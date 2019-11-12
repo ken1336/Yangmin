@@ -5,8 +5,11 @@ if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(FATAL_ERROR "In-source build is not allowed. Please make a standalone build directory and run CMake from there. You may need to remove CMakeCache.txt.")
 endif()
 
-project(libyang C)
-
+project(libyang C CXX)
+message("Your C++ compiler supports these C++ features:")
+foreach(i ${CMAKE_CXX_COMPILE_FEATURES})
+  message("${i}")
+endforeach()
 include(GNUInstallDirs)
 include(CheckSymbolExists)
 
@@ -230,6 +233,17 @@ set(libsrc
     src/printer_lyb.c
     src/yang_types.c)
 
+set(yangmin
+    tools/lint/test.c
+    tools/lint/main_ni.c
+    tools/lint/commands.c
+    tools/lint/completion.c
+    tools/lint/configuration.c
+    linenoise/linenoise.c)
+
+set(yangtest
+    tools/lint/Ytest.cpp)
+
 set(lintsrc
     tools/lint/main.c
     tools/lint/main_ni.c
@@ -395,6 +409,18 @@ else()
 endif(ENABLE_STATIC)
 
 configure_file(${PROJECT_SOURCE_DIR}/src/plugin_config.h.in ${PROJECT_BINARY_DIR}/src/plugin_config.h)
+
+# yangMin
+add_executable(yangMin ${yangmin})
+target_link_libraries(yangMin yang)
+install(TARGETS yangMin DESTINATION ${CMAKE_INSTALL_BINDIR})
+
+# yangTest
+set(CMAKE_CXX_COMPILER g++)
+add_definitions("-Wall -std=c++14")
+add_executable(yangTest ${yangtest})
+target_link_libraries(yangTest yang)
+install(TARGETS yangTest DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # yanglint
 add_executable(yanglint ${lintsrc})

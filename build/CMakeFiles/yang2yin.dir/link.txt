@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -g -O0  -rdynamic CMakeFiles/yang2yin.dir/tools/yang2yin/main.c.o  -o yang2yin 

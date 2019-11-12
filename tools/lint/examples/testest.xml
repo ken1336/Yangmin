@@ -1,0 +1,56 @@
+module: ietf-netconf
+
+  rpcs:
+    +---x get-config
+    |  +---- input
+    |  |  +---w source
+    |  |  |  +---w (config-source)
+    |  |  |     +--:(running)
+    |  |  |        +---w running?   empty
+    |  |  +---w filter?   anyxml
+    |  +---- output
+    |     +--ro data?   anyxml
+    +---x edit-config
+    |  +---- input
+    |     +---w target
+    |     |  +---w (config-target)
+    |     +---w default-operation?   enumeration <merge>
+    |     +---w error-option?        enumeration <stop-on-error>
+    |     +---w (edit-content)
+    |        +--:(config)
+    |           +---w config?   anyxml
+    +---x copy-config
+    |  +---- input
+    |     +---w target
+    |     |  +---w (config-target)
+    |     +---w source
+    |        +---w (config-source)
+    |           +--:(running)
+    |           |  +---w running?   empty
+    |           +--:(config)
+    |              +---w config?   anyxml
+    +---x delete-config
+    |  +---- input
+    |     +---w target
+    |        +---w (config-target)
+    +---x lock
+    |  +---- input
+    |     +---w target
+    |        +---w (config-target)
+    |           +--:(running)
+    |              +---w running?   empty
+    +---x unlock
+    |  +---- input
+    |     +---w target
+    |        +---w (config-target)
+    |           +--:(running)
+    |              +---w running?   empty
+    +---x get
+    |  +---- input
+    |  |  +---w filter?   anyxml
+    |  +---- output
+    |     +--ro data?   anyxml
+    +---x close-session
+    +---x kill-session
+       +---- input
+          +---w session-id    session-id-type

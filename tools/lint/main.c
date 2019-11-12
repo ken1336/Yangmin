@@ -34,8 +34,9 @@ int
 main(int argc, char* argv[])
 {
     char *cmd, *cmdline, *cmdstart;
-    int i, j;
-
+    int i, j, cmd_count;
+    int index;
+    
     if (argc > 1) {
         /* run in non-interactive mode */
         return main_ni(argc, argv);
@@ -52,6 +53,7 @@ main(int argc, char* argv[])
     }
 
     while (!done) {
+        printf("min develope command:\n");
         /* get the command from user */
         cmdline = linenoise(PROMPT);
 
@@ -70,6 +72,8 @@ main(int argc, char* argv[])
         /* isolate the command word. */
         for (i = 0; cmdline[i] && (cmdline[i] == ' '); i++);
         cmdstart = cmdline + i;
+        cmd_count = i;
+      
         for (j = 0; cmdline[i] && (cmdline[i] != ' '); i++, j++);
         cmd = strndup(cmdstart, j);
 
@@ -82,6 +86,7 @@ main(int argc, char* argv[])
 
         /* execute the command if any valid specified */
         if (commands[i].name) {
+             printf("command:%s\n",commands[i].name);
             /* display help */
             if ((strchr(cmdstart, ' ') != NULL) && ((strncmp(strchr(cmdstart, ' ')+1, "-h", 2) == 0)
                     || (strncmp(strchr(cmdstart, ' ')+1, "--help", 6) == 0))) {
@@ -91,6 +96,8 @@ main(int argc, char* argv[])
                     printf("%s\n", commands[i].helpstring);
                 }
             } else {
+                printf("Execute function:%s\n",cmdstart);
+               
                 commands[i].func((const char *)cmdstart);
             }
         } else {

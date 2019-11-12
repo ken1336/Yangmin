@@ -1095,6 +1095,7 @@ print_list(FILE *out, struct ly_ctx *ctx, LYD_FORMAT outformat)
 int
 cmd_list(const char *arg)
 {
+    printf("commands.c :%s\n",arg);
     char **argv = NULL, *ptr;
     int c, argc, option_index;
     LYD_FORMAT outformat = LYD_UNKNOWN;

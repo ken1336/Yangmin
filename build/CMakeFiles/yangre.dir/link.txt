@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -g -O0  -rdynamic CMakeFiles/yangre.dir/tools/re/main.c.o  -o yangre -Wl,-rpath,/home/min/libyang/build: libyang.so.1.3.0 -ldl -lm -lpthread -lpcre 
