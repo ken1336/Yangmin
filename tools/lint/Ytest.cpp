@@ -29,9 +29,17 @@ int main(){
         //module->implemented = internal_modules[i].implemented;
         std::cout<<"internal module name: "<<module->name<<std::endl;
         
+        if(module->data){
+            auto iter = module->data;
+            std::cout<<"name: "<<iter->name<<std::endl;
+            while(iter->next){
+                iter = iter->next;
+                std::cout<<"next: "<<iter->name<<std::endl;
+            }
+        }
+           
     }
     
-    commands[0].func("ietf-yang-library");
     
     ly_ctx_destroy(ctx, NULL);
 }

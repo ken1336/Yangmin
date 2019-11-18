@@ -51,8 +51,11 @@ constexpr internal_modules_s internal_modules[LY_INTERNAL_MODULE_COUNT] = {
 class InternalModule
 {
 
-private:
+private:    
+    lys_module module;
 public:
+    InternalModule(lys_module& module);
+    void printModuleData(lys_node& data, int dept = 0);
 };
 
 } // namespace internal
