@@ -21,3 +21,12 @@ CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o
  /home/min/libyang/tools/lint/min_extension/internal_module.hpp
  src/common.h
  src/libyang.h
+CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o
+ ../models/ietf-datastores@2017-08-17.h
+ ../models/ietf-inet-types@2013-07-15.h
+ ../models/ietf-yang-library@2019-01-04.h
+ ../models/ietf-yang-metadata@2016-08-05.h
+ ../models/ietf-yang-types@2013-07-15.h
+ ../models/yang@2017-02-20.h
+ /home/min/libyang/tools/lint/min_extension/internal_module.hpp
+ /home/min/libyang/tools/lint/min_extension/module.cpp

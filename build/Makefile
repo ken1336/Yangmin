@@ -1425,6 +1425,33 @@ tools/lint/main_ni.c.s:
 	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/tools/lint/main_ni.c.s
 .PHONY : tools/lint/main_ni.c.s
 
+tools/lint/min_extension/module.o: tools/lint/min_extension/module.cpp.o
+
+.PHONY : tools/lint/min_extension/module.o
+
+# target to build an object file
+tools/lint/min_extension/module.cpp.o:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o
+.PHONY : tools/lint/min_extension/module.cpp.o
+
+tools/lint/min_extension/module.i: tools/lint/min_extension/module.cpp.i
+
+.PHONY : tools/lint/min_extension/module.i
+
+# target to preprocess a source file
+tools/lint/min_extension/module.cpp.i:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.i
+.PHONY : tools/lint/min_extension/module.cpp.i
+
+tools/lint/min_extension/module.s: tools/lint/min_extension/module.cpp.s
+
+.PHONY : tools/lint/min_extension/module.s
+
+# target to generate assembly for a file
+tools/lint/min_extension/module.cpp.s:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.s
+.PHONY : tools/lint/min_extension/module.cpp.s
+
 tools/lint/test.o: tools/lint/test.c.o
 
 .PHONY : tools/lint/test.o
@@ -1641,6 +1668,9 @@ help:
 	@echo "... tools/lint/main_ni.o"
 	@echo "... tools/lint/main_ni.i"
 	@echo "... tools/lint/main_ni.s"
+	@echo "... tools/lint/min_extension/module.o"
+	@echo "... tools/lint/min_extension/module.i"
+	@echo "... tools/lint/min_extension/module.s"
 	@echo "... tools/lint/test.o"
 	@echo "... tools/lint/test.i"
 	@echo "... tools/lint/test.s"

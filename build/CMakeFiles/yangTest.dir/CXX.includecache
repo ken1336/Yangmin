@@ -131,8 +131,6 @@ errno.h
 -
 fcntl.h
 -
-../src/tree_schema.h
-/home/min/libyang/tools/lint/src/tree_schema.h
 ../../models/ietf-yang-metadata@2016-08-05.h
 /home/min/libyang/tools/models/ietf-yang-metadata@2016-08-05.h
 ../../models/yang@2017-02-20.h
@@ -145,6 +143,20 @@ fcntl.h
 /home/min/libyang/tools/models/ietf-datastores@2017-08-17.h
 ../../models/ietf-yang-library@2019-01-04.h
 /home/min/libyang/tools/models/ietf-yang-library@2019-01-04.h
+iostream
+-
+string
+-
+memory
+-
+
+/home/min/libyang/tools/lint/min_extension/module.cpp
+iostream
+-
+memory
+-
+internal_module.hpp
+/home/min/libyang/tools/lint/min_extension/internal_module.hpp
 
 src/common.h
 stdint.h

@@ -1,1 +1,1 @@
-g++  -g  -rdynamic CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o  -o yangTest -Wl,-rpath,/home/min/libyang/build: libyang.so.1.3.0 -ldl -lm -lpthread -lpcre 
+g++  -g  -rdynamic CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o  -o yangTest -Wl,-rpath,/home/min/libyang/build: libyang.so.1.3.0 -ldl -lm -lpthread -lpcre 

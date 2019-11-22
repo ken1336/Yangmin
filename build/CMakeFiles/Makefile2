@@ -103,7 +103,7 @@ clean: CMakeFiles/yang2yin.dir/clean
 CMakeFiles/yangre.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f CMakeFiles/yangre.dir/build.make CMakeFiles/yangre.dir/depend
 	$(MAKE) -f CMakeFiles/yangre.dir/build.make CMakeFiles/yangre.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=88,89 "Built target yangre"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=89,90 "Built target yangre"
 .PHONY : CMakeFiles/yangre.dir/all
 
 # Include target in all.
@@ -140,7 +140,7 @@ clean: CMakeFiles/yangre.dir/clean
 CMakeFiles/yanglint.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/depend
 	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=23,24,25,26,27,28,29 "Built target yanglint"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=24,25,26,27,28,29,30 "Built target yanglint"
 .PHONY : CMakeFiles/yanglint.dir/all
 
 # Include target in all.
@@ -214,7 +214,7 @@ clean: CMakeFiles/yang.dir/clean
 CMakeFiles/yangTest.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/depend
 	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=19,20 "Built target yangTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=19,20,21 "Built target yangTest"
 .PHONY : CMakeFiles/yangTest.dir/all
 
 # Include target in all.
@@ -224,7 +224,7 @@ all: CMakeFiles/yangTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/yangTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 33
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : CMakeFiles/yangTest.dir/rule
@@ -320,7 +320,7 @@ clean: CMakeFiles/yangMin.dir/clean
 CMakeFiles/yangobj_tests.dir/all:
 	$(MAKE) -f CMakeFiles/yangobj_tests.dir/build.make CMakeFiles/yangobj_tests.dir/depend
 	$(MAKE) -f CMakeFiles/yangobj_tests.dir/build.make CMakeFiles/yangobj_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 "Built target yangobj_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88 "Built target yangobj_tests"
 .PHONY : CMakeFiles/yangobj_tests.dir/all
 
 # Include target in all.
@@ -357,7 +357,7 @@ clean: CMakeFiles/yangobj_tests.dir/clean
 CMakeFiles/yangobj.dir/all:
 	$(MAKE) -f CMakeFiles/yangobj.dir/build.make CMakeFiles/yangobj.dir/depend
 	$(MAKE) -f CMakeFiles/yangobj.dir/build.make CMakeFiles/yangobj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58 "Built target yangobj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59 "Built target yangobj"
 .PHONY : CMakeFiles/yangobj.dir/all
 
 # Include target in all.
@@ -522,7 +522,7 @@ clean: src/extensions/CMakeFiles/nacm.dir/clean
 src/extensions/CMakeFiles/yangdata.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/depend
 	$(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=21,22 "Built target yangdata"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=22,23 "Built target yangdata"
 .PHONY : src/extensions/CMakeFiles/yangdata.dir/all
 
 # Include target in all.

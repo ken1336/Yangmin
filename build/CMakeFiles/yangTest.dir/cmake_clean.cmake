@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o"
+  "CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o"
   "yangTest.pdb"
   "yangTest"
 )

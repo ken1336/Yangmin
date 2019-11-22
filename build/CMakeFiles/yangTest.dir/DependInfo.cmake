@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/min/libyang/tools/lint/Ytest.cpp" "/home/min/libyang/build/CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o"
+  "/home/min/libyang/tools/lint/min_extension/module.cpp" "/home/min/libyang/build/CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
