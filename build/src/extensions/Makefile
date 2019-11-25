@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/min/libyang
+CMAKE_SOURCE_DIR = /home/min/libyang/Yangmin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/min/libyang/build
+CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/min/libyang/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles /home/min/libyang/build/src/extensions/CMakeFiles/progress.marks
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
+	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles /home/min/libyang/Yangmin/build/src/extensions/CMakeFiles/progress.marks
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/clean
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/preinstall
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/preinstall
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/min/libyang/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/extensions/CMakeFiles/metadata.dir/rule:
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/CMakeFiles/metadata.dir/rule
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/CMakeFiles/metadata.dir/rule
 .PHONY : src/extensions/CMakeFiles/metadata.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ metadata: src/extensions/CMakeFiles/metadata.dir/rule
 
 # fast build rule for target.
 metadata/fast:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/build
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/build
 .PHONY : metadata/fast
 
 # Convenience name for target.
 src/extensions/CMakeFiles/nacm.dir/rule:
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/CMakeFiles/nacm.dir/rule
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/CMakeFiles/nacm.dir/rule
 .PHONY : src/extensions/CMakeFiles/nacm.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ nacm: src/extensions/CMakeFiles/nacm.dir/rule
 
 # fast build rule for target.
 nacm/fast:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/build
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/build
 .PHONY : nacm/fast
 
 # Convenience name for target.
 src/extensions/CMakeFiles/yangdata.dir/rule:
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/CMakeFiles/yangdata.dir/rule
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/extensions/CMakeFiles/yangdata.dir/rule
 .PHONY : src/extensions/CMakeFiles/yangdata.dir/rule
 
 # Convenience name for target.
@@ -198,7 +198,7 @@ yangdata: src/extensions/CMakeFiles/yangdata.dir/rule
 
 # fast build rule for target.
 yangdata/fast:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/build
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/build
 .PHONY : yangdata/fast
 
 metadata.o: metadata.c.o
@@ -207,7 +207,7 @@ metadata.o: metadata.c.o
 
 # target to build an object file
 metadata.c.o:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/metadata.c.o
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/metadata.c.o
 .PHONY : metadata.c.o
 
 metadata.i: metadata.c.i
@@ -216,7 +216,7 @@ metadata.i: metadata.c.i
 
 # target to preprocess a source file
 metadata.c.i:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/metadata.c.i
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/metadata.c.i
 .PHONY : metadata.c.i
 
 metadata.s: metadata.c.s
@@ -225,7 +225,7 @@ metadata.s: metadata.c.s
 
 # target to generate assembly for a file
 metadata.c.s:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/metadata.c.s
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/metadata.c.s
 .PHONY : metadata.c.s
 
 nacm.o: nacm.c.o
@@ -234,7 +234,7 @@ nacm.o: nacm.c.o
 
 # target to build an object file
 nacm.c.o:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/nacm.c.o
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/nacm.c.o
 .PHONY : nacm.c.o
 
 nacm.i: nacm.c.i
@@ -243,7 +243,7 @@ nacm.i: nacm.c.i
 
 # target to preprocess a source file
 nacm.c.i:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/nacm.c.i
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/nacm.c.i
 .PHONY : nacm.c.i
 
 nacm.s: nacm.c.s
@@ -252,7 +252,7 @@ nacm.s: nacm.c.s
 
 # target to generate assembly for a file
 nacm.c.s:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/nacm.c.s
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/nacm.c.s
 .PHONY : nacm.c.s
 
 yangdata.o: yangdata.c.o
@@ -261,7 +261,7 @@ yangdata.o: yangdata.c.o
 
 # target to build an object file
 yangdata.c.o:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/yangdata.c.o
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/yangdata.c.o
 .PHONY : yangdata.c.o
 
 yangdata.i: yangdata.c.i
@@ -270,7 +270,7 @@ yangdata.i: yangdata.c.i
 
 # target to preprocess a source file
 yangdata.c.i:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/yangdata.c.i
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/yangdata.c.i
 .PHONY : yangdata.c.i
 
 yangdata.s: yangdata.c.s
@@ -279,7 +279,7 @@ yangdata.s: yangdata.c.s
 
 # target to generate assembly for a file
 yangdata.c.s:
-	cd /home/min/libyang/build && $(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/yangdata.c.s
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/yangdata.c.s
 .PHONY : yangdata.c.s
 
 # Help Target
@@ -317,6 +317,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/min/libyang/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

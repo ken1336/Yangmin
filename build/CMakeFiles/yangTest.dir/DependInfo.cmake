@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/min/libyang/tools/lint/Ytest.cpp" "/home/min/libyang/build/CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o"
-  "/home/min/libyang/tools/lint/min_extension/module.cpp" "/home/min/libyang/build/CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o"
+  "/home/min/libyang/Yangmin/tools/lint/Ytest.cpp" "/home/min/libyang/Yangmin/build/CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o"
+  "/home/min/libyang/Yangmin/tools/lint/min_extension/module.cpp" "/home/min/libyang/Yangmin/build/CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,7 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/min/libyang/build/CMakeFiles/yang.dir/DependInfo.cmake"
+  "/home/min/libyang/Yangmin/build/CMakeFiles/yang.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

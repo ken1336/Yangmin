@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/min/libyang
+CMAKE_SOURCE_DIR = /home/min/libyang/Yangmin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/min/libyang/build
+CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
 
 # Utility rule file for cclean.
 
@@ -54,9 +54,9 @@ CMAKE_BINARY_DIR = /home/min/libyang/build
 include CMakeFiles/cclean.dir/progress.make
 
 CMakeFiles/cclean:
-	cd /home/min/libyang && make clean
-	cd /home/min/libyang && find . -iname '*cmake*' -not -name CMakeLists.txt -not -path './CMakeModules*' -exec rm -rf {} +
-	cd /home/min/libyang && rm -rf Makefile Doxyfile
+	cd /home/min/libyang/Yangmin && make clean
+	cd /home/min/libyang/Yangmin && find . -iname '*cmake*' -not -name CMakeLists.txt -not -path './CMakeModules*' -exec rm -rf {} +
+	cd /home/min/libyang/Yangmin && rm -rf Makefile Doxyfile
 
 cclean: CMakeFiles/cclean
 cclean: CMakeFiles/cclean.dir/build.make
@@ -73,6 +73,6 @@ CMakeFiles/cclean.dir/clean:
 .PHONY : CMakeFiles/cclean.dir/clean
 
 CMakeFiles/cclean.dir/depend:
-	cd /home/min/libyang/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang /home/min/libyang /home/min/libyang/build /home/min/libyang/build /home/min/libyang/build/CMakeFiles/cclean.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang/Yangmin /home/min/libyang/Yangmin /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build/CMakeFiles/cclean.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cclean.dir/depend
 

@@ -3,7 +3,7 @@
 #include "libyang.h"
 #include "commands.h"
 #include "context.h"
-#include "min_extension/internal_module.hpp"
+#include "./min_extension/internal_module.hpp"
 
 int main(){
 
@@ -22,6 +22,7 @@ int main(){
     min::internal::InternalModule iModule{ctx};
     
     std::cout<<iModule.getName()<<std::endl;
+    iModule.printModuleData();
 
     /*
     for (auto i = 0; i < ctx->internal_module_count; i++) {

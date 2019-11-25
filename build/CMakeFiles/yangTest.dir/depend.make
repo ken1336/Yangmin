@@ -9,9 +9,9 @@ CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/resolve.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/tree_data.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/tree_schema.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/xml.h
+CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../tools/lint/./min_extension/internal_module.hpp
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../tools/lint/Ytest.cpp
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../tools/lint/commands.h
-CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../tools/lint/min_extension/internal_module.hpp
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: src/common.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: src/libyang.h
 
@@ -22,6 +22,6 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o: ../models/ietf-ya
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o: ../models/ietf-yang-types@2013-07-15.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o: ../models/yang@2017-02-20.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o: ../src/tree_schema.h
-CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o: ../tools/lint/min_extension/./internal_module.hpp
+CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o: ../tools/lint/min_extension/internal_module.hpp
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o: ../tools/lint/min_extension/module.cpp
 

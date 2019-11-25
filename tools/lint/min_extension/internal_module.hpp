@@ -49,6 +49,8 @@ public:
     InternalModule(const lys_module* module);
     InternalModule(ly_ctx* ctx);
     void printModuleData(int dept = 0);
+    void printSubNode(lys_node* node, int dept);
+    void test();
     inline std::string getName(){return module->name;};
 };
 

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <memory>
-#include "./internal_module.hpp"
+#include "internal_module.hpp"
 
 
 #include "../../models/ietf-yang-metadata@2016-08-05.h"
@@ -33,27 +33,70 @@ InternalModule::InternalModule(const lys_module *module)
 InternalModule::InternalModule(ly_ctx* ctx){
     auto in = lys_parse_mem(ctx, min::internal::internal_modules[5].data, min::internal::internal_modules[5].format);
     this->module = std::make_unique<lys_module>(*in);
+    
 }
-
+void InternalModule::test(){
+    std::cout<<"test"<<std::endl;
+}
 void InternalModule::printModuleData(int dept)
 {
-    return;
-    //std::shared_ptr<lys_node> node{this->module.data};
+   
+    auto iter = this->module->data;
+   
+    std::cout<<"----------iter start----------"<<std::endl;
+    while(iter){
+        for (auto i = 0; i < dept; i++){
+         std::cout << "  ..  ";
+        }
+        
+        std::cout<<iter->name<<std::endl;
+        if(iter->child){
+            printSubNode(iter->child,dept+1);
+        }
+        
+        
+        if(iter->next){
+            iter = iter->next;
+        }else{
+            std::cout<<"----------iter end----------"<<std::endl;
+            return;
+        }
+    }
 
-    // for (auto i = 0; i < dept; i++){
-    //     std::cout << "    ";
-    // }
-    // std::cout<<"data: "<<node->name<<std::endl;
-    // while(node->next){
-    //     node = node->next;
-    //     for (auto i = 0; i < dept; i++){
-    //     std::cout << "    ";
-    // }
-    // std::cout<<"data: "<<node->name<<std::endl;
-    // }
+    std::cout<<"----------iter end----------"<<std::endl;
+    return;
+    
+
 }
+
 void printSubModule(const lys_module &subModule, int dept)
 {
+}
+
+void InternalModule::printSubNode(lys_node* node, int dept)
+{
+    auto iter = node;
+   
+    while(iter){
+        for (auto i = 0; i < dept; i++){
+         std::cout << "  ..  ";
+        }
+        
+        std::cout<<iter->name<<std::endl;
+        if(iter->child){
+            printSubNode(iter->child,dept+1);
+        }
+        
+        
+        if(iter->next){
+            iter = iter->next;
+        }else{
+            return;
+        }
+    }
+
+    return;
+   
 }
 } // namespace internal
 } // namespace min
