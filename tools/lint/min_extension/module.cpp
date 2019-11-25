@@ -31,6 +31,9 @@ InternalModule::InternalModule(const lys_module *module)
     
 }
 InternalModule::InternalModule(ly_ctx* ctx){
+    // for(auto i = 0; i<4; i++){
+    //     lys_parse_mem(ctx, min::internal::internal_modules[i].data, min::internal::internal_modules[i].format);
+    // }
     auto in = lys_parse_mem(ctx, min::internal::internal_modules[5].data, min::internal::internal_modules[5].format);
     this->module = std::make_unique<lys_module>(*in);
     
@@ -42,15 +45,16 @@ void InternalModule::printModuleData(int dept)
 {
    
     auto iter = this->module->data;
-   
+    int num = 0;
     std::cout<<"----------iter start----------"<<std::endl;
     while(iter){
+        std::cout<<"module num: "<<num++<<std::endl;
         for (auto i = 0; i < dept; i++){
          std::cout << "  ..  ";
         }
         
         std::cout<<iter->name<<std::endl;
-        if(iter->child){
+        if(iter->name){
             printSubNode(iter->child,dept+1);
         }
         
@@ -69,20 +73,28 @@ void InternalModule::printModuleData(int dept)
 
 }
 
-void printSubModule(const lys_module &subModule, int dept)
+void InternalModule::printSubModule(lys_module* subModule, int dept)
 {
 }
 
 void InternalModule::printSubNode(lys_node* node, int dept)
 {
+    
     auto iter = node;
-   
+
     while(iter){
         for (auto i = 0; i < dept; i++){
          std::cout << "  ..  ";
         }
-        
-        std::cout<<iter->name<<std::endl;
+            std::cout<<"flags: "<<iter->flags;
+            if(iter->flags >= 0 && iter->flags <= 19 )
+                std::cout<<"  "<<iter->nodetype<<"  name: "<<iter->name<<std::endl;
+            else{
+                std::cout<<std::endl;
+                return;
+            }
+                
+           // std::cout<<iter->dsc<<std::endl;
         if(iter->child){
             printSubNode(iter->child,dept+1);
         }
@@ -96,6 +108,7 @@ void InternalModule::printSubNode(lys_node* node, int dept)
     }
 
     return;
+
    
 }
 } // namespace internal

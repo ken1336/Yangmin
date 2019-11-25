@@ -978,7 +978,7 @@ union lys_type_info {
  * @brief YANG type structure providing information from the schema
  */
 struct lys_type {
-    LY_DATA_TYPE base;       /**< base type */
+    LY_DATA_TYPE __attribute__((__packed__)) base;       /**< base type */
     uint8_t value_flags;             /**< value type flags */
     uint8_t ext_size;                /**< number of elements in #ext array */
     struct lys_ext_instance **ext;   /**< array of pointers to the extension instances */
