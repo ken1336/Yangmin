@@ -242,7 +242,8 @@ set(yangmin
     linenoise/linenoise.c)
 
 set(yangtest
-    tools/lint/Ytest.cpp)
+    tools/lint/Ytest.cpp
+    tools/lint/min_extension/module.cpp)
 
 set(lintsrc
     tools/lint/main.c

@@ -406,7 +406,6 @@ typedef enum {
  * @ingroup extensions
  *
  * Various flags for extensions.
-
  * @{
  */
 #define LYEXT_OPT_INHERIT    0x01    /**< When instantiated in lys_node, the extension is supposed to be inherited
@@ -979,7 +978,7 @@ union lys_type_info {
  * @brief YANG type structure providing information from the schema
  */
 struct lys_type {
-    LY_DATA_TYPE _PACKED base;       /**< base type */
+    LY_DATA_TYPE base;       /**< base type */
     uint8_t value_flags;             /**< value type flags */
     uint8_t ext_size;                /**< number of elements in #ext array */
     struct lys_ext_instance **ext;   /**< array of pointers to the extension instances */

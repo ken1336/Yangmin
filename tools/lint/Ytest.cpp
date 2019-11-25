@@ -19,9 +19,11 @@ int main(){
     
 
     std::cout<<"internal modules count:"<<ctx->internal_module_count<<std::endl;
-   
+    min::internal::InternalModule iModule{ctx};
+    
+    std::cout<<iModule.getName()<<std::endl;
 
-
+    /*
     for (auto i = 0; i < ctx->internal_module_count; i++) {
         auto module = lys_parse_mem(ctx, min::internal::internal_modules[i].data, min::internal::internal_modules[i].format);
         assert(module);
@@ -38,8 +40,12 @@ int main(){
             }
         }
            
-    }
+    }*/
     
+    
+    
+    //auto iModule = min::internal::InternalModule{module};
+    //std::cout<<iModule.getName()<<std::endl;
     
     ly_ctx_destroy(ctx, NULL);
 }
