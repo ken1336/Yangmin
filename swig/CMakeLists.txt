@@ -45,18 +45,18 @@ if(GEN_PYTHON_BINDINGS AND SWIG_FOUND)
 endif()
 
 set(LIBYANG_CPP_SOURCES
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Xml.cpp
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Libyang.cpp
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Tree_Data.cpp
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Tree_Schema.cpp
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Internal.cpp)
+    ${CMAKE_SOURCE_DIR}/cpp/src/Xml.cpp
+    ${CMAKE_SOURCE_DIR}/cpp/src/Libyang.cpp
+    ${CMAKE_SOURCE_DIR}/cpp/src/Tree_Data.cpp
+    ${CMAKE_SOURCE_DIR}/cpp/src/Tree_Schema.cpp
+    ${CMAKE_SOURCE_DIR}/cpp/src/Internal.cpp)
 
 set(LIBYANG_HPP_SOURCES
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Xml.hpp
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Libyang.hpp
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Tree_Data.hpp
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Tree_Schema.hpp
-    ${CMAKE_SOURCE_DIR}/swig/cpp/src/Internal.hpp)
+    ${CMAKE_SOURCE_DIR}/cpp/src/Xml.hpp
+    ${CMAKE_SOURCE_DIR}/cpp/src/Libyang.hpp
+    ${CMAKE_SOURCE_DIR}/cpp/src/Tree_Data.hpp
+    ${CMAKE_SOURCE_DIR}/cpp/src/Tree_Schema.hpp
+    ${CMAKE_SOURCE_DIR}/cpp/src/Internal.hpp)
 
 FUNCTION(PREPEND var prefix)
     SET(listVar "")
@@ -89,7 +89,8 @@ if(PKG_CONFIG_FOUND)
 endif()
 
 # install binary
-install(TARGETS libyang-cpp DESTINATION ${CMAKE_INSTALL_LIBDIR})
+
+install(TARGETS libyang-cpp LIBRARY DESTINATION lib ${CMAKE_INSTALL_LIBDIR})
 install(FILES ${LIBYANG_HPP_SOURCES} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/libyang)
 
 if (GEN_CPP_BINDINGS)
@@ -99,11 +100,11 @@ if (GEN_CPP_BINDINGS)
     endif()
 endif()
 
-if(ENABLE_STATIC AND PYTHONLIBS_FOUND AND PYTHONINTERP_FOUND AND (${GEN_PYTHON_VERSION} STREQUAL "2" OR ${GEN_PYTHON_VERSION} STREQUAL "3"))
-    message(WARNING "Can't create a static Python module")
-elseif(PYTHONLIBS_FOUND AND PYTHONINTERP_FOUND AND (${GEN_PYTHON_VERSION} STREQUAL "2" OR ${GEN_PYTHON_VERSION} STREQUAL "3"))
-    add_subdirectory(python)
-endif()
+#if(ENABLE_STATIC AND PYTHONLIBS_FOUND AND PYTHONINTERP_FOUND AND (${GEN_PYTHON_VERSION} STREQUAL "2" OR ${GEN_PYTHON_VERSION} STREQUAL "3"))
+#    message(WARNING "Can't create a static Python module")
+#elseif(PYTHONLIBS_FOUND AND PYTHONINTERP_FOUND AND (${GEN_PYTHON_VERSION} STREQUAL "2" OR ${GEN_PYTHON_VERSION} STREQUAL "3"))
+#    add_subdirectory(python)
+# endif()
 
 if(NOT ENABLE_STATIC AND GEN_JAVASCRIPT_BINDINGS)
     message(WARNING "Can't create Javascript bindings with a shared library, please use -DENABLE_STATIC")

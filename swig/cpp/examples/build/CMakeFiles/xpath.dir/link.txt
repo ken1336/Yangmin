@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/xpath.dir/xpath.o  -o xpath -llibyang-cpp 

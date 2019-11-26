@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/min/libyang/swig/cpp/examples/xpath.cpp
+iostream
+-
+memory
+-
+stdexcept
+-
+vector
+-
+Libyang.hpp
+-
+Tree_Data.hpp
+-
+Tree_Schema.hpp
+-
+

@@ -1,0 +1,5 @@
+/home/min/libyang/swig/cpp/examples/build/CMakeFiles/edit_cache.dir
+/home/min/libyang/swig/cpp/examples/build/CMakeFiles/xpath.dir
+/home/min/libyang/swig/cpp/examples/build/CMakeFiles/rebuild_cache.dir
+/home/min/libyang/swig/cpp/examples/build/CMakeFiles/process_tree.dir
+/home/min/libyang/swig/cpp/examples/build/CMakeFiles/context.dir

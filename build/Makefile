@@ -1285,6 +1285,7 @@ tools/lint/commands.o: tools/lint/commands.c.o
 # target to build an object file
 tools/lint/commands.c.o:
 	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/tools/lint/commands.c.o
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/commands.c.o
 	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/tools/lint/commands.c.o
 .PHONY : tools/lint/commands.c.o
 
@@ -1295,6 +1296,7 @@ tools/lint/commands.i: tools/lint/commands.c.i
 # target to preprocess a source file
 tools/lint/commands.c.i:
 	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/tools/lint/commands.c.i
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/commands.c.i
 	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/tools/lint/commands.c.i
 .PHONY : tools/lint/commands.c.i
 
@@ -1305,6 +1307,7 @@ tools/lint/commands.s: tools/lint/commands.c.s
 # target to generate assembly for a file
 tools/lint/commands.c.s:
 	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/tools/lint/commands.c.s
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/commands.c.s
 	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/tools/lint/commands.c.s
 .PHONY : tools/lint/commands.c.s
 

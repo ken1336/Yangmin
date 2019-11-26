@@ -24,29 +24,8 @@ int main(){
     std::cout<<iModule.getName()<<std::endl;
     iModule.printModuleData();
 
-    /*
-    for (auto i = 0; i < ctx->internal_module_count; i++) {
-        auto module = lys_parse_mem(ctx, min::internal::internal_modules[i].data, min::internal::internal_modules[i].format);
-        assert(module);
 
-        //module->implemented = internal_modules[i].implemented;
-        std::cout<<"internal module name: "<<module->name<<std::endl;
-        
-        if(module->data){
-            auto iter = module->data;
-            std::cout<<"name: "<<iter->name<<std::endl;
-            while(iter->next){
-                iter = iter->next;
-                std::cout<<"next: "<<iter->name<<std::endl;
-            }
-        }
-           
-    }*/
-    
-    
-    
-    //auto iModule = min::internal::InternalModule{module};
-    //std::cout<<iModule.getName()<<std::endl;
+    commands[1].func("ietf-netconf.yang");
     
     ly_ctx_destroy(ctx, NULL);
 }

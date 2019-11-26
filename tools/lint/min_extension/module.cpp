@@ -47,25 +47,26 @@ void InternalModule::printModuleData(int dept)
     auto iter = this->module->data;
     int num = 0;
     std::cout<<"----------iter start----------"<<std::endl;
-    while(iter){
-        std::cout<<"module num: "<<num++<<std::endl;
-        for (auto i = 0; i < dept; i++){
-         std::cout << "  ..  ";
-        }
+    printSubNode(iter,0);
+    // while(iter){
         
-        std::cout<<iter->name<<std::endl;
-        if(iter->name){
-            printSubNode(iter->child,dept+1);
-        }
+    //     for (auto i = 0; i < dept; i++){
+    //      std::cout << "  ..  ";
+    //     }
+        
+    //     std::cout<<iter->name<<std::endl;
+    //     if(iter->name){
+    //         printSubNode(iter->child,dept+1);
+    //     }
         
         
-        if(iter->next){
-            iter = iter->next;
-        }else{
-            std::cout<<"----------iter end----------"<<std::endl;
-            return;
-        }
-    }
+    //     if(iter->next){
+    //         iter = iter->next;
+    //     }else{
+    //         std::cout<<"----------iter end----------"<<std::endl;
+    //         return;
+    //     }
+    // }
 
     std::cout<<"----------iter end----------"<<std::endl;
     return;
@@ -87,10 +88,10 @@ void InternalModule::printSubNode(lys_node* node, int dept)
          std::cout << "  ..  ";
         }
             std::cout<<"flags: "<<iter->flags;
-            if(iter->flags >= 0 && iter->flags <= 19 )
-                std::cout<<"  "<<iter->nodetype<<"  name: "<<iter->name<<std::endl;
+            if(iter->flags >= 0 && iter->flags <= 64 )
+                std::cout<<"  "<<iter->nodetype<<" : "<<iter->name<<std::endl;
             else{
-                std::cout<<std::endl;
+                std::cout<<"  skip--"<<std::endl;
                 return;
             }
                 
