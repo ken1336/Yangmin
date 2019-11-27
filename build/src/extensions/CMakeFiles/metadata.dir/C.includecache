@@ -46,13 +46,13 @@ sys/types.h
 stdio.h
 -
 
-/home/min/libyang/src/extensions.h
+/home/min/libyang/Yangmin/src/extensions.h
 libyang.h
-/home/min/libyang/src/libyang.h
+/home/min/libyang/Yangmin/src/libyang.h
 
-/home/min/libyang/src/extensions/metadata.c
+/home/min/libyang/Yangmin/src/extensions/metadata.c
 ../extensions.h
-/home/min/libyang/src/extensions.h
+/home/min/libyang/Yangmin/src/extensions.h
 
 src/libyang.h
 stdio.h

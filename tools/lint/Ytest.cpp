@@ -4,6 +4,7 @@
 #include "commands.h"
 #include "context.h"
 #include "./min_extension/internal_module.hpp"
+#include"./min_extension/execute.hpp"
 
 int main(){
 
@@ -24,8 +25,10 @@ int main(){
     std::cout<<iModule.getName()<<std::endl;
     iModule.printModuleData();
 
+    
+    min::execute::command cmd{ctx};
 
-    commands[1].func("ietf-netconf.yang");
+    //commands[1].func("ietf-netconf.yang");
     
     ly_ctx_destroy(ctx, NULL);
 }

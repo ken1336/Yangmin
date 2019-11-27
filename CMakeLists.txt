@@ -244,7 +244,7 @@ set(yangmin
 set(yangtest
     tools/lint/Ytest.cpp
     tools/lint/min_extension/module.cpp
-    tools/lint/commands.c)
+    tools/lint/min_extension/command.cpp)
 
 set(lintsrc
     tools/lint/main.c

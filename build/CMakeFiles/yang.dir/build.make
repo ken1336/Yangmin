@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/min/libyang
+CMAKE_SOURCE_DIR = /home/min/libyang/Yangmin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/min/libyang/build
+CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/yang.dir/depend.make
@@ -62,35 +62,35 @@ yang_OBJECTS =
 
 # External object files for target yang
 yang_EXTERNAL_OBJECTS = \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/common.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/context.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/log.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/hash_table.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/resolve.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/validation.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/xml.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/parser.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/parser_yin.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/parser_xml.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/parser_json.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/parser_lyb.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/parser_yang_bis.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/parser_yang_lex.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/parser_yang.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/tree_schema.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/tree_data.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/plugins.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/printer.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/xpath.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/printer_yang.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/printer_yin.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/printer_json_schema.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/printer_xml.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/printer_tree.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/printer_info.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/printer_json.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/printer_lyb.c.o" \
-"/home/min/libyang/build/CMakeFiles/yangobj.dir/src/yang_types.c.o"
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/common.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/context.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/log.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/hash_table.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/resolve.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/validation.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/xml.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/parser.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/parser_yin.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/parser_xml.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/parser_json.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/parser_lyb.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/parser_yang_bis.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/parser_yang_lex.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/parser_yang.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/tree_schema.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/tree_data.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/plugins.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/printer.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/xpath.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/printer_yang.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/printer_yin.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/printer_json_schema.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/printer_xml.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/printer_tree.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/printer_info.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/printer_json.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/printer_lyb.c.o" \
+"/home/min/libyang/Yangmin/build/CMakeFiles/yangobj.dir/src/yang_types.c.o"
 
 libyang.so.1.3.0: CMakeFiles/yangobj.dir/src/common.c.o
 libyang.so.1.3.0: CMakeFiles/yangobj.dir/src/context.c.o
@@ -124,7 +124,7 @@ libyang.so.1.3.0: CMakeFiles/yangobj.dir/src/yang_types.c.o
 libyang.so.1.3.0: CMakeFiles/yang.dir/build.make
 libyang.so.1.3.0: /usr/lib/x86_64-linux-gnu/libpcre.so
 libyang.so.1.3.0: CMakeFiles/yang.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C shared library libyang.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C shared library libyang.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yang.dir/link.txt --verbose=$(VERBOSE)
 	$(CMAKE_COMMAND) -E cmake_symlink_library libyang.so.1.3.0 libyang.so.1 libyang.so
 
@@ -148,6 +148,6 @@ CMakeFiles/yang.dir/clean:
 .PHONY : CMakeFiles/yang.dir/clean
 
 CMakeFiles/yang.dir/depend:
-	cd /home/min/libyang/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang /home/min/libyang /home/min/libyang/build /home/min/libyang/build /home/min/libyang/build/CMakeFiles/yang.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang/Yangmin /home/min/libyang/Yangmin /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build/CMakeFiles/yang.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yang.dir/depend
 

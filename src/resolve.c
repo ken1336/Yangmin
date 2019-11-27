@@ -6312,7 +6312,7 @@ resolve_must(struct lyd_node *node, int inout_parent, int ignore_fail)
 
         lyxp_set_cast(&set, LYXP_SET_BOOLEAN, node, lyd_node_module(node), LYXP_MUST);
 
-        if (!set.val.bool) {
+        if (!set.val._bool) {
             if ((ignore_fail == 1) || ((must[i].flags & (LYS_XPCONF_DEP | LYS_XPSTATE_DEP)) && (ignore_fail == 2))) {
                 LOGVRB("Must condition \"%s\" not satisfied, but it is not required.", must[i].expr);
             } else {
@@ -6727,7 +6727,7 @@ resolve_when(struct lyd_node *node, int ignore_fail, struct lys_when **failed_wh
 
         /* set boolean result of the condition */
         lyxp_set_cast(&set, LYXP_SET_BOOLEAN, node, lyd_node_module(node), LYXP_WHEN);
-        if (!set.val.bool) {
+        if (!set.val._bool) {
             node->when_status |= LYD_WHEN_FALSE;
             if ((ignore_fail == 1) || ((snode_get_when(node->schema)->flags & (LYS_XPCONF_DEP | LYS_XPSTATE_DEP))
                     && (ignore_fail == 2))) {
@@ -6785,7 +6785,7 @@ resolve_when(struct lyd_node *node, int ignore_fail, struct lys_when **failed_wh
             }
 
             lyxp_set_cast(&set, LYXP_SET_BOOLEAN, ctx_node, lys_node_module(sparent), LYXP_WHEN);
-            if (!set.val.bool) {
+            if (!set.val._bool) {
                 if ((ignore_fail == 1) || ((snode_get_when(sparent)->flags & (LYS_XPCONF_DEP | LYS_XPSTATE_DEP))
                         && (ignore_fail == 2))) {
                     LOGVRB("When condition \"%s\" is not satisfied, but it is not required.", snode_get_when(sparent)->cond);
@@ -6841,7 +6841,7 @@ check_augment:
             }
 
             lyxp_set_cast(&set, LYXP_SET_BOOLEAN, ctx_node, lys_node_module(sparent->parent), LYXP_WHEN);
-            if (!set.val.bool) {
+            if (!set.val._bool) {
                 node->when_status |= LYD_WHEN_FALSE;
                 if ((ignore_fail == 1) || ((snode_get_when(sparent->parent)->flags & (LYS_XPCONF_DEP | LYS_XPSTATE_DEP))
                         && (ignore_fail == 2))) {

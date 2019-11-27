@@ -1,4 +1,4 @@
-# Install script for directory: /home/min/libyang/src/user_types
+# Install script for directory: /home/min/libyang/Yangmin/src/user_types
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,12 +52,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib/libyang/user_types" TYPE SHARED_LIBRARY FILES "/home/min/libyang/build/src/user_types/user_yang_types.so")
+file(INSTALL DESTINATION "/usr/local/lib/libyang/user_types" TYPE SHARED_LIBRARY FILES "/home/min/libyang/Yangmin/build/src/user_types/user_yang_types.so")
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libyang/user_types/user_yang_types.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libyang/user_types/user_yang_types.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}/usr/local/lib/libyang/user_types/user_yang_types.so"
-         OLD_RPATH "/home/min/libyang/build:"
+         OLD_RPATH "/home/min/libyang/Yangmin/build:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/local/lib/libyang/user_types/user_yang_types.so")
@@ -80,12 +80,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local/lib/libyang/user_types" TYPE SHARED_LIBRARY FILES "/home/min/libyang/build/src/user_types/user_inet_types.so")
+file(INSTALL DESTINATION "/usr/local/lib/libyang/user_types" TYPE SHARED_LIBRARY FILES "/home/min/libyang/Yangmin/build/src/user_types/user_inet_types.so")
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libyang/user_types/user_inet_types.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libyang/user_types/user_inet_types.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}/usr/local/lib/libyang/user_types/user_inet_types.so"
-         OLD_RPATH "/home/min/libyang/build:"
+         OLD_RPATH "/home/min/libyang/Yangmin/build:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/usr/local/lib/libyang/user_types/user_inet_types.so")

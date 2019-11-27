@@ -1,12 +1,37 @@
 #include "execute.hpp"
 #include <string>
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+static LYS_INFORMAT 
+get_schema_format(const char *path)
+{
+    char *ptr;
+
+    if ((ptr = strrchr(path, '.')) != NULL) {
+        ++ptr;
+        if (!strcmp(ptr, "yin")) {
+            return LYS_IN_YIN;
+        } else if (!strcmp(ptr, "yang")) {
+            return LYS_IN_YANG;
+        } else {
+            fprintf(stderr, "Input file in an unknown format \"%s\".\n", ptr);
+            return LYS_IN_UNKNOWN;
+        }
+    } else {
+        fprintf(stdout, "Input file \"%s\" without extension - unknown format.\n", path);
+        return LYS_IN_UNKNOWN;
+    }
+}
 namespace min
 {
 
 namespace execute
 {
 
-command::command(ly_ctx *ctx)
+command::command(const ly_ctx *ctx)
 {
     this->context = std::make_unique<ly_ctx>(*ctx);
 }
@@ -86,7 +111,7 @@ int command::model_add(const char* arg){
     }
     if (format == LYS_IN_UNKNOWN) {
         /* no schema on input */
-        cmd_add_help();
+        //cmd_add_help();
         goto cleanup;
     }
     ret = 0;
@@ -96,6 +121,7 @@ cleanup:
     ly_ctx_unset_allimplemented(ctx);
 
     return ret;
+    
 }
 }
 

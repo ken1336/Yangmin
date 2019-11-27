@@ -59,7 +59,7 @@ cmd_clear_help(void)
 void
 cmd_print_help(void)
 {
-    printf("print [-f (yang | yin | tree [<tree-options>] | info [-P <info-path>] | jsons)] [-o <output-file>]"
+    printf("print [-f (yang | yin | tree[-rfc] [<tree-options>] | info [-P <info-path>] | jsons)] [-o <output-file>]"
            " <model-name>[@<revision>]\n");
     printf("\n");
     printf("\ttree-options:\t--tree-print-groupings\t(print top-level groupings in a separate section)\n");
@@ -1095,7 +1095,6 @@ print_list(FILE *out, struct ly_ctx *ctx, LYD_FORMAT outformat)
 int
 cmd_list(const char *arg)
 {
-    printf("commands.c :%s\n",arg);
     char **argv = NULL, *ptr;
     int c, argc, option_index;
     LYD_FORMAT outformat = LYD_UNKNOWN;

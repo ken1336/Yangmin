@@ -216,7 +216,7 @@ struct lyxp_set {
         } *attrs;
         char *str;
         long double num;
-        int bool;
+        int _bool;
     } val;
 
     /* this is valid only for type LYXP_SET_NODE_SET and LYXP_SET_SNODE_SET */

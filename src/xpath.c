@@ -275,7 +275,7 @@ print_set_debug(struct lyxp_set *set)
 
     case LYXP_SET_BOOLEAN:
         LOGDBG(LY_LDGXPATH, "set BOOLEAN");
-        LOGDBG(LY_LDGXPATH, "\t%s", (set->val.bool ? "true" : "false"));
+        LOGDBG(LY_LDGXPATH, "\t%s", (set->val._bool ? "true" : "false"));
         break;
 
     case LYXP_SET_STRING:
@@ -844,7 +844,7 @@ set_fill_boolean(struct lyxp_set *set, int boolean)
     set_free_content(set);
 
     set->type = LYXP_SET_BOOLEAN;
-    set->val.bool = boolean;
+    set->val._bool = boolean;
 }
 
 /**
@@ -870,7 +870,7 @@ set_fill_set(struct lyxp_set *trg, struct lyxp_set *src)
         LY_CHECK_ERR_RETURN(!trg->val.nodes, LOGMEM(NULL); memset(trg, 0, sizeof *trg), );
         memcpy(trg->val.nodes, src->val.nodes, src->used * sizeof *src->val.nodes);
     } else if (src->type == LYXP_SET_BOOLEAN) {
-        set_fill_boolean(trg, src->val.bool);
+        set_fill_boolean(trg, src->val._bool);
     } else if (src->type ==  LYXP_SET_NUMBER) {
         set_fill_number(trg, src->val.num);
     } else if (src->type == LYXP_SET_STRING) {
@@ -4431,7 +4431,7 @@ xpath_not(struct lyxp_set **args, uint16_t UNUSED(arg_count), struct lyd_node *c
     }
 
     lyxp_set_cast(args[0], LYXP_SET_BOOLEAN, cur_node, local_mod, options);
-    if (args[0]->val.bool) {
+    if (args[0]->val._bool) {
         set_fill_boolean(set, 0);
     } else {
         set_fill_boolean(set, 1);
@@ -6794,7 +6794,7 @@ moveto_op_comp(struct lyxp_set *set1, struct lyxp_set *set2, const char *op, str
                 }
 
                 /* lazy evaluation until true */
-                if (iter1.val.bool) {
+                if (iter1.val._bool) {
                     set_fill_boolean(set1, 1);
                     return EXIT_SUCCESS;
                 }
@@ -6833,7 +6833,7 @@ moveto_op_comp(struct lyxp_set *set1, struct lyxp_set *set2, const char *op, str
                 set_free_content(&iter2);
 
                 /* lazy evaluation until true */
-                if (iter1.val.bool) {
+                if (iter1.val._bool) {
                     set_fill_boolean(set1, 1);
                     return EXIT_SUCCESS;
                 }
@@ -6872,7 +6872,7 @@ moveto_op_comp(struct lyxp_set *set1, struct lyxp_set *set2, const char *op, str
     /* compute result */
     if (op[0] == '=') {
         if (set1->type == LYXP_SET_BOOLEAN) {
-            result = (set1->val.bool == set2->val.bool);
+            result = (set1->val._bool == set2->val._bool);
         } else if (set1->type == LYXP_SET_NUMBER) {
             result = (set1->val.num == set2->val.num);
         } else {
@@ -6881,7 +6881,7 @@ moveto_op_comp(struct lyxp_set *set1, struct lyxp_set *set2, const char *op, str
         }
     } else if (op[0] == '!') {
         if (set1->type == LYXP_SET_BOOLEAN) {
-            result = (set1->val.bool != set2->val.bool);
+            result = (set1->val._bool != set2->val._bool);
         } else if (set1->type == LYXP_SET_NUMBER) {
             result = (set1->val.num != set2->val.num);
         } else {
@@ -7218,7 +7218,7 @@ only_parse:
             lyxp_set_cast(&set2, LYXP_SET_BOOLEAN, cur_node, local_mod, options);
 
             /* predicate satisfied or not? */
-            if (!set2.val.bool) {
+            if (!set2.val._bool) {
 #ifdef LY_ENABLED_CACHE
                 set_remove_node_hash(set, set->val.nodes[i].node, set->val.nodes[i].type);
 #endif
@@ -7283,7 +7283,7 @@ only_parse:
         }
 
         lyxp_set_cast(&set2, LYXP_SET_BOOLEAN, cur_node, local_mod, options);
-        if (!set2.val.bool) {
+        if (!set2.val._bool) {
             lyxp_set_cast(set, LYXP_SET_EMPTY, cur_node, local_mod, options);
         }
         lyxp_set_cast(&set2, LYXP_SET_EMPTY, cur_node, local_mod, options);
@@ -8378,12 +8378,12 @@ eval_and_expr(struct lyxp_expr *exp, uint16_t *exp_idx, uint16_t repeat, struct 
     /* ('and' EqualityExpr)* */
     for (i = 0; i < repeat; ++i) {
         assert(exp->tokens[*exp_idx] == LYXP_TOKEN_OPERATOR_LOG);
-        LOGDBG(LY_LDGXPATH, "%-27s %s %s[%u]", __func__, (!set || !set->val.bool ? "skipped" : "parsed"),
+        LOGDBG(LY_LDGXPATH, "%-27s %s %s[%u]", __func__, (!set || !set->val._bool ? "skipped" : "parsed"),
             print_token(exp->tokens[*exp_idx]), exp->expr_pos[*exp_idx]);
         ++(*exp_idx);
 
         /* lazy evaluation */
-        if (!set || ((set->type == LYXP_SET_BOOLEAN) && !set->val.bool)) {
+        if (!set || ((set->type == LYXP_SET_BOOLEAN) && !set->val._bool)) {
             ret = eval_expr_select(exp, exp_idx, LYXP_EXPR_AND, cur_node, local_mod, NULL, options);
             if (ret) {
                 goto finish;
@@ -8456,12 +8456,12 @@ eval_or_expr(struct lyxp_expr *exp, uint16_t *exp_idx, uint16_t repeat, struct l
     /* ('or' AndExpr)* */
     for (i = 0; i < repeat; ++i) {
         assert(exp->tokens[*exp_idx] == LYXP_TOKEN_OPERATOR_LOG);
-        LOGDBG(LY_LDGXPATH, "%-27s %s %s[%u]", __func__, (!set || set->val.bool ? "skipped" : "parsed"),
+        LOGDBG(LY_LDGXPATH, "%-27s %s %s[%u]", __func__, (!set || set->val._bool ? "skipped" : "parsed"),
             print_token(exp->tokens[*exp_idx]), exp->expr_pos[*exp_idx]);
         ++(*exp_idx);
 
         /* lazy evaluation */
-        if (!set || ((set->type == LYXP_SET_BOOLEAN) && set->val.bool)) {
+        if (!set || ((set->type == LYXP_SET_BOOLEAN) && set->val._bool)) {
             ret = eval_expr_select(exp, exp_idx, LYXP_EXPR_OR, cur_node, local_mod, NULL, options);
             if (ret) {
                 goto finish;
@@ -8646,7 +8646,7 @@ lyxp_set_print_xml(FILE *f, struct lyxp_set *set)
         break;
     case LYXP_SET_BOOLEAN:
         ly_print(&out, "Boolean XPath set:\n");
-        ly_print(&out, "%s\n\n", set->value.bool ? "true" : "false");
+        ly_print(&out, "%s\n\n", set->value._bool ? "true" : "false");
         break;
     case LYXP_SET_STRING:
         ly_print(&out, "String XPath set:\n");
@@ -8773,7 +8773,7 @@ lyxp_set_cast(struct lyxp_set *set, enum lyxp_set_type target, const struct lyd_
             }
             break;
         case LYXP_SET_BOOLEAN:
-            if (set->val.bool) {
+            if (set->val._bool) {
                 set->val.str = strdup("true");
             } else {
                 set->val.str = strdup("false");
@@ -8813,7 +8813,7 @@ lyxp_set_cast(struct lyxp_set *set, enum lyxp_set_type target, const struct lyd_
             set->val.num = num;
             break;
         case LYXP_SET_BOOLEAN:
-            if (set->val.bool) {
+            if (set->val._bool) {
                 set->val.num = 1;
             } else {
                 set->val.num = 0;
@@ -8831,28 +8831,28 @@ lyxp_set_cast(struct lyxp_set *set, enum lyxp_set_type target, const struct lyd_
         switch (set->type) {
         case LYXP_SET_NUMBER:
             if ((set->val.num == 0) || (set->val.num == -0.0f) || isnan(set->val.num)) {
-                set->val.bool = 0;
+                set->val._bool = 0;
             } else {
-                set->val.bool = 1;
+                set->val._bool = 1;
             }
             break;
         case LYXP_SET_STRING:
             if (set->val.str[0]) {
                 set_free_content(set);
-                set->val.bool = 1;
+                set->val._bool = 1;
             } else {
                 set_free_content(set);
-                set->val.bool = 0;
+                set->val._bool = 0;
             }
             break;
         case LYXP_SET_NODE_SET:
             set_free_content(set);
 
             assert(set->used);
-            set->val.bool = 1;
+            set->val._bool = 1;
             break;
         case LYXP_SET_EMPTY:
-            set->val.bool = 0;
+            set->val._bool = 0;
             break;
         default:
             LOGINT(local_mod ? local_mod->ctx : NULL);

@@ -46,19 +46,19 @@ sys/types.h
 stdio.h
 -
 
-/home/min/libyang/src/tree_data.h
+/home/min/libyang/Yangmin/src/tree_data.h
 stddef.h
 -
 stdint.h
 -
 libyang.h
-/home/min/libyang/src/libyang.h
+/home/min/libyang/Yangmin/src/libyang.h
 tree_schema.h
-/home/min/libyang/src/tree_schema.h
+/home/min/libyang/Yangmin/src/tree_schema.h
 xml.h
-/home/min/libyang/src/xml.h
+/home/min/libyang/Yangmin/src/xml.h
 
-/home/min/libyang/src/tree_schema.h
+/home/min/libyang/Yangmin/src/tree_schema.h
 machine/endian.h
 -
 sys/endian.h
@@ -76,17 +76,17 @@ stdio.h
 sys/types.h
 -
 
-/home/min/libyang/src/xpath.h
+/home/min/libyang/Yangmin/src/xpath.h
 stdint.h
 -
 libyang.h
-/home/min/libyang/src/libyang.h
+/home/min/libyang/Yangmin/src/libyang.h
 tree_schema.h
-/home/min/libyang/src/tree_schema.h
+/home/min/libyang/Yangmin/src/tree_schema.h
 tree_data.h
-/home/min/libyang/src/tree_data.h
+/home/min/libyang/Yangmin/src/tree_data.h
 
-/home/min/libyang/tools/lint/commands.c
+/home/min/libyang/Yangmin/tools/lint/commands.c
 string.h
 -
 stdio.h
@@ -108,21 +108,21 @@ getopt.h
 libgen.h
 -
 commands.h
-/home/min/libyang/tools/lint/commands.h
+/home/min/libyang/Yangmin/tools/lint/commands.h
 libyang.h
-/home/min/libyang/tools/lint/libyang.h
+/home/min/libyang/Yangmin/tools/lint/libyang.h
 ../../src/tree_schema.h
-/home/min/libyang/src/tree_schema.h
+/home/min/libyang/Yangmin/src/tree_schema.h
 ../../src/tree_data.h
-/home/min/libyang/src/tree_data.h
+/home/min/libyang/Yangmin/src/tree_data.h
 ../../src/xpath.h
-/home/min/libyang/src/xpath.h
+/home/min/libyang/Yangmin/src/xpath.h
 
-/home/min/libyang/tools/lint/commands.h
+/home/min/libyang/Yangmin/tools/lint/commands.h
 stdlib.h
 -
 libyang.h
-/home/min/libyang/tools/lint/libyang.h
+/home/min/libyang/Yangmin/tools/lint/libyang.h
 
 src/libyang.h
 stdio.h
