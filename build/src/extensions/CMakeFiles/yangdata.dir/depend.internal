@@ -6,6 +6,6 @@ src/extensions/CMakeFiles/yangdata.dir/yangdata.c.o
  ../src/tree_data.h
  ../src/tree_schema.h
  ../src/xml.h
- /home/min/libyang/src/extensions.h
- /home/min/libyang/src/extensions/yangdata.c
+ /home/min/libyang/Yangmin/src/extensions.h
+ /home/min/libyang/Yangmin/src/extensions/yangdata.c
  src/libyang.h

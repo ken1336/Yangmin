@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/min/libyang
+CMAKE_SOURCE_DIR = /home/min/libyang/Yangmin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/min/libyang/build
+CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/min/libyang/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles /home/min/libyang/build/src/user_types/CMakeFiles/progress.marks
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
+	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles /home/min/libyang/Yangmin/build/src/user_types/CMakeFiles/progress.marks
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/clean
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/preinstall
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/preinstall
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/min/libyang/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/user_types/CMakeFiles/user_inet_types.dir/rule:
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/CMakeFiles/user_inet_types.dir/rule
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/CMakeFiles/user_inet_types.dir/rule
 .PHONY : src/user_types/CMakeFiles/user_inet_types.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ user_inet_types: src/user_types/CMakeFiles/user_inet_types.dir/rule
 
 # fast build rule for target.
 user_inet_types/fast:
-	cd /home/min/libyang/build && $(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/build
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/build
 .PHONY : user_inet_types/fast
 
 # Convenience name for target.
 src/user_types/CMakeFiles/user_yang_types.dir/rule:
-	cd /home/min/libyang/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/CMakeFiles/user_yang_types.dir/rule
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f CMakeFiles/Makefile2 src/user_types/CMakeFiles/user_yang_types.dir/rule
 .PHONY : src/user_types/CMakeFiles/user_yang_types.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ user_yang_types: src/user_types/CMakeFiles/user_yang_types.dir/rule
 
 # fast build rule for target.
 user_yang_types/fast:
-	cd /home/min/libyang/build && $(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/build
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/build
 .PHONY : user_yang_types/fast
 
 user_inet_types.o: user_inet_types.c.o
@@ -192,7 +192,7 @@ user_inet_types.o: user_inet_types.c.o
 
 # target to build an object file
 user_inet_types.c.o:
-	cd /home/min/libyang/build && $(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/user_inet_types.c.o
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/user_inet_types.c.o
 .PHONY : user_inet_types.c.o
 
 user_inet_types.i: user_inet_types.c.i
@@ -201,7 +201,7 @@ user_inet_types.i: user_inet_types.c.i
 
 # target to preprocess a source file
 user_inet_types.c.i:
-	cd /home/min/libyang/build && $(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/user_inet_types.c.i
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/user_inet_types.c.i
 .PHONY : user_inet_types.c.i
 
 user_inet_types.s: user_inet_types.c.s
@@ -210,7 +210,7 @@ user_inet_types.s: user_inet_types.c.s
 
 # target to generate assembly for a file
 user_inet_types.c.s:
-	cd /home/min/libyang/build && $(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/user_inet_types.c.s
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/user_inet_types.c.s
 .PHONY : user_inet_types.c.s
 
 user_yang_types.o: user_yang_types.c.o
@@ -219,7 +219,7 @@ user_yang_types.o: user_yang_types.c.o
 
 # target to build an object file
 user_yang_types.c.o:
-	cd /home/min/libyang/build && $(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/user_yang_types.c.o
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/user_yang_types.c.o
 .PHONY : user_yang_types.c.o
 
 user_yang_types.i: user_yang_types.c.i
@@ -228,7 +228,7 @@ user_yang_types.i: user_yang_types.c.i
 
 # target to preprocess a source file
 user_yang_types.c.i:
-	cd /home/min/libyang/build && $(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/user_yang_types.c.i
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/user_yang_types.c.i
 .PHONY : user_yang_types.c.i
 
 user_yang_types.s: user_yang_types.c.s
@@ -237,7 +237,7 @@ user_yang_types.s: user_yang_types.c.s
 
 # target to generate assembly for a file
 user_yang_types.c.s:
-	cd /home/min/libyang/build && $(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/user_yang_types.c.s
+	cd /home/min/libyang/Yangmin/build && $(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/user_yang_types.c.s
 .PHONY : user_yang_types.c.s
 
 # Help Target
@@ -271,6 +271,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/min/libyang/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

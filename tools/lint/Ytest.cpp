@@ -40,7 +40,9 @@ int main(){
     
     iModule2.printModuleData();
     //commands[1].func("ietf-netconf.yang");
-    lydict_clean(&(ctx->dict));
+    
     std::cout<<"---------------------------------------clean----------------------"<<std::endl;
+    std::cout<<ctx->dict.hash_tab->cb_data<<std::endl;
+    lydict_remove(ctx,(const char*)ctx->dict.hash_tab->cb_data);
     ly_ctx_destroy(ctx, NULL);
 }

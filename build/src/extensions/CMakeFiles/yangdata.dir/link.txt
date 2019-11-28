@@ -1,1 +1,1 @@
-/usr/bin/cc -fPIC  -Wall -Wextra -g -O0  -shared -Wl,-soname,yangdata.so -o yangdata.so CMakeFiles/yangdata.dir/yangdata.c.o -Wl,-rpath,/home/min/libyang/build: ../../libyang.so.1.3.0 -ldl -lm -lpthread -lpcre 
+/usr/bin/cc -fPIC  -Wall -Wextra -g -O0  -shared -Wl,-soname,yangdata.so -o yangdata.so CMakeFiles/yangdata.dir/yangdata.c.o -Wl,-rpath,/home/min/libyang/Yangmin/build: ../../libyang.so.1.3.0 -ldl -lm -lpthread -lpcre 

@@ -6,5 +6,5 @@ C_FLAGS =  -Wall -Wextra -g -O0 -fPIC   -std=gnu11
 
 C_DEFINES = -DHAVE_VDPRINTF -Dnacm_EXPORTS
 
-C_INCLUDES = -I/home/min/libyang/build/src -I/home/min/libyang/src 
+C_INCLUDES = -I/home/min/libyang/Yangmin/build/src -I/home/min/libyang/Yangmin/src 
 
