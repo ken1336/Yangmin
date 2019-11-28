@@ -6,6 +6,6 @@ src/user_types/CMakeFiles/user_inet_types.dir/user_inet_types.c.o
  ../src/tree_data.h
  ../src/tree_schema.h
  ../src/xml.h
- /home/min/libyang/Yangmin/src/user_types.h
- /home/min/libyang/Yangmin/src/user_types/user_inet_types.c
+ /home/min/libyang/src/user_types.h
+ /home/min/libyang/src/user_types/user_inet_types.c
  src/libyang.h

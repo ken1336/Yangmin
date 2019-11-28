@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/min/libyang/Yangmin/linenoise/linenoise.c" "/home/min/libyang/Yangmin/build/CMakeFiles/yangMin.dir/linenoise/linenoise.c.o"
-  "/home/min/libyang/Yangmin/tools/lint/commands.c" "/home/min/libyang/Yangmin/build/CMakeFiles/yangMin.dir/tools/lint/commands.c.o"
-  "/home/min/libyang/Yangmin/tools/lint/completion.c" "/home/min/libyang/Yangmin/build/CMakeFiles/yangMin.dir/tools/lint/completion.c.o"
-  "/home/min/libyang/Yangmin/tools/lint/configuration.c" "/home/min/libyang/Yangmin/build/CMakeFiles/yangMin.dir/tools/lint/configuration.c.o"
-  "/home/min/libyang/Yangmin/tools/lint/main_ni.c" "/home/min/libyang/Yangmin/build/CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o"
-  "/home/min/libyang/Yangmin/tools/lint/test.c" "/home/min/libyang/Yangmin/build/CMakeFiles/yangMin.dir/tools/lint/test.c.o"
+  "/home/min/libyang/linenoise/linenoise.c" "/home/min/libyang/build/CMakeFiles/yangMin.dir/linenoise/linenoise.c.o"
+  "/home/min/libyang/tools/lint/commands.c" "/home/min/libyang/build/CMakeFiles/yangMin.dir/tools/lint/commands.c.o"
+  "/home/min/libyang/tools/lint/completion.c" "/home/min/libyang/build/CMakeFiles/yangMin.dir/tools/lint/completion.c.o"
+  "/home/min/libyang/tools/lint/configuration.c" "/home/min/libyang/build/CMakeFiles/yangMin.dir/tools/lint/configuration.c.o"
+  "/home/min/libyang/tools/lint/main_ni.c" "/home/min/libyang/build/CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o"
+  "/home/min/libyang/tools/lint/test.c" "/home/min/libyang/build/CMakeFiles/yangMin.dir/tools/lint/test.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -26,7 +26,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/min/libyang/Yangmin/build/CMakeFiles/yang.dir/DependInfo.cmake"
+  "/home/min/libyang/build/CMakeFiles/yang.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -27,8 +27,20 @@ int main(){
 
     
     min::execute::command cmd{ctx};
-
-    //commands[1].func("ietf-netconf.yang");
+    cmd.model_add("ietf-netconf.yang");
+    ly_modules_list list= ctx->models;
+    std::cout<<"---------------------------------------list----------------------"<<std::endl;
+    std::cout<<"---------------------------------------"<<list.parsed_submodules_count<<"----------------------"<<std::endl;
+    std::cout<<"---------------------------------------"<<list.parsing_sub_modules_count<<"----------------------"<<std::endl;
+    for(auto i = 0; i< 7; i++){
+        std::cout<<list.list[i]->name<<std::endl;
+    }
     
+    min::internal::InternalModule iModule2{list.list[6]};
+    
+    iModule2.printModuleData();
+    //commands[1].func("ietf-netconf.yang");
+    lydict_clean(&(ctx->dict));
+    std::cout<<"---------------------------------------clean----------------------"<<std::endl;
     ly_ctx_destroy(ctx, NULL);
 }

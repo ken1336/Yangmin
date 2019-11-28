@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/min/libyang/Yangmin
+CMAKE_SOURCE_DIR = /home/min/libyang
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
+CMAKE_BINARY_DIR = /home/min/libyang/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/yangobj_tests.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/yangobj_tests.dir/flags.make
 
 CMakeFiles/yangobj_tests.dir/src/common.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/common.c.o: ../src/common.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/yangobj_tests.dir/src/common.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/common.c.o   -c /home/min/libyang/Yangmin/src/common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/yangobj_tests.dir/src/common.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/common.c.o   -c /home/min/libyang/src/common.c
 
 CMakeFiles/yangobj_tests.dir/src/common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/common.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/common.c > CMakeFiles/yangobj_tests.dir/src/common.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/common.c > CMakeFiles/yangobj_tests.dir/src/common.c.i
 
 CMakeFiles/yangobj_tests.dir/src/common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/common.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/common.c -o CMakeFiles/yangobj_tests.dir/src/common.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/common.c -o CMakeFiles/yangobj_tests.dir/src/common.c.s
 
 CMakeFiles/yangobj_tests.dir/src/common.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/yangobj_tests.dir/src/common.c.o.provides.build: CMakeFiles/yangobj_t
 
 CMakeFiles/yangobj_tests.dir/src/context.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/context.c.o: ../src/context.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/yangobj_tests.dir/src/context.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/context.c.o   -c /home/min/libyang/Yangmin/src/context.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/yangobj_tests.dir/src/context.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/context.c.o   -c /home/min/libyang/src/context.c
 
 CMakeFiles/yangobj_tests.dir/src/context.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/context.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/context.c > CMakeFiles/yangobj_tests.dir/src/context.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/context.c > CMakeFiles/yangobj_tests.dir/src/context.c.i
 
 CMakeFiles/yangobj_tests.dir/src/context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/context.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/context.c -o CMakeFiles/yangobj_tests.dir/src/context.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/context.c -o CMakeFiles/yangobj_tests.dir/src/context.c.s
 
 CMakeFiles/yangobj_tests.dir/src/context.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/yangobj_tests.dir/src/context.c.o.provides.build: CMakeFiles/yangobj_
 
 CMakeFiles/yangobj_tests.dir/src/log.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/log.c.o: ../src/log.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/yangobj_tests.dir/src/log.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/log.c.o   -c /home/min/libyang/Yangmin/src/log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/yangobj_tests.dir/src/log.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/log.c.o   -c /home/min/libyang/src/log.c
 
 CMakeFiles/yangobj_tests.dir/src/log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/log.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/log.c > CMakeFiles/yangobj_tests.dir/src/log.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/log.c > CMakeFiles/yangobj_tests.dir/src/log.c.i
 
 CMakeFiles/yangobj_tests.dir/src/log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/log.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/log.c -o CMakeFiles/yangobj_tests.dir/src/log.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/log.c -o CMakeFiles/yangobj_tests.dir/src/log.c.s
 
 CMakeFiles/yangobj_tests.dir/src/log.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/yangobj_tests.dir/src/log.c.o.provides.build: CMakeFiles/yangobj_test
 
 CMakeFiles/yangobj_tests.dir/src/hash_table.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/hash_table.c.o: ../src/hash_table.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/yangobj_tests.dir/src/hash_table.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/hash_table.c.o   -c /home/min/libyang/Yangmin/src/hash_table.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/yangobj_tests.dir/src/hash_table.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/hash_table.c.o   -c /home/min/libyang/src/hash_table.c
 
 CMakeFiles/yangobj_tests.dir/src/hash_table.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/hash_table.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/hash_table.c > CMakeFiles/yangobj_tests.dir/src/hash_table.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/hash_table.c > CMakeFiles/yangobj_tests.dir/src/hash_table.c.i
 
 CMakeFiles/yangobj_tests.dir/src/hash_table.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/hash_table.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/hash_table.c -o CMakeFiles/yangobj_tests.dir/src/hash_table.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/hash_table.c -o CMakeFiles/yangobj_tests.dir/src/hash_table.c.s
 
 CMakeFiles/yangobj_tests.dir/src/hash_table.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/yangobj_tests.dir/src/hash_table.c.o.provides.build: CMakeFiles/yango
 
 CMakeFiles/yangobj_tests.dir/src/resolve.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/resolve.c.o: ../src/resolve.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/yangobj_tests.dir/src/resolve.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/resolve.c.o   -c /home/min/libyang/Yangmin/src/resolve.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/yangobj_tests.dir/src/resolve.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/resolve.c.o   -c /home/min/libyang/src/resolve.c
 
 CMakeFiles/yangobj_tests.dir/src/resolve.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/resolve.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/resolve.c > CMakeFiles/yangobj_tests.dir/src/resolve.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/resolve.c > CMakeFiles/yangobj_tests.dir/src/resolve.c.i
 
 CMakeFiles/yangobj_tests.dir/src/resolve.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/resolve.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/resolve.c -o CMakeFiles/yangobj_tests.dir/src/resolve.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/resolve.c -o CMakeFiles/yangobj_tests.dir/src/resolve.c.s
 
 CMakeFiles/yangobj_tests.dir/src/resolve.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/yangobj_tests.dir/src/resolve.c.o.provides.build: CMakeFiles/yangobj_
 
 CMakeFiles/yangobj_tests.dir/src/validation.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/validation.c.o: ../src/validation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/yangobj_tests.dir/src/validation.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/validation.c.o   -c /home/min/libyang/Yangmin/src/validation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/yangobj_tests.dir/src/validation.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/validation.c.o   -c /home/min/libyang/src/validation.c
 
 CMakeFiles/yangobj_tests.dir/src/validation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/validation.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/validation.c > CMakeFiles/yangobj_tests.dir/src/validation.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/validation.c > CMakeFiles/yangobj_tests.dir/src/validation.c.i
 
 CMakeFiles/yangobj_tests.dir/src/validation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/validation.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/validation.c -o CMakeFiles/yangobj_tests.dir/src/validation.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/validation.c -o CMakeFiles/yangobj_tests.dir/src/validation.c.s
 
 CMakeFiles/yangobj_tests.dir/src/validation.c.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/yangobj_tests.dir/src/validation.c.o.provides.build: CMakeFiles/yango
 
 CMakeFiles/yangobj_tests.dir/src/xml.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/xml.c.o: ../src/xml.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/yangobj_tests.dir/src/xml.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/xml.c.o   -c /home/min/libyang/Yangmin/src/xml.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/yangobj_tests.dir/src/xml.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/xml.c.o   -c /home/min/libyang/src/xml.c
 
 CMakeFiles/yangobj_tests.dir/src/xml.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/xml.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/xml.c > CMakeFiles/yangobj_tests.dir/src/xml.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/xml.c > CMakeFiles/yangobj_tests.dir/src/xml.c.i
 
 CMakeFiles/yangobj_tests.dir/src/xml.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/xml.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/xml.c -o CMakeFiles/yangobj_tests.dir/src/xml.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/xml.c -o CMakeFiles/yangobj_tests.dir/src/xml.c.s
 
 CMakeFiles/yangobj_tests.dir/src/xml.c.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/yangobj_tests.dir/src/xml.c.o.provides.build: CMakeFiles/yangobj_test
 
 CMakeFiles/yangobj_tests.dir/src/parser.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/parser.c.o: ../src/parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/yangobj_tests.dir/src/parser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser.c.o   -c /home/min/libyang/Yangmin/src/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/yangobj_tests.dir/src/parser.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser.c.o   -c /home/min/libyang/src/parser.c
 
 CMakeFiles/yangobj_tests.dir/src/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/parser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/parser.c > CMakeFiles/yangobj_tests.dir/src/parser.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/parser.c > CMakeFiles/yangobj_tests.dir/src/parser.c.i
 
 CMakeFiles/yangobj_tests.dir/src/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/parser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/parser.c -o CMakeFiles/yangobj_tests.dir/src/parser.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/parser.c -o CMakeFiles/yangobj_tests.dir/src/parser.c.s
 
 CMakeFiles/yangobj_tests.dir/src/parser.c.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/yangobj_tests.dir/src/parser.c.o.provides.build: CMakeFiles/yangobj_t
 
 CMakeFiles/yangobj_tests.dir/src/parser_yin.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/parser_yin.c.o: ../src/parser_yin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_yin.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_yin.c.o   -c /home/min/libyang/Yangmin/src/parser_yin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_yin.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_yin.c.o   -c /home/min/libyang/src/parser_yin.c
 
 CMakeFiles/yangobj_tests.dir/src/parser_yin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/parser_yin.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/parser_yin.c > CMakeFiles/yangobj_tests.dir/src/parser_yin.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/parser_yin.c > CMakeFiles/yangobj_tests.dir/src/parser_yin.c.i
 
 CMakeFiles/yangobj_tests.dir/src/parser_yin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/parser_yin.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/parser_yin.c -o CMakeFiles/yangobj_tests.dir/src/parser_yin.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/parser_yin.c -o CMakeFiles/yangobj_tests.dir/src/parser_yin.c.s
 
 CMakeFiles/yangobj_tests.dir/src/parser_yin.c.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/yangobj_tests.dir/src/parser_yin.c.o.provides.build: CMakeFiles/yango
 
 CMakeFiles/yangobj_tests.dir/src/parser_xml.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/parser_xml.c.o: ../src/parser_xml.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_xml.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_xml.c.o   -c /home/min/libyang/Yangmin/src/parser_xml.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_xml.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_xml.c.o   -c /home/min/libyang/src/parser_xml.c
 
 CMakeFiles/yangobj_tests.dir/src/parser_xml.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/parser_xml.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/parser_xml.c > CMakeFiles/yangobj_tests.dir/src/parser_xml.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/parser_xml.c > CMakeFiles/yangobj_tests.dir/src/parser_xml.c.i
 
 CMakeFiles/yangobj_tests.dir/src/parser_xml.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/parser_xml.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/parser_xml.c -o CMakeFiles/yangobj_tests.dir/src/parser_xml.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/parser_xml.c -o CMakeFiles/yangobj_tests.dir/src/parser_xml.c.s
 
 CMakeFiles/yangobj_tests.dir/src/parser_xml.c.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/yangobj_tests.dir/src/parser_xml.c.o.provides.build: CMakeFiles/yango
 
 CMakeFiles/yangobj_tests.dir/src/parser_json.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/parser_json.c.o: ../src/parser_json.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_json.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_json.c.o   -c /home/min/libyang/Yangmin/src/parser_json.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_json.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_json.c.o   -c /home/min/libyang/src/parser_json.c
 
 CMakeFiles/yangobj_tests.dir/src/parser_json.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/parser_json.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/parser_json.c > CMakeFiles/yangobj_tests.dir/src/parser_json.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/parser_json.c > CMakeFiles/yangobj_tests.dir/src/parser_json.c.i
 
 CMakeFiles/yangobj_tests.dir/src/parser_json.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/parser_json.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/parser_json.c -o CMakeFiles/yangobj_tests.dir/src/parser_json.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/parser_json.c -o CMakeFiles/yangobj_tests.dir/src/parser_json.c.s
 
 CMakeFiles/yangobj_tests.dir/src/parser_json.c.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/yangobj_tests.dir/src/parser_json.c.o.provides.build: CMakeFiles/yang
 
 CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.o: ../src/parser_lyb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.o   -c /home/min/libyang/Yangmin/src/parser_lyb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.o   -c /home/min/libyang/src/parser_lyb.c
 
 CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/parser_lyb.c > CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/parser_lyb.c > CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.i
 
 CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/parser_lyb.c -o CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/parser_lyb.c -o CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.s
 
 CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/yangobj_tests.dir/src/parser_lyb.c.o.provides.build: CMakeFiles/yango
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.o: ../src/parser_yang_bis.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.o   -c /home/min/libyang/Yangmin/src/parser_yang_bis.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.o   -c /home/min/libyang/src/parser_yang_bis.c
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/parser_yang_bis.c > CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/parser_yang_bis.c > CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.i
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/parser_yang_bis.c -o CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/parser_yang_bis.c -o CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.s
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/yangobj_tests.dir/src/parser_yang_bis.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.o: ../src/parser_yang_lex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.o   -c /home/min/libyang/Yangmin/src/parser_yang_lex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.o   -c /home/min/libyang/src/parser_yang_lex.c
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/parser_yang_lex.c > CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/parser_yang_lex.c > CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.i
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/parser_yang_lex.c -o CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/parser_yang_lex.c -o CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.s
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/yangobj_tests.dir/src/parser_yang_lex.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/parser_yang.c.o: ../src/parser_yang.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_yang.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_yang.c.o   -c /home/min/libyang/Yangmin/src/parser_yang.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/yangobj_tests.dir/src/parser_yang.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/parser_yang.c.o   -c /home/min/libyang/src/parser_yang.c
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/parser_yang.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/parser_yang.c > CMakeFiles/yangobj_tests.dir/src/parser_yang.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/parser_yang.c > CMakeFiles/yangobj_tests.dir/src/parser_yang.c.i
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/parser_yang.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/parser_yang.c -o CMakeFiles/yangobj_tests.dir/src/parser_yang.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/parser_yang.c -o CMakeFiles/yangobj_tests.dir/src/parser_yang.c.s
 
 CMakeFiles/yangobj_tests.dir/src/parser_yang.c.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/yangobj_tests.dir/src/parser_yang.c.o.provides.build: CMakeFiles/yang
 
 CMakeFiles/yangobj_tests.dir/src/tree_schema.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/tree_schema.c.o: ../src/tree_schema.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/yangobj_tests.dir/src/tree_schema.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/tree_schema.c.o   -c /home/min/libyang/Yangmin/src/tree_schema.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/yangobj_tests.dir/src/tree_schema.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/tree_schema.c.o   -c /home/min/libyang/src/tree_schema.c
 
 CMakeFiles/yangobj_tests.dir/src/tree_schema.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/tree_schema.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/tree_schema.c > CMakeFiles/yangobj_tests.dir/src/tree_schema.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/tree_schema.c > CMakeFiles/yangobj_tests.dir/src/tree_schema.c.i
 
 CMakeFiles/yangobj_tests.dir/src/tree_schema.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/tree_schema.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/tree_schema.c -o CMakeFiles/yangobj_tests.dir/src/tree_schema.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/tree_schema.c -o CMakeFiles/yangobj_tests.dir/src/tree_schema.c.s
 
 CMakeFiles/yangobj_tests.dir/src/tree_schema.c.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/yangobj_tests.dir/src/tree_schema.c.o.provides.build: CMakeFiles/yang
 
 CMakeFiles/yangobj_tests.dir/src/tree_data.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/tree_data.c.o: ../src/tree_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/yangobj_tests.dir/src/tree_data.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/tree_data.c.o   -c /home/min/libyang/Yangmin/src/tree_data.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/yangobj_tests.dir/src/tree_data.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/tree_data.c.o   -c /home/min/libyang/src/tree_data.c
 
 CMakeFiles/yangobj_tests.dir/src/tree_data.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/tree_data.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/tree_data.c > CMakeFiles/yangobj_tests.dir/src/tree_data.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/tree_data.c > CMakeFiles/yangobj_tests.dir/src/tree_data.c.i
 
 CMakeFiles/yangobj_tests.dir/src/tree_data.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/tree_data.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/tree_data.c -o CMakeFiles/yangobj_tests.dir/src/tree_data.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/tree_data.c -o CMakeFiles/yangobj_tests.dir/src/tree_data.c.s
 
 CMakeFiles/yangobj_tests.dir/src/tree_data.c.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/yangobj_tests.dir/src/tree_data.c.o.provides.build: CMakeFiles/yangob
 
 CMakeFiles/yangobj_tests.dir/src/plugins.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/plugins.c.o: ../src/plugins.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/yangobj_tests.dir/src/plugins.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/plugins.c.o   -c /home/min/libyang/Yangmin/src/plugins.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/yangobj_tests.dir/src/plugins.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/plugins.c.o   -c /home/min/libyang/src/plugins.c
 
 CMakeFiles/yangobj_tests.dir/src/plugins.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/plugins.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/plugins.c > CMakeFiles/yangobj_tests.dir/src/plugins.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/plugins.c > CMakeFiles/yangobj_tests.dir/src/plugins.c.i
 
 CMakeFiles/yangobj_tests.dir/src/plugins.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/plugins.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/plugins.c -o CMakeFiles/yangobj_tests.dir/src/plugins.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/plugins.c -o CMakeFiles/yangobj_tests.dir/src/plugins.c.s
 
 CMakeFiles/yangobj_tests.dir/src/plugins.c.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/yangobj_tests.dir/src/plugins.c.o.provides.build: CMakeFiles/yangobj_
 
 CMakeFiles/yangobj_tests.dir/src/printer.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/printer.c.o: ../src/printer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/yangobj_tests.dir/src/printer.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer.c.o   -c /home/min/libyang/Yangmin/src/printer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/yangobj_tests.dir/src/printer.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer.c.o   -c /home/min/libyang/src/printer.c
 
 CMakeFiles/yangobj_tests.dir/src/printer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/printer.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/printer.c > CMakeFiles/yangobj_tests.dir/src/printer.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/printer.c > CMakeFiles/yangobj_tests.dir/src/printer.c.i
 
 CMakeFiles/yangobj_tests.dir/src/printer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/printer.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/printer.c -o CMakeFiles/yangobj_tests.dir/src/printer.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/printer.c -o CMakeFiles/yangobj_tests.dir/src/printer.c.s
 
 CMakeFiles/yangobj_tests.dir/src/printer.c.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/yangobj_tests.dir/src/printer.c.o.provides.build: CMakeFiles/yangobj_
 
 CMakeFiles/yangobj_tests.dir/src/xpath.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/xpath.c.o: ../src/xpath.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/yangobj_tests.dir/src/xpath.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/xpath.c.o   -c /home/min/libyang/Yangmin/src/xpath.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/yangobj_tests.dir/src/xpath.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/xpath.c.o   -c /home/min/libyang/src/xpath.c
 
 CMakeFiles/yangobj_tests.dir/src/xpath.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/xpath.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/xpath.c > CMakeFiles/yangobj_tests.dir/src/xpath.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/xpath.c > CMakeFiles/yangobj_tests.dir/src/xpath.c.i
 
 CMakeFiles/yangobj_tests.dir/src/xpath.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/xpath.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/xpath.c -o CMakeFiles/yangobj_tests.dir/src/xpath.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/xpath.c -o CMakeFiles/yangobj_tests.dir/src/xpath.c.s
 
 CMakeFiles/yangobj_tests.dir/src/xpath.c.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/yangobj_tests.dir/src/xpath.c.o.provides.build: CMakeFiles/yangobj_te
 
 CMakeFiles/yangobj_tests.dir/src/printer_yang.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/printer_yang.c.o: ../src/printer_yang.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_yang.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_yang.c.o   -c /home/min/libyang/Yangmin/src/printer_yang.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_yang.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_yang.c.o   -c /home/min/libyang/src/printer_yang.c
 
 CMakeFiles/yangobj_tests.dir/src/printer_yang.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/printer_yang.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/printer_yang.c > CMakeFiles/yangobj_tests.dir/src/printer_yang.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/printer_yang.c > CMakeFiles/yangobj_tests.dir/src/printer_yang.c.i
 
 CMakeFiles/yangobj_tests.dir/src/printer_yang.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/printer_yang.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/printer_yang.c -o CMakeFiles/yangobj_tests.dir/src/printer_yang.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/printer_yang.c -o CMakeFiles/yangobj_tests.dir/src/printer_yang.c.s
 
 CMakeFiles/yangobj_tests.dir/src/printer_yang.c.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/yangobj_tests.dir/src/printer_yang.c.o.provides.build: CMakeFiles/yan
 
 CMakeFiles/yangobj_tests.dir/src/printer_yin.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/printer_yin.c.o: ../src/printer_yin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_yin.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_yin.c.o   -c /home/min/libyang/Yangmin/src/printer_yin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_yin.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_yin.c.o   -c /home/min/libyang/src/printer_yin.c
 
 CMakeFiles/yangobj_tests.dir/src/printer_yin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/printer_yin.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/printer_yin.c > CMakeFiles/yangobj_tests.dir/src/printer_yin.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/printer_yin.c > CMakeFiles/yangobj_tests.dir/src/printer_yin.c.i
 
 CMakeFiles/yangobj_tests.dir/src/printer_yin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/printer_yin.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/printer_yin.c -o CMakeFiles/yangobj_tests.dir/src/printer_yin.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/printer_yin.c -o CMakeFiles/yangobj_tests.dir/src/printer_yin.c.s
 
 CMakeFiles/yangobj_tests.dir/src/printer_yin.c.o.requires:
 
@@ -587,16 +587,16 @@ CMakeFiles/yangobj_tests.dir/src/printer_yin.c.o.provides.build: CMakeFiles/yang
 
 CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.o: ../src/printer_json_schema.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.o   -c /home/min/libyang/Yangmin/src/printer_json_schema.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.o   -c /home/min/libyang/src/printer_json_schema.c
 
 CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/printer_json_schema.c > CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/printer_json_schema.c > CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.i
 
 CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/printer_json_schema.c -o CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/printer_json_schema.c -o CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.s
 
 CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.o.requires:
 
@@ -611,16 +611,16 @@ CMakeFiles/yangobj_tests.dir/src/printer_json_schema.c.o.provides.build: CMakeFi
 
 CMakeFiles/yangobj_tests.dir/src/printer_xml.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/printer_xml.c.o: ../src/printer_xml.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_xml.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_xml.c.o   -c /home/min/libyang/Yangmin/src/printer_xml.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_xml.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_xml.c.o   -c /home/min/libyang/src/printer_xml.c
 
 CMakeFiles/yangobj_tests.dir/src/printer_xml.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/printer_xml.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/printer_xml.c > CMakeFiles/yangobj_tests.dir/src/printer_xml.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/printer_xml.c > CMakeFiles/yangobj_tests.dir/src/printer_xml.c.i
 
 CMakeFiles/yangobj_tests.dir/src/printer_xml.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/printer_xml.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/printer_xml.c -o CMakeFiles/yangobj_tests.dir/src/printer_xml.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/printer_xml.c -o CMakeFiles/yangobj_tests.dir/src/printer_xml.c.s
 
 CMakeFiles/yangobj_tests.dir/src/printer_xml.c.o.requires:
 
@@ -635,16 +635,16 @@ CMakeFiles/yangobj_tests.dir/src/printer_xml.c.o.provides.build: CMakeFiles/yang
 
 CMakeFiles/yangobj_tests.dir/src/printer_tree.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/printer_tree.c.o: ../src/printer_tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_tree.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_tree.c.o   -c /home/min/libyang/Yangmin/src/printer_tree.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_tree.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_tree.c.o   -c /home/min/libyang/src/printer_tree.c
 
 CMakeFiles/yangobj_tests.dir/src/printer_tree.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/printer_tree.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/printer_tree.c > CMakeFiles/yangobj_tests.dir/src/printer_tree.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/printer_tree.c > CMakeFiles/yangobj_tests.dir/src/printer_tree.c.i
 
 CMakeFiles/yangobj_tests.dir/src/printer_tree.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/printer_tree.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/printer_tree.c -o CMakeFiles/yangobj_tests.dir/src/printer_tree.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/printer_tree.c -o CMakeFiles/yangobj_tests.dir/src/printer_tree.c.s
 
 CMakeFiles/yangobj_tests.dir/src/printer_tree.c.o.requires:
 
@@ -659,16 +659,16 @@ CMakeFiles/yangobj_tests.dir/src/printer_tree.c.o.provides.build: CMakeFiles/yan
 
 CMakeFiles/yangobj_tests.dir/src/printer_info.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/printer_info.c.o: ../src/printer_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_info.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_info.c.o   -c /home/min/libyang/Yangmin/src/printer_info.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_info.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_info.c.o   -c /home/min/libyang/src/printer_info.c
 
 CMakeFiles/yangobj_tests.dir/src/printer_info.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/printer_info.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/printer_info.c > CMakeFiles/yangobj_tests.dir/src/printer_info.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/printer_info.c > CMakeFiles/yangobj_tests.dir/src/printer_info.c.i
 
 CMakeFiles/yangobj_tests.dir/src/printer_info.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/printer_info.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/printer_info.c -o CMakeFiles/yangobj_tests.dir/src/printer_info.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/printer_info.c -o CMakeFiles/yangobj_tests.dir/src/printer_info.c.s
 
 CMakeFiles/yangobj_tests.dir/src/printer_info.c.o.requires:
 
@@ -683,16 +683,16 @@ CMakeFiles/yangobj_tests.dir/src/printer_info.c.o.provides.build: CMakeFiles/yan
 
 CMakeFiles/yangobj_tests.dir/src/printer_json.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/printer_json.c.o: ../src/printer_json.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_json.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_json.c.o   -c /home/min/libyang/Yangmin/src/printer_json.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_json.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_json.c.o   -c /home/min/libyang/src/printer_json.c
 
 CMakeFiles/yangobj_tests.dir/src/printer_json.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/printer_json.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/printer_json.c > CMakeFiles/yangobj_tests.dir/src/printer_json.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/printer_json.c > CMakeFiles/yangobj_tests.dir/src/printer_json.c.i
 
 CMakeFiles/yangobj_tests.dir/src/printer_json.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/printer_json.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/printer_json.c -o CMakeFiles/yangobj_tests.dir/src/printer_json.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/printer_json.c -o CMakeFiles/yangobj_tests.dir/src/printer_json.c.s
 
 CMakeFiles/yangobj_tests.dir/src/printer_json.c.o.requires:
 
@@ -707,16 +707,16 @@ CMakeFiles/yangobj_tests.dir/src/printer_json.c.o.provides.build: CMakeFiles/yan
 
 CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.o: ../src/printer_lyb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.o   -c /home/min/libyang/Yangmin/src/printer_lyb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.o   -c /home/min/libyang/src/printer_lyb.c
 
 CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/printer_lyb.c > CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/printer_lyb.c > CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.i
 
 CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/printer_lyb.c -o CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/printer_lyb.c -o CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.s
 
 CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.o.requires:
 
@@ -731,16 +731,16 @@ CMakeFiles/yangobj_tests.dir/src/printer_lyb.c.o.provides.build: CMakeFiles/yang
 
 CMakeFiles/yangobj_tests.dir/src/yang_types.c.o: CMakeFiles/yangobj_tests.dir/flags.make
 CMakeFiles/yangobj_tests.dir/src/yang_types.c.o: ../src/yang_types.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/yangobj_tests.dir/src/yang_types.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/yang_types.c.o   -c /home/min/libyang/Yangmin/src/yang_types.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/yangobj_tests.dir/src/yang_types.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangobj_tests.dir/src/yang_types.c.o   -c /home/min/libyang/src/yang_types.c
 
 CMakeFiles/yangobj_tests.dir/src/yang_types.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangobj_tests.dir/src/yang_types.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/src/yang_types.c > CMakeFiles/yangobj_tests.dir/src/yang_types.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/src/yang_types.c > CMakeFiles/yangobj_tests.dir/src/yang_types.c.i
 
 CMakeFiles/yangobj_tests.dir/src/yang_types.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangobj_tests.dir/src/yang_types.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/src/yang_types.c -o CMakeFiles/yangobj_tests.dir/src/yang_types.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/src/yang_types.c -o CMakeFiles/yangobj_tests.dir/src/yang_types.c.s
 
 CMakeFiles/yangobj_tests.dir/src/yang_types.c.o.requires:
 
@@ -828,6 +828,6 @@ CMakeFiles/yangobj_tests.dir/clean:
 .PHONY : CMakeFiles/yangobj_tests.dir/clean
 
 CMakeFiles/yangobj_tests.dir/depend:
-	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang/Yangmin /home/min/libyang/Yangmin /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build/CMakeFiles/yangobj_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/min/libyang/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang /home/min/libyang /home/min/libyang/build /home/min/libyang/build /home/min/libyang/build/CMakeFiles/yangobj_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yangobj_tests.dir/depend
 

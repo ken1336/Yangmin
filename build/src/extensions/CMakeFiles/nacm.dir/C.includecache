@@ -46,15 +46,15 @@ sys/types.h
 stdio.h
 -
 
-/home/min/libyang/Yangmin/src/extensions.h
+/home/min/libyang/src/extensions.h
 libyang.h
-/home/min/libyang/Yangmin/src/libyang.h
+/home/min/libyang/src/libyang.h
 
-/home/min/libyang/Yangmin/src/extensions/nacm.c
+/home/min/libyang/src/extensions/nacm.c
 stdlib.h
 -
 ../extensions.h
-/home/min/libyang/Yangmin/src/extensions.h
+/home/min/libyang/src/extensions.h
 
 src/libyang.h
 stdio.h

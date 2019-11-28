@@ -87,8 +87,9 @@ void InternalModule::printSubNode(lys_node* node, int dept)
         for (auto i = 0; i < dept; i++){
          std::cout << "  ..  ";
         }
-            std::cout<<"flags: "<<iter->flags;
-            if(iter->flags >= 0 && iter->flags <= 64 )
+            //std::cout<<"nodetype: "<<iter->nodetype
+            //if(iter->flags >= 0 && iter->flags <= 64 )
+            if(iter->nodetype !=33 && iter->nodetype!=LYS_UNKNOWN && iter->nodetype!=2)
                 std::cout<<"  "<<iter->nodetype<<" : "<<iter->name<<std::endl;
             else{
                 std::cout<<"  skip--"<<std::endl;
