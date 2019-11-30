@@ -46,7 +46,7 @@ sys/types.h
 stdio.h
 -
 
-/home/min/libyang/Yangmin/linenoise/linenoise.c
+/home/min/libyang/linenoise/linenoise.c
 termios.h
 -
 unistd.h
@@ -74,23 +74,23 @@ sys/stat.h
 unistd.h
 -
 linenoise.h
-/home/min/libyang/Yangmin/linenoise/linenoise.h
+/home/min/libyang/linenoise/linenoise.h
 
-/home/min/libyang/Yangmin/linenoise/linenoise.h
+/home/min/libyang/linenoise/linenoise.h
 
-/home/min/libyang/Yangmin/src/tree_data.h
+/home/min/libyang/src/tree_data.h
 stddef.h
 -
 stdint.h
 -
 libyang.h
-/home/min/libyang/Yangmin/src/libyang.h
+/home/min/libyang/src/libyang.h
 tree_schema.h
-/home/min/libyang/Yangmin/src/tree_schema.h
+/home/min/libyang/src/tree_schema.h
 xml.h
-/home/min/libyang/Yangmin/src/xml.h
+/home/min/libyang/src/xml.h
 
-/home/min/libyang/Yangmin/src/tree_schema.h
+/home/min/libyang/src/tree_schema.h
 machine/endian.h
 -
 sys/endian.h
@@ -108,17 +108,17 @@ stdio.h
 sys/types.h
 -
 
-/home/min/libyang/Yangmin/src/xpath.h
+/home/min/libyang/src/xpath.h
 stdint.h
 -
 libyang.h
-/home/min/libyang/Yangmin/src/libyang.h
+/home/min/libyang/src/libyang.h
 tree_schema.h
-/home/min/libyang/Yangmin/src/tree_schema.h
+/home/min/libyang/src/tree_schema.h
 tree_data.h
-/home/min/libyang/Yangmin/src/tree_data.h
+/home/min/libyang/src/tree_data.h
 
-/home/min/libyang/Yangmin/tools/lint/commands.c
+/home/min/libyang/tools/lint/commands.c
 string.h
 -
 stdio.h
@@ -140,23 +140,23 @@ getopt.h
 libgen.h
 -
 commands.h
-/home/min/libyang/Yangmin/tools/lint/commands.h
+/home/min/libyang/tools/lint/commands.h
 libyang.h
-/home/min/libyang/Yangmin/tools/lint/libyang.h
+/home/min/libyang/tools/lint/libyang.h
 ../../src/tree_schema.h
-/home/min/libyang/Yangmin/src/tree_schema.h
+/home/min/libyang/src/tree_schema.h
 ../../src/tree_data.h
-/home/min/libyang/Yangmin/src/tree_data.h
+/home/min/libyang/src/tree_data.h
 ../../src/xpath.h
-/home/min/libyang/Yangmin/src/xpath.h
+/home/min/libyang/src/xpath.h
 
-/home/min/libyang/Yangmin/tools/lint/commands.h
+/home/min/libyang/tools/lint/commands.h
 stdlib.h
 -
 libyang.h
-/home/min/libyang/Yangmin/tools/lint/libyang.h
+/home/min/libyang/tools/lint/libyang.h
 
-/home/min/libyang/Yangmin/tools/lint/completion.c
+/home/min/libyang/tools/lint/completion.c
 stdlib.h
 -
 stdio.h
@@ -170,17 +170,17 @@ errno.h
 string.h
 -
 commands.h
-/home/min/libyang/Yangmin/tools/lint/commands.h
+/home/min/libyang/tools/lint/commands.h
 ../../linenoise/linenoise.h
-/home/min/libyang/Yangmin/linenoise/linenoise.h
+/home/min/libyang/linenoise/linenoise.h
 libyang.h
-/home/min/libyang/Yangmin/tools/lint/libyang.h
+/home/min/libyang/tools/lint/libyang.h
 
-/home/min/libyang/Yangmin/tools/lint/completion.h
+/home/min/libyang/tools/lint/completion.h
 ../../linenoise/linenoise.h
-/home/min/libyang/Yangmin/linenoise/linenoise.h
+/home/min/libyang/linenoise/linenoise.h
 
-/home/min/libyang/Yangmin/tools/lint/configuration.c
+/home/min/libyang/tools/lint/configuration.c
 stdlib.h
 -
 stdio.h
@@ -198,13 +198,13 @@ sys/types.h
 pwd.h
 -
 configuration.h
-/home/min/libyang/Yangmin/tools/lint/configuration.h
+/home/min/libyang/tools/lint/configuration.h
 ../../linenoise/linenoise.h
-/home/min/libyang/Yangmin/linenoise/linenoise.h
+/home/min/libyang/linenoise/linenoise.h
 
-/home/min/libyang/Yangmin/tools/lint/configuration.h
+/home/min/libyang/tools/lint/configuration.h
 
-/home/min/libyang/Yangmin/tools/lint/main.c
+/home/min/libyang/tools/lint/main.c
 stdio.h
 -
 stdlib.h
@@ -216,17 +216,17 @@ string.h
 unistd.h
 -
 commands.h
-/home/min/libyang/Yangmin/tools/lint/commands.h
+/home/min/libyang/tools/lint/commands.h
 configuration.h
-/home/min/libyang/Yangmin/tools/lint/configuration.h
+/home/min/libyang/tools/lint/configuration.h
 completion.h
-/home/min/libyang/Yangmin/tools/lint/completion.h
+/home/min/libyang/tools/lint/completion.h
 ../../linenoise/linenoise.h
-/home/min/libyang/Yangmin/linenoise/linenoise.h
+/home/min/libyang/linenoise/linenoise.h
 libyang.h
-/home/min/libyang/Yangmin/tools/lint/libyang.h
+/home/min/libyang/tools/lint/libyang.h
 
-/home/min/libyang/Yangmin/tools/lint/main_ni.c
+/home/min/libyang/tools/lint/main_ni.c
 stdio.h
 -
 stdlib.h
@@ -248,9 +248,9 @@ string.h
 unistd.h
 -
 commands.h
-/home/min/libyang/Yangmin/tools/lint/commands.h
+/home/min/libyang/tools/lint/commands.h
 libyang.h
-/home/min/libyang/Yangmin/tools/lint/libyang.h
+/home/min/libyang/tools/lint/libyang.h
 
 src/libyang.h
 stdio.h

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/min/libyang/Yangmin/tools/yang2yin/main.c
+/home/min/libyang/tools/yang2yin/main.c
 stdio.h
 -
 stdlib.h

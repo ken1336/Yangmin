@@ -38,6 +38,10 @@ void InternalModule::test()
 {
     std::cout << "test" << std::endl;
 }
+
+void InternalModule::setModule(lys_module* module){
+    this->module = std::make_unique<lys_module>(*module);
+}
 void InternalModule::printModuleData(int dept)
 {
 
@@ -88,11 +92,11 @@ void InternalModule::printSubNode(lys_node *node, int dept)
         if (iter->nodetype != 33 && iter->nodetype != LYS_UNKNOWN && iter->nodetype != LYS_CHOICE && iter->nodetype < 0x10000)
         {
             std::cout << "  " << iter->nodetype << " : " << iter->name << std::endl;
-            for (auto i = 0; i < dept; i++)
-            {
-                std::cout << "  ..  ";
-            }
-            std::cout<<iter->dsc<<std::endl;
+            // for (auto i = 0; i < dept; i++)
+            // {
+            //     std::cout << "  ..  ";
+            // }
+            // std::cout<<iter->dsc<<std::endl;
         }
 
         else

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/min/libyang/Yangmin
+CMAKE_SOURCE_DIR = /home/min/libyang
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
+CMAKE_BINARY_DIR = /home/min/libyang/build
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/min/libyang/Yangmin/CMakeModules//uninstall.cmake
+	/usr/bin/cmake -P /home/min/libyang/CMakeModules//uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang/Yangmin /home/min/libyang/Yangmin /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/min/libyang/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang /home/min/libyang /home/min/libyang/build /home/min/libyang/build /home/min/libyang/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

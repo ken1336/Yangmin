@@ -1,1 +1,1 @@
-/usr/bin/cc -fPIC  -Wall -Wextra -g -O0  -shared -Wl,-soname,metadata.so -o metadata.so CMakeFiles/metadata.dir/metadata.c.o -Wl,-rpath,/home/min/libyang/Yangmin/build: ../../libyang.so.1.3.0 -ldl -lm -lpthread -lpcre 
+/usr/bin/cc -fPIC  -Wall -Wextra -g -O0  -shared -Wl,-soname,metadata.so -o metadata.so CMakeFiles/metadata.dir/metadata.c.o -Wl,-rpath,/home/min/libyang/build: ../../libyang.so.1.3.0 -ldl -lm -lpthread -lpcre 

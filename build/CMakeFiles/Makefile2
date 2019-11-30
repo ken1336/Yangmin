@@ -54,10 +54,121 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/min/libyang/Yangmin
+CMAKE_SOURCE_DIR = /home/min/libyang
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
+CMAKE_BINARY_DIR = /home/min/libyang/build
+
+#=============================================================================
+# Target rules for target CMakeFiles/yang2yin.dir
+
+# All Build rule for target.
+CMakeFiles/yang2yin.dir/all:
+	$(MAKE) -f CMakeFiles/yang2yin.dir/build.make CMakeFiles/yang2yin.dir/depend
+	$(MAKE) -f CMakeFiles/yang2yin.dir/build.make CMakeFiles/yang2yin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=10,11 "Built target yang2yin"
+.PHONY : CMakeFiles/yang2yin.dir/all
+
+# Include target in all.
+all: CMakeFiles/yang2yin.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/yang2yin.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yang2yin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
+.PHONY : CMakeFiles/yang2yin.dir/rule
+
+# Convenience name for target.
+yang2yin: CMakeFiles/yang2yin.dir/rule
+
+.PHONY : yang2yin
+
+# clean rule for target.
+CMakeFiles/yang2yin.dir/clean:
+	$(MAKE) -f CMakeFiles/yang2yin.dir/build.make CMakeFiles/yang2yin.dir/clean
+.PHONY : CMakeFiles/yang2yin.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/yang2yin.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/yangre.dir
+
+# All Build rule for target.
+CMakeFiles/yangre.dir/all: CMakeFiles/yang.dir/all
+	$(MAKE) -f CMakeFiles/yangre.dir/build.make CMakeFiles/yangre.dir/depend
+	$(MAKE) -f CMakeFiles/yangre.dir/build.make CMakeFiles/yangre.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=90,91 "Built target yangre"
+.PHONY : CMakeFiles/yangre.dir/all
+
+# Include target in all.
+all: CMakeFiles/yangre.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/yangre.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 32
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangre.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
+.PHONY : CMakeFiles/yangre.dir/rule
+
+# Convenience name for target.
+yangre: CMakeFiles/yangre.dir/rule
+
+.PHONY : yangre
+
+# clean rule for target.
+CMakeFiles/yangre.dir/clean:
+	$(MAKE) -f CMakeFiles/yangre.dir/build.make CMakeFiles/yangre.dir/clean
+.PHONY : CMakeFiles/yangre.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/yangre.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/yanglint.dir
+
+# All Build rule for target.
+CMakeFiles/yanglint.dir/all: CMakeFiles/yang.dir/all
+	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/depend
+	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=25,26,27,28,29,30,31 "Built target yanglint"
+.PHONY : CMakeFiles/yanglint.dir/all
+
+# Include target in all.
+all: CMakeFiles/yanglint.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/yanglint.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 37
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yanglint.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
+.PHONY : CMakeFiles/yanglint.dir/rule
+
+# Convenience name for target.
+yanglint: CMakeFiles/yanglint.dir/rule
+
+.PHONY : yanglint
+
+# clean rule for target.
+CMakeFiles/yanglint.dir/clean:
+	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/clean
+.PHONY : CMakeFiles/yanglint.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/yanglint.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/yang.dir
@@ -66,7 +177,7 @@ CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
 CMakeFiles/yang.dir/all: CMakeFiles/yangobj.dir/all
 	$(MAKE) -f CMakeFiles/yang.dir/build.make CMakeFiles/yang.dir/depend
 	$(MAKE) -f CMakeFiles/yang.dir/build.make CMakeFiles/yang.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=9 "Built target yang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=9 "Built target yang"
 .PHONY : CMakeFiles/yang.dir/all
 
 # Include target in all.
@@ -76,9 +187,9 @@ all: CMakeFiles/yang.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/yang.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yang.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : CMakeFiles/yang.dir/rule
 
 # Convenience name for target.
@@ -97,188 +208,13 @@ clean: CMakeFiles/yang.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/yangobj.dir
-
-# All Build rule for target.
-CMakeFiles/yangobj.dir/all:
-	$(MAKE) -f CMakeFiles/yangobj.dir/build.make CMakeFiles/yangobj.dir/depend
-	$(MAKE) -f CMakeFiles/yangobj.dir/build.make CMakeFiles/yangobj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60 "Built target yangobj"
-.PHONY : CMakeFiles/yangobj.dir/all
-
-# Include target in all.
-all: CMakeFiles/yangobj.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/yangobj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 29
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangobj.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-.PHONY : CMakeFiles/yangobj.dir/rule
-
-# Convenience name for target.
-yangobj: CMakeFiles/yangobj.dir/rule
-
-.PHONY : yangobj
-
-# clean rule for target.
-CMakeFiles/yangobj.dir/clean:
-	$(MAKE) -f CMakeFiles/yangobj.dir/build.make CMakeFiles/yangobj.dir/clean
-.PHONY : CMakeFiles/yangobj.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/yangobj.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/doc.dir
-
-# All Build rule for target.
-CMakeFiles/doc.dir/all:
-	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/depend
-	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num= "Built target doc"
-.PHONY : CMakeFiles/doc.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/doc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-.PHONY : CMakeFiles/doc.dir/rule
-
-# Convenience name for target.
-doc: CMakeFiles/doc.dir/rule
-
-.PHONY : doc
-
-# clean rule for target.
-CMakeFiles/doc.dir/clean:
-	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/clean
-.PHONY : CMakeFiles/doc.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/doc.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/yangobj_tests.dir
-
-# All Build rule for target.
-CMakeFiles/yangobj_tests.dir/all:
-	$(MAKE) -f CMakeFiles/yangobj_tests.dir/build.make CMakeFiles/yangobj_tests.dir/depend
-	$(MAKE) -f CMakeFiles/yangobj_tests.dir/build.make CMakeFiles/yangobj_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89 "Built target yangobj_tests"
-.PHONY : CMakeFiles/yangobj_tests.dir/all
-
-# Include target in all.
-all: CMakeFiles/yangobj_tests.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/yangobj_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 29
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangobj_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-.PHONY : CMakeFiles/yangobj_tests.dir/rule
-
-# Convenience name for target.
-yangobj_tests: CMakeFiles/yangobj_tests.dir/rule
-
-.PHONY : yangobj_tests
-
-# clean rule for target.
-CMakeFiles/yangobj_tests.dir/clean:
-	$(MAKE) -f CMakeFiles/yangobj_tests.dir/build.make CMakeFiles/yangobj_tests.dir/clean
-.PHONY : CMakeFiles/yangobj_tests.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/yangobj_tests.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/bison.dir
-
-# All Build rule for target.
-CMakeFiles/bison.dir/all:
-	$(MAKE) -f CMakeFiles/bison.dir/build.make CMakeFiles/bison.dir/depend
-	$(MAKE) -f CMakeFiles/bison.dir/build.make CMakeFiles/bison.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num= "Built target bison"
-.PHONY : CMakeFiles/bison.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/bison.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bison.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-.PHONY : CMakeFiles/bison.dir/rule
-
-# Convenience name for target.
-bison: CMakeFiles/bison.dir/rule
-
-.PHONY : bison
-
-# clean rule for target.
-CMakeFiles/bison.dir/clean:
-	$(MAKE) -f CMakeFiles/bison.dir/build.make CMakeFiles/bison.dir/clean
-.PHONY : CMakeFiles/bison.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/bison.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/yangMin.dir
-
-# All Build rule for target.
-CMakeFiles/yangMin.dir/all: CMakeFiles/yang.dir/all
-	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/depend
-	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=12,13,14,15,16,17,18 "Built target yangMin"
-.PHONY : CMakeFiles/yangMin.dir/all
-
-# Include target in all.
-all: CMakeFiles/yangMin.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/yangMin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 37
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangMin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-.PHONY : CMakeFiles/yangMin.dir/rule
-
-# Convenience name for target.
-yangMin: CMakeFiles/yangMin.dir/rule
-
-.PHONY : yangMin
-
-# clean rule for target.
-CMakeFiles/yangMin.dir/clean:
-	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/clean
-.PHONY : CMakeFiles/yangMin.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/yangMin.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/yangTest.dir
 
 # All Build rule for target.
 CMakeFiles/yangTest.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/depend
 	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=19,20,21,22 "Built target yangTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=19,20,21,22 "Built target yangTest"
 .PHONY : CMakeFiles/yangTest.dir/all
 
 # Include target in all.
@@ -288,9 +224,9 @@ all: CMakeFiles/yangTest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/yangTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 34
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : CMakeFiles/yangTest.dir/rule
 
 # Convenience name for target.
@@ -315,14 +251,14 @@ clean: CMakeFiles/yangTest.dir/clean
 CMakeFiles/uninstall.dir/all:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -341,76 +277,113 @@ clean: CMakeFiles/uninstall.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/yanglint.dir
+# Target rules for target CMakeFiles/yangMin.dir
 
 # All Build rule for target.
-CMakeFiles/yanglint.dir/all: CMakeFiles/yang.dir/all
-	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/depend
-	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=25,26,27,28,29,30,31 "Built target yanglint"
-.PHONY : CMakeFiles/yanglint.dir/all
+CMakeFiles/yangMin.dir/all: CMakeFiles/yang.dir/all
+	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/depend
+	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=12,13,14,15,16,17,18 "Built target yangMin"
+.PHONY : CMakeFiles/yangMin.dir/all
 
 # Include target in all.
-all: CMakeFiles/yanglint.dir/all
+all: CMakeFiles/yangMin.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/yanglint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 37
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yanglint.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-.PHONY : CMakeFiles/yanglint.dir/rule
+CMakeFiles/yangMin.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 37
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangMin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
+.PHONY : CMakeFiles/yangMin.dir/rule
 
 # Convenience name for target.
-yanglint: CMakeFiles/yanglint.dir/rule
+yangMin: CMakeFiles/yangMin.dir/rule
 
-.PHONY : yanglint
-
-# clean rule for target.
-CMakeFiles/yanglint.dir/clean:
-	$(MAKE) -f CMakeFiles/yanglint.dir/build.make CMakeFiles/yanglint.dir/clean
-.PHONY : CMakeFiles/yanglint.dir/clean
+.PHONY : yangMin
 
 # clean rule for target.
-clean: CMakeFiles/yanglint.dir/clean
+CMakeFiles/yangMin.dir/clean:
+	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/clean
+.PHONY : CMakeFiles/yangMin.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/yangMin.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/yangre.dir
+# Target rules for target CMakeFiles/yangobj_tests.dir
 
 # All Build rule for target.
-CMakeFiles/yangre.dir/all: CMakeFiles/yang.dir/all
-	$(MAKE) -f CMakeFiles/yangre.dir/build.make CMakeFiles/yangre.dir/depend
-	$(MAKE) -f CMakeFiles/yangre.dir/build.make CMakeFiles/yangre.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=90,91 "Built target yangre"
-.PHONY : CMakeFiles/yangre.dir/all
+CMakeFiles/yangobj_tests.dir/all:
+	$(MAKE) -f CMakeFiles/yangobj_tests.dir/build.make CMakeFiles/yangobj_tests.dir/depend
+	$(MAKE) -f CMakeFiles/yangobj_tests.dir/build.make CMakeFiles/yangobj_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89 "Built target yangobj_tests"
+.PHONY : CMakeFiles/yangobj_tests.dir/all
 
 # Include target in all.
-all: CMakeFiles/yangre.dir/all
+all: CMakeFiles/yangobj_tests.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/yangre.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 32
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangre.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-.PHONY : CMakeFiles/yangre.dir/rule
+CMakeFiles/yangobj_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 29
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangobj_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
+.PHONY : CMakeFiles/yangobj_tests.dir/rule
 
 # Convenience name for target.
-yangre: CMakeFiles/yangre.dir/rule
+yangobj_tests: CMakeFiles/yangobj_tests.dir/rule
 
-.PHONY : yangre
-
-# clean rule for target.
-CMakeFiles/yangre.dir/clean:
-	$(MAKE) -f CMakeFiles/yangre.dir/build.make CMakeFiles/yangre.dir/clean
-.PHONY : CMakeFiles/yangre.dir/clean
+.PHONY : yangobj_tests
 
 # clean rule for target.
-clean: CMakeFiles/yangre.dir/clean
+CMakeFiles/yangobj_tests.dir/clean:
+	$(MAKE) -f CMakeFiles/yangobj_tests.dir/build.make CMakeFiles/yangobj_tests.dir/clean
+.PHONY : CMakeFiles/yangobj_tests.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/yangobj_tests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/yangobj.dir
+
+# All Build rule for target.
+CMakeFiles/yangobj.dir/all:
+	$(MAKE) -f CMakeFiles/yangobj.dir/build.make CMakeFiles/yangobj.dir/depend
+	$(MAKE) -f CMakeFiles/yangobj.dir/build.make CMakeFiles/yangobj.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60 "Built target yangobj"
+.PHONY : CMakeFiles/yangobj.dir/all
+
+# Include target in all.
+all: CMakeFiles/yangobj.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/yangobj.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 29
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yangobj.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
+.PHONY : CMakeFiles/yangobj.dir/rule
+
+# Convenience name for target.
+yangobj: CMakeFiles/yangobj.dir/rule
+
+.PHONY : yangobj
+
+# clean rule for target.
+CMakeFiles/yangobj.dir/clean:
+	$(MAKE) -f CMakeFiles/yangobj.dir/build.make CMakeFiles/yangobj.dir/clean
+.PHONY : CMakeFiles/yangobj.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/yangobj.dir/clean
 
 .PHONY : clean
 
@@ -421,14 +394,14 @@ clean: CMakeFiles/yangre.dir/clean
 CMakeFiles/cclean.dir/all:
 	$(MAKE) -f CMakeFiles/cclean.dir/build.make CMakeFiles/cclean.dir/depend
 	$(MAKE) -f CMakeFiles/cclean.dir/build.make CMakeFiles/cclean.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num= "Built target cclean"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num= "Built target cclean"
 .PHONY : CMakeFiles/cclean.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cclean.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cclean.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : CMakeFiles/cclean.dir/rule
 
 # Convenience name for target.
@@ -443,43 +416,6 @@ CMakeFiles/cclean.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/cclean.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/yang2yin.dir
-
-# All Build rule for target.
-CMakeFiles/yang2yin.dir/all:
-	$(MAKE) -f CMakeFiles/yang2yin.dir/build.make CMakeFiles/yang2yin.dir/depend
-	$(MAKE) -f CMakeFiles/yang2yin.dir/build.make CMakeFiles/yang2yin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=10,11 "Built target yang2yin"
-.PHONY : CMakeFiles/yang2yin.dir/all
-
-# Include target in all.
-all: CMakeFiles/yang2yin.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/yang2yin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yang2yin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
-.PHONY : CMakeFiles/yang2yin.dir/rule
-
-# Convenience name for target.
-yang2yin: CMakeFiles/yang2yin.dir/rule
-
-.PHONY : yang2yin
-
-# clean rule for target.
-CMakeFiles/yang2yin.dir/clean:
-	$(MAKE) -f CMakeFiles/yang2yin.dir/build.make CMakeFiles/yang2yin.dir/clean
-.PHONY : CMakeFiles/yang2yin.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/yang2yin.dir/clean
 
 .PHONY : clean
 
@@ -512,7 +448,7 @@ src/extensions/preinstall:
 src/extensions/CMakeFiles/metadata.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/depend
 	$(MAKE) -f src/extensions/CMakeFiles/metadata.dir/build.make src/extensions/CMakeFiles/metadata.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=1,2 "Built target metadata"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=1,2 "Built target metadata"
 .PHONY : src/extensions/CMakeFiles/metadata.dir/all
 
 # Include target in all.
@@ -522,9 +458,9 @@ all: src/extensions/CMakeFiles/metadata.dir/all
 
 # Build rule for subdir invocation for target.
 src/extensions/CMakeFiles/metadata.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 src/extensions/CMakeFiles/metadata.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : src/extensions/CMakeFiles/metadata.dir/rule
 
 # Convenience name for target.
@@ -549,7 +485,7 @@ clean: src/extensions/CMakeFiles/metadata.dir/clean
 src/extensions/CMakeFiles/nacm.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/depend
 	$(MAKE) -f src/extensions/CMakeFiles/nacm.dir/build.make src/extensions/CMakeFiles/nacm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=3,4 "Built target nacm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=3,4 "Built target nacm"
 .PHONY : src/extensions/CMakeFiles/nacm.dir/all
 
 # Include target in all.
@@ -559,9 +495,9 @@ all: src/extensions/CMakeFiles/nacm.dir/all
 
 # Build rule for subdir invocation for target.
 src/extensions/CMakeFiles/nacm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 src/extensions/CMakeFiles/nacm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : src/extensions/CMakeFiles/nacm.dir/rule
 
 # Convenience name for target.
@@ -586,7 +522,7 @@ clean: src/extensions/CMakeFiles/nacm.dir/clean
 src/extensions/CMakeFiles/yangdata.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/depend
 	$(MAKE) -f src/extensions/CMakeFiles/yangdata.dir/build.make src/extensions/CMakeFiles/yangdata.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=23,24 "Built target yangdata"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=23,24 "Built target yangdata"
 .PHONY : src/extensions/CMakeFiles/yangdata.dir/all
 
 # Include target in all.
@@ -596,9 +532,9 @@ all: src/extensions/CMakeFiles/yangdata.dir/all
 
 # Build rule for subdir invocation for target.
 src/extensions/CMakeFiles/yangdata.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 src/extensions/CMakeFiles/yangdata.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : src/extensions/CMakeFiles/yangdata.dir/rule
 
 # Convenience name for target.
@@ -643,7 +579,7 @@ src/user_types/preinstall:
 src/user_types/CMakeFiles/user_inet_types.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/depend
 	$(MAKE) -f src/user_types/CMakeFiles/user_inet_types.dir/build.make src/user_types/CMakeFiles/user_inet_types.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=5,6 "Built target user_inet_types"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=5,6 "Built target user_inet_types"
 .PHONY : src/user_types/CMakeFiles/user_inet_types.dir/all
 
 # Include target in all.
@@ -653,9 +589,9 @@ all: src/user_types/CMakeFiles/user_inet_types.dir/all
 
 # Build rule for subdir invocation for target.
 src/user_types/CMakeFiles/user_inet_types.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 src/user_types/CMakeFiles/user_inet_types.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : src/user_types/CMakeFiles/user_inet_types.dir/rule
 
 # Convenience name for target.
@@ -680,7 +616,7 @@ clean: src/user_types/CMakeFiles/user_inet_types.dir/clean
 src/user_types/CMakeFiles/user_yang_types.dir/all: CMakeFiles/yang.dir/all
 	$(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/depend
 	$(MAKE) -f src/user_types/CMakeFiles/user_yang_types.dir/build.make src/user_types/CMakeFiles/user_yang_types.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=7,8 "Built target user_yang_types"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=7,8 "Built target user_yang_types"
 .PHONY : src/user_types/CMakeFiles/user_yang_types.dir/all
 
 # Include target in all.
@@ -690,9 +626,9 @@ all: src/user_types/CMakeFiles/user_yang_types.dir/all
 
 # Build rule for subdir invocation for target.
 src/user_types/CMakeFiles/user_yang_types.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 src/user_types/CMakeFiles/user_yang_types.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/Yangmin/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/min/libyang/build/CMakeFiles 0
 .PHONY : src/user_types/CMakeFiles/user_yang_types.dir/rule
 
 # Convenience name for target.

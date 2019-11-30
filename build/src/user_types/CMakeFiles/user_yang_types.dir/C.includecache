@@ -46,11 +46,11 @@ sys/types.h
 stdio.h
 -
 
-/home/min/libyang/Yangmin/src/user_types.h
+/home/min/libyang/src/user_types.h
 libyang.h
-/home/min/libyang/Yangmin/src/libyang.h
+/home/min/libyang/src/libyang.h
 
-/home/min/libyang/Yangmin/src/user_types/user_yang_types.c
+/home/min/libyang/src/user_types/user_yang_types.c
 stdlib.h
 -
 string.h
@@ -64,7 +64,7 @@ time.h
 ctype.h
 -
 ../user_types.h
-/home/min/libyang/Yangmin/src/user_types.h
+/home/min/libyang/src/user_types.h
 
 src/libyang.h
 stdio.h

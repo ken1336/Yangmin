@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/min/libyang/Yangmin
+CMAKE_SOURCE_DIR = /home/min/libyang
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
+CMAKE_BINARY_DIR = /home/min/libyang/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/yangTest.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/yangTest.dir/flags.make
 
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: CMakeFiles/yangTest.dir/flags.make
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../tools/lint/Ytest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o -c /home/min/libyang/Yangmin/tools/lint/Ytest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o -c /home/min/libyang/tools/lint/Ytest.cpp
 
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/min/libyang/Yangmin/tools/lint/Ytest.cpp > CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/min/libyang/tools/lint/Ytest.cpp > CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.i
 
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/min/libyang/Yangmin/tools/lint/Ytest.cpp -o CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/min/libyang/tools/lint/Ytest.cpp -o CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.s
 
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o.provides.build: CMakeFiles/yangTe
 
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o: CMakeFiles/yangTest.dir/flags.make
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o: ../tools/lint/min_extension/module.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o -c /home/min/libyang/Yangmin/tools/lint/min_extension/module.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o -c /home/min/libyang/tools/lint/min_extension/module.cpp
 
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/min/libyang/Yangmin/tools/lint/min_extension/module.cpp > CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/min/libyang/tools/lint/min_extension/module.cpp > CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.i
 
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/min/libyang/Yangmin/tools/lint/min_extension/module.cpp -o CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/min/libyang/tools/lint/min_extension/module.cpp -o CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.s
 
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o.provides.build: CM
 
 CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o: CMakeFiles/yangTest.dir/flags.make
 CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o: ../tools/lint/min_extension/command.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o -c /home/min/libyang/Yangmin/tools/lint/min_extension/command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o -c /home/min/libyang/tools/lint/min_extension/command.cpp
 
 CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/min/libyang/Yangmin/tools/lint/min_extension/command.cpp > CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.i
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/min/libyang/tools/lint/min_extension/command.cpp > CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.i
 
 CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/min/libyang/Yangmin/tools/lint/min_extension/command.cpp -o CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.s
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/min/libyang/tools/lint/min_extension/command.cpp -o CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.s
 
 CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o.requires:
 
@@ -145,7 +145,7 @@ yangTest: CMakeFiles/yangTest.dir/build.make
 yangTest: libyang.so.1.3.0
 yangTest: /usr/lib/x86_64-linux-gnu/libpcre.so
 yangTest: CMakeFiles/yangTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable yangTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable yangTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yangTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -164,6 +164,6 @@ CMakeFiles/yangTest.dir/clean:
 .PHONY : CMakeFiles/yangTest.dir/clean
 
 CMakeFiles/yangTest.dir/depend:
-	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang/Yangmin /home/min/libyang/Yangmin /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build/CMakeFiles/yangTest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/min/libyang/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang /home/min/libyang /home/min/libyang/build /home/min/libyang/build /home/min/libyang/build/CMakeFiles/yangTest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yangTest.dir/depend
 

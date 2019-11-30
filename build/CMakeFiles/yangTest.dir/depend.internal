@@ -11,10 +11,11 @@ CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o
  ../src/tree_schema.h
  ../src/xml.h
  ../src/xpath.h
- /home/min/libyang/Yangmin/tools/lint/./min_extension/execute.hpp
- /home/min/libyang/Yangmin/tools/lint/./min_extension/internal_module.hpp
- /home/min/libyang/Yangmin/tools/lint/Ytest.cpp
- /home/min/libyang/Yangmin/tools/lint/commands.h
+ /home/min/libyang/tools/lint/./min_extension/./min_module.hpp
+ /home/min/libyang/tools/lint/./min_extension/execute.hpp
+ /home/min/libyang/tools/lint/./min_extension/internal_module.hpp
+ /home/min/libyang/tools/lint/Ytest.cpp
+ /home/min/libyang/tools/lint/commands.h
  src/common.h
  src/libyang.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o
@@ -27,8 +28,8 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o
  ../src/tree_schema.h
  ../src/xml.h
  ../src/xpath.h
- /home/min/libyang/Yangmin/tools/lint/min_extension/command.cpp
- /home/min/libyang/Yangmin/tools/lint/min_extension/execute.hpp
+ /home/min/libyang/tools/lint/min_extension/command.cpp
+ /home/min/libyang/tools/lint/min_extension/execute.hpp
  src/common.h
  src/libyang.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o
@@ -39,5 +40,6 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o
  ../models/ietf-yang-types@2013-07-15.h
  ../models/yang@2017-02-20.h
  ../src/tree_schema.h
- /home/min/libyang/Yangmin/tools/lint/min_extension/internal_module.hpp
- /home/min/libyang/Yangmin/tools/lint/min_extension/module.cpp
+ /home/min/libyang/tools/lint/min_extension/./min_module.hpp
+ /home/min/libyang/tools/lint/min_extension/internal_module.hpp
+ /home/min/libyang/tools/lint/min_extension/module.cpp

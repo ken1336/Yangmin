@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/min/libyang/Yangmin/tools/yang2yin/main.c" "/home/min/libyang/Yangmin/build/CMakeFiles/yang2yin.dir/tools/yang2yin/main.c.o"
+  "/home/min/libyang/tools/yang2yin/main.c" "/home/min/libyang/build/CMakeFiles/yang2yin.dir/tools/yang2yin/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

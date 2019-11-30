@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/min/libyang/Yangmin
+CMAKE_SOURCE_DIR = /home/min/libyang
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/min/libyang/Yangmin/build
+CMAKE_BINARY_DIR = /home/min/libyang/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/yangMin.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/yangMin.dir/flags.make
 
 CMakeFiles/yangMin.dir/tools/lint/test.c.o: CMakeFiles/yangMin.dir/flags.make
 CMakeFiles/yangMin.dir/tools/lint/test.c.o: ../tools/lint/test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/yangMin.dir/tools/lint/test.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/test.c.o   -c /home/min/libyang/Yangmin/tools/lint/test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/yangMin.dir/tools/lint/test.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/test.c.o   -c /home/min/libyang/tools/lint/test.c
 
 CMakeFiles/yangMin.dir/tools/lint/test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangMin.dir/tools/lint/test.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/tools/lint/test.c > CMakeFiles/yangMin.dir/tools/lint/test.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/tools/lint/test.c > CMakeFiles/yangMin.dir/tools/lint/test.c.i
 
 CMakeFiles/yangMin.dir/tools/lint/test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangMin.dir/tools/lint/test.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/tools/lint/test.c -o CMakeFiles/yangMin.dir/tools/lint/test.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/tools/lint/test.c -o CMakeFiles/yangMin.dir/tools/lint/test.c.s
 
 CMakeFiles/yangMin.dir/tools/lint/test.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/yangMin.dir/tools/lint/test.c.o.provides.build: CMakeFiles/yangMin.di
 
 CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o: CMakeFiles/yangMin.dir/flags.make
 CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o: ../tools/lint/main_ni.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o   -c /home/min/libyang/Yangmin/tools/lint/main_ni.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o   -c /home/min/libyang/tools/lint/main_ni.c
 
 CMakeFiles/yangMin.dir/tools/lint/main_ni.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangMin.dir/tools/lint/main_ni.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/tools/lint/main_ni.c > CMakeFiles/yangMin.dir/tools/lint/main_ni.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/tools/lint/main_ni.c > CMakeFiles/yangMin.dir/tools/lint/main_ni.c.i
 
 CMakeFiles/yangMin.dir/tools/lint/main_ni.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangMin.dir/tools/lint/main_ni.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/tools/lint/main_ni.c -o CMakeFiles/yangMin.dir/tools/lint/main_ni.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/tools/lint/main_ni.c -o CMakeFiles/yangMin.dir/tools/lint/main_ni.c.s
 
 CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/yangMin.dir/tools/lint/main_ni.c.o.provides.build: CMakeFiles/yangMin
 
 CMakeFiles/yangMin.dir/tools/lint/commands.c.o: CMakeFiles/yangMin.dir/flags.make
 CMakeFiles/yangMin.dir/tools/lint/commands.c.o: ../tools/lint/commands.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/yangMin.dir/tools/lint/commands.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/commands.c.o   -c /home/min/libyang/Yangmin/tools/lint/commands.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/yangMin.dir/tools/lint/commands.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/commands.c.o   -c /home/min/libyang/tools/lint/commands.c
 
 CMakeFiles/yangMin.dir/tools/lint/commands.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangMin.dir/tools/lint/commands.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/tools/lint/commands.c > CMakeFiles/yangMin.dir/tools/lint/commands.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/tools/lint/commands.c > CMakeFiles/yangMin.dir/tools/lint/commands.c.i
 
 CMakeFiles/yangMin.dir/tools/lint/commands.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangMin.dir/tools/lint/commands.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/tools/lint/commands.c -o CMakeFiles/yangMin.dir/tools/lint/commands.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/tools/lint/commands.c -o CMakeFiles/yangMin.dir/tools/lint/commands.c.s
 
 CMakeFiles/yangMin.dir/tools/lint/commands.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/yangMin.dir/tools/lint/commands.c.o.provides.build: CMakeFiles/yangMi
 
 CMakeFiles/yangMin.dir/tools/lint/completion.c.o: CMakeFiles/yangMin.dir/flags.make
 CMakeFiles/yangMin.dir/tools/lint/completion.c.o: ../tools/lint/completion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/yangMin.dir/tools/lint/completion.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/completion.c.o   -c /home/min/libyang/Yangmin/tools/lint/completion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/yangMin.dir/tools/lint/completion.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/completion.c.o   -c /home/min/libyang/tools/lint/completion.c
 
 CMakeFiles/yangMin.dir/tools/lint/completion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangMin.dir/tools/lint/completion.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/tools/lint/completion.c > CMakeFiles/yangMin.dir/tools/lint/completion.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/tools/lint/completion.c > CMakeFiles/yangMin.dir/tools/lint/completion.c.i
 
 CMakeFiles/yangMin.dir/tools/lint/completion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangMin.dir/tools/lint/completion.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/tools/lint/completion.c -o CMakeFiles/yangMin.dir/tools/lint/completion.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/tools/lint/completion.c -o CMakeFiles/yangMin.dir/tools/lint/completion.c.s
 
 CMakeFiles/yangMin.dir/tools/lint/completion.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/yangMin.dir/tools/lint/completion.c.o.provides.build: CMakeFiles/yang
 
 CMakeFiles/yangMin.dir/tools/lint/configuration.c.o: CMakeFiles/yangMin.dir/flags.make
 CMakeFiles/yangMin.dir/tools/lint/configuration.c.o: ../tools/lint/configuration.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/yangMin.dir/tools/lint/configuration.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/configuration.c.o   -c /home/min/libyang/Yangmin/tools/lint/configuration.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/yangMin.dir/tools/lint/configuration.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/tools/lint/configuration.c.o   -c /home/min/libyang/tools/lint/configuration.c
 
 CMakeFiles/yangMin.dir/tools/lint/configuration.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangMin.dir/tools/lint/configuration.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/tools/lint/configuration.c > CMakeFiles/yangMin.dir/tools/lint/configuration.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/tools/lint/configuration.c > CMakeFiles/yangMin.dir/tools/lint/configuration.c.i
 
 CMakeFiles/yangMin.dir/tools/lint/configuration.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangMin.dir/tools/lint/configuration.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/tools/lint/configuration.c -o CMakeFiles/yangMin.dir/tools/lint/configuration.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/tools/lint/configuration.c -o CMakeFiles/yangMin.dir/tools/lint/configuration.c.s
 
 CMakeFiles/yangMin.dir/tools/lint/configuration.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/yangMin.dir/tools/lint/configuration.c.o.provides.build: CMakeFiles/y
 
 CMakeFiles/yangMin.dir/linenoise/linenoise.c.o: CMakeFiles/yangMin.dir/flags.make
 CMakeFiles/yangMin.dir/linenoise/linenoise.c.o: ../linenoise/linenoise.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/yangMin.dir/linenoise/linenoise.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/linenoise/linenoise.c.o   -c /home/min/libyang/Yangmin/linenoise/linenoise.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/yangMin.dir/linenoise/linenoise.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/yangMin.dir/linenoise/linenoise.c.o   -c /home/min/libyang/linenoise/linenoise.c
 
 CMakeFiles/yangMin.dir/linenoise/linenoise.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/yangMin.dir/linenoise/linenoise.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/Yangmin/linenoise/linenoise.c > CMakeFiles/yangMin.dir/linenoise/linenoise.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/min/libyang/linenoise/linenoise.c > CMakeFiles/yangMin.dir/linenoise/linenoise.c.i
 
 CMakeFiles/yangMin.dir/linenoise/linenoise.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/yangMin.dir/linenoise/linenoise.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/Yangmin/linenoise/linenoise.c -o CMakeFiles/yangMin.dir/linenoise/linenoise.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/min/libyang/linenoise/linenoise.c -o CMakeFiles/yangMin.dir/linenoise/linenoise.c.s
 
 CMakeFiles/yangMin.dir/linenoise/linenoise.c.o.requires:
 
@@ -223,7 +223,7 @@ yangMin: CMakeFiles/yangMin.dir/build.make
 yangMin: libyang.so.1.3.0
 yangMin: /usr/lib/x86_64-linux-gnu/libpcre.so
 yangMin: CMakeFiles/yangMin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/min/libyang/Yangmin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable yangMin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable yangMin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/yangMin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -245,6 +245,6 @@ CMakeFiles/yangMin.dir/clean:
 .PHONY : CMakeFiles/yangMin.dir/clean
 
 CMakeFiles/yangMin.dir/depend:
-	cd /home/min/libyang/Yangmin/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang/Yangmin /home/min/libyang/Yangmin /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build /home/min/libyang/Yangmin/build/CMakeFiles/yangMin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/min/libyang/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/min/libyang /home/min/libyang /home/min/libyang/build /home/min/libyang/build /home/min/libyang/build/CMakeFiles/yangMin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yangMin.dir/depend
 

@@ -6,6 +6,6 @@ src/extensions/CMakeFiles/nacm.dir/nacm.c.o
  ../src/tree_data.h
  ../src/tree_schema.h
  ../src/xml.h
- /home/min/libyang/Yangmin/src/extensions.h
- /home/min/libyang/Yangmin/src/extensions/nacm.c
+ /home/min/libyang/src/extensions.h
+ /home/min/libyang/src/extensions/nacm.c
  src/libyang.h
