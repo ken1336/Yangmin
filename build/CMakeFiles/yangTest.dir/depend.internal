@@ -32,7 +32,7 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o
  /home/min/libyang/tools/lint/min_extension/execute.hpp
  src/common.h
  src/libyang.h
-CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o
+CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o
  ../models/ietf-datastores@2017-08-17.h
  ../models/ietf-inet-types@2013-07-15.h
  ../models/ietf-yang-library@2019-01-04.h
@@ -41,5 +41,9 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o
  ../models/yang@2017-02-20.h
  ../src/tree_schema.h
  /home/min/libyang/tools/lint/min_extension/./min_module.hpp
+ /home/min/libyang/tools/lint/min_extension/internal_module.cpp
  /home/min/libyang/tools/lint/min_extension/internal_module.hpp
- /home/min/libyang/tools/lint/min_extension/module.cpp
+CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.o
+ ../src/tree_schema.h
+ /home/min/libyang/tools/lint/min_extension/min_module.cpp
+ /home/min/libyang/tools/lint/min_extension/min_module.hpp

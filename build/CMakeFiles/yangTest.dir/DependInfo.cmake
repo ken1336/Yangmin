@@ -6,7 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/min/libyang/tools/lint/Ytest.cpp" "/home/min/libyang/build/CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o"
   "/home/min/libyang/tools/lint/min_extension/command.cpp" "/home/min/libyang/build/CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o"
-  "/home/min/libyang/tools/lint/min_extension/module.cpp" "/home/min/libyang/build/CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o"
+  "/home/min/libyang/tools/lint/min_extension/internal_module.cpp" "/home/min/libyang/build/CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o"
+  "/home/min/libyang/tools/lint/min_extension/min_module.cpp" "/home/min/libyang/build/CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

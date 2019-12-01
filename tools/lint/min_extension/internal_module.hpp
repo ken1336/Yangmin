@@ -48,8 +48,8 @@ private:
     void printSubModule(const lys_module& subModule,int dept);
     void setModule(lys_module* module);
 public:
-    //InternalModule(const lys_module* module);
-    //InternalModule(ly_ctx* ctx);
+    InternalModule(const lys_module* module);
+    InternalModule(ly_ctx* ctx);
     
     void printModuleData(int dept = 0);
     void printSubNode(lys_node* node, int dept);

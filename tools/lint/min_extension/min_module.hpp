@@ -31,17 +31,16 @@ class MinModule
 private:
     std::unique_ptr<lys_module> module;
 
-    virtual void printSubModule(const lys_module &subModule, int dept);
-    virtual void setModule(lys_module *module);
+    virtual void printSubModule(const lys_module &subModule, int dept) =0;
+    virtual void setModule(lys_module *module) =0;
 
 public:
     MinModule(const lys_module *module);
-    MinModule(ly_ctx *ctx);
-
-    virtual void printModuleData(int dept = 0);
-    virtual void printSubNode(lys_node *node, int dept);
-    virtual void printSubModule(lys_module *subModule, int dept = 0);
-    virtual void test();
+    MinModule();
+    virtual void printModuleData(int dept = 0) =0;
+    virtual void printSubNode(lys_node *node, int dept) =0;
+    virtual void printSubModule(lys_module *subModule, int dept = 0) =0;
+    virtual void test() =0;
     inline std::string getName() { return module->name; };
 };
 

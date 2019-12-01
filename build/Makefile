@@ -1452,32 +1452,59 @@ tools/lint/min_extension/command.cpp.s:
 	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.s
 .PHONY : tools/lint/min_extension/command.cpp.s
 
-tools/lint/min_extension/module.o: tools/lint/min_extension/module.cpp.o
+tools/lint/min_extension/internal_module.o: tools/lint/min_extension/internal_module.cpp.o
 
-.PHONY : tools/lint/min_extension/module.o
+.PHONY : tools/lint/min_extension/internal_module.o
 
 # target to build an object file
-tools/lint/min_extension/module.cpp.o:
-	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.o
-.PHONY : tools/lint/min_extension/module.cpp.o
+tools/lint/min_extension/internal_module.cpp.o:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o
+.PHONY : tools/lint/min_extension/internal_module.cpp.o
 
-tools/lint/min_extension/module.i: tools/lint/min_extension/module.cpp.i
+tools/lint/min_extension/internal_module.i: tools/lint/min_extension/internal_module.cpp.i
 
-.PHONY : tools/lint/min_extension/module.i
+.PHONY : tools/lint/min_extension/internal_module.i
 
 # target to preprocess a source file
-tools/lint/min_extension/module.cpp.i:
-	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.i
-.PHONY : tools/lint/min_extension/module.cpp.i
+tools/lint/min_extension/internal_module.cpp.i:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.i
+.PHONY : tools/lint/min_extension/internal_module.cpp.i
 
-tools/lint/min_extension/module.s: tools/lint/min_extension/module.cpp.s
+tools/lint/min_extension/internal_module.s: tools/lint/min_extension/internal_module.cpp.s
 
-.PHONY : tools/lint/min_extension/module.s
+.PHONY : tools/lint/min_extension/internal_module.s
 
 # target to generate assembly for a file
-tools/lint/min_extension/module.cpp.s:
-	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/module.cpp.s
-.PHONY : tools/lint/min_extension/module.cpp.s
+tools/lint/min_extension/internal_module.cpp.s:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.s
+.PHONY : tools/lint/min_extension/internal_module.cpp.s
+
+tools/lint/min_extension/min_module.o: tools/lint/min_extension/min_module.cpp.o
+
+.PHONY : tools/lint/min_extension/min_module.o
+
+# target to build an object file
+tools/lint/min_extension/min_module.cpp.o:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.o
+.PHONY : tools/lint/min_extension/min_module.cpp.o
+
+tools/lint/min_extension/min_module.i: tools/lint/min_extension/min_module.cpp.i
+
+.PHONY : tools/lint/min_extension/min_module.i
+
+# target to preprocess a source file
+tools/lint/min_extension/min_module.cpp.i:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.i
+.PHONY : tools/lint/min_extension/min_module.cpp.i
+
+tools/lint/min_extension/min_module.s: tools/lint/min_extension/min_module.cpp.s
+
+.PHONY : tools/lint/min_extension/min_module.s
+
+# target to generate assembly for a file
+tools/lint/min_extension/min_module.cpp.s:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.s
+.PHONY : tools/lint/min_extension/min_module.cpp.s
 
 tools/lint/test.o: tools/lint/test.c.o
 
@@ -1698,9 +1725,12 @@ help:
 	@echo "... tools/lint/min_extension/command.o"
 	@echo "... tools/lint/min_extension/command.i"
 	@echo "... tools/lint/min_extension/command.s"
-	@echo "... tools/lint/min_extension/module.o"
-	@echo "... tools/lint/min_extension/module.i"
-	@echo "... tools/lint/min_extension/module.s"
+	@echo "... tools/lint/min_extension/internal_module.o"
+	@echo "... tools/lint/min_extension/internal_module.i"
+	@echo "... tools/lint/min_extension/internal_module.s"
+	@echo "... tools/lint/min_extension/min_module.o"
+	@echo "... tools/lint/min_extension/min_module.i"
+	@echo "... tools/lint/min_extension/min_module.s"
 	@echo "... tools/lint/test.o"
 	@echo "... tools/lint/test.i"
 	@echo "... tools/lint/test.s"
