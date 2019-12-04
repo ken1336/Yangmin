@@ -22,11 +22,11 @@ constexpr internal_modules_s internal_modules[] = {
     {"ietf-datastores", "2017-08-17", (const char *)ietf_datastores_2017_08_17_yin, 0, LYS_IN_YIN},
     {"ietf-yang-library", IETF_YANG_LIB_REV, (const char *)ietf_yang_library_2019_01_04_yin, 1, LYS_IN_YIN}};
 
-InternalModule::InternalModule(const lys_module *module)  : min::module::MinModule(module)
+InternalModule::InternalModule(const lys_module *module) : MinModule::MinModule()
 {
     this->module = std::make_unique<lys_module>(*module);
 }
-InternalModule::InternalModule(ly_ctx *ctx)
+InternalModule::InternalModule(ly_ctx *ctx): MinModule::MinModule()
 {
     // for(auto i = 0; i<4; i++){
     //     lys_parse_mem(ctx, min::internal::internal_modules[i].data, min::internal::internal_modules[i].format);
@@ -104,5 +104,7 @@ void InternalModule::printSubNode(lys_node *node, int dept)
 
     return;
 }
+
+InternalModule::~InternalModule(){};
 } // namespace internal
 } // namespace min

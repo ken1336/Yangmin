@@ -11,10 +11,7 @@ MinModule::MinModule(const lys_module *module)
 {
     this->module = std::make_unique<lys_module>(*module);
 }
-MinModule::MinModule()
-{
 
-}
 
 
 void MinModule::setModule(lys_module *module)

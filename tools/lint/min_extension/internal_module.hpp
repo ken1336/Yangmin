@@ -56,6 +56,8 @@ public:
     void printSubModule(lys_module* subModule, int dept = 0);
     void test();
     inline std::string getName(){return module->name;};
+
+    ~InternalModule();
 };
 
 } // namespace internal
