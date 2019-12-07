@@ -16,18 +16,24 @@ extern "C" {
 namespace min
 {
 
-namespace execute
+namespace context
 {
 
-class command
+class Context
 {
 
 private:
-    std::unique_ptr<ly_ctx> context;
+    std::shared_ptr<ly_ctx> context;
+    int moduleIndex =6;
 
 public:
-    command(const ly_ctx *ctx);
+    Context(const ly_ctx *ctx);
+    Context();
     int model_add(const char* arg);
+    int print_list(FILE *out, LYD_FORMAT outformat);
+    std::shared_ptr<ly_ctx> getContext();
+
+    ~Context();
 
 };
 } // namespace execute

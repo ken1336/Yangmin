@@ -168,6 +168,7 @@ error:
 int
 yang_read_description(struct lys_module *module, void *node, char *value, char *where, enum yytokentype type)
 {
+    
     int ret;
     char *dsc = "description";
 

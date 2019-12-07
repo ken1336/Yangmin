@@ -1425,32 +1425,32 @@ tools/lint/main_ni.c.s:
 	$(MAKE) -f CMakeFiles/yangMin.dir/build.make CMakeFiles/yangMin.dir/tools/lint/main_ni.c.s
 .PHONY : tools/lint/main_ni.c.s
 
-tools/lint/min_extension/command.o: tools/lint/min_extension/command.cpp.o
+tools/lint/min_extension/Context.o: tools/lint/min_extension/Context.cpp.o
 
-.PHONY : tools/lint/min_extension/command.o
+.PHONY : tools/lint/min_extension/Context.o
 
 # target to build an object file
-tools/lint/min_extension/command.cpp.o:
-	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o
-.PHONY : tools/lint/min_extension/command.cpp.o
+tools/lint/min_extension/Context.cpp.o:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o
+.PHONY : tools/lint/min_extension/Context.cpp.o
 
-tools/lint/min_extension/command.i: tools/lint/min_extension/command.cpp.i
+tools/lint/min_extension/Context.i: tools/lint/min_extension/Context.cpp.i
 
-.PHONY : tools/lint/min_extension/command.i
+.PHONY : tools/lint/min_extension/Context.i
 
 # target to preprocess a source file
-tools/lint/min_extension/command.cpp.i:
-	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.i
-.PHONY : tools/lint/min_extension/command.cpp.i
+tools/lint/min_extension/Context.cpp.i:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.i
+.PHONY : tools/lint/min_extension/Context.cpp.i
 
-tools/lint/min_extension/command.s: tools/lint/min_extension/command.cpp.s
+tools/lint/min_extension/Context.s: tools/lint/min_extension/Context.cpp.s
 
-.PHONY : tools/lint/min_extension/command.s
+.PHONY : tools/lint/min_extension/Context.s
 
 # target to generate assembly for a file
-tools/lint/min_extension/command.cpp.s:
-	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.s
-.PHONY : tools/lint/min_extension/command.cpp.s
+tools/lint/min_extension/Context.cpp.s:
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.s
+.PHONY : tools/lint/min_extension/Context.cpp.s
 
 tools/lint/min_extension/internal_module.o: tools/lint/min_extension/internal_module.cpp.o
 
@@ -1722,9 +1722,9 @@ help:
 	@echo "... tools/lint/main_ni.o"
 	@echo "... tools/lint/main_ni.i"
 	@echo "... tools/lint/main_ni.s"
-	@echo "... tools/lint/min_extension/command.o"
-	@echo "... tools/lint/min_extension/command.i"
-	@echo "... tools/lint/min_extension/command.s"
+	@echo "... tools/lint/min_extension/Context.o"
+	@echo "... tools/lint/min_extension/Context.i"
+	@echo "... tools/lint/min_extension/Context.s"
 	@echo "... tools/lint/min_extension/internal_module.o"
 	@echo "... tools/lint/min_extension/internal_module.i"
 	@echo "... tools/lint/min_extension/internal_module.s"

@@ -110,7 +110,7 @@ void lydict_init(struct dict_table *dict);
  * @param[in] dict Dictionary table to cleanup
  */
 void lydict_clean(struct dict_table *dict);
-
+void lydict_clean2(struct ly_ctx* ctx, struct dict_table *dict);
 /**
  * @brief Get a specific record from a hash table.
  *

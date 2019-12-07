@@ -534,6 +534,7 @@ ly_ctx_destroy(struct ly_ctx *ctx, void (*private_destructor)(const struct lys_n
 
     /* models list */
     for (; ctx->models.used > 0; ctx->models.used--) {
+        //printf("------------------------------%d\n",ctx->models.used);
         /* remove the applied deviations and augments */
         lys_sub_module_remove_devs_augs(ctx->models.list[ctx->models.used - 1]);
         /* remove the module */
@@ -552,13 +553,24 @@ ly_ctx_destroy(struct ly_ctx *ctx, void (*private_destructor)(const struct lys_n
     pthread_key_delete(ctx->errlist_key);
 
     /* dictionary */
-    lydict_clean(&ctx->dict);
-
+    //printf("ref count:%d\n",&ctx->dict.hash_tab->);
+    //lydict_clean(&ctx->dict);
+    
+    lydict_clean2(ctx,&ctx->dict);
     /* plugins - will be removed only if this is the last context */
     ly_clean_plugins();
 
+    //if(&ctx->dict.hash_tab->cb_data)
+       
     free(ctx);
 }
+
+/*      printf("refcount: %d\n",dict_rec->refcount);
+            
+            lydict_remove(ctx,dict_rec->value);
+            printf("refcount: %d\n",dict_rec->refcount);
+            free(dict_rec->value);
+            free(dict_rec->refcount);*/
 
 API const struct lys_submodule *
 ly_ctx_get_submodule2(const struct lys_module *main_module, const char *submodule)

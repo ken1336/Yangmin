@@ -4,36 +4,38 @@
 #include "commands.h"
 #include "context.h"
 #include "./min_extension/internal_module.hpp"
-#include"./min_extension/execute.hpp"
-
+#include"./min_extension/Context.hpp"
+volatile uint8_t verbose = 0;
 int main(){
 
     
-    auto ctx = ly_ctx_new(NULL, 0);
-    if (!ctx) {
-        fprintf(stderr, "Failed to create context.\n");
-        return 1;
-    }
+    
      //commands[i].func((const char *)"cmd_add");
 
     
     
 
-    std::cout<<"internal modules count:"<<ctx->internal_module_count<<std::endl;
-    min::internal::InternalModule iModule{ctx};
+    //std::cout<<"internal modules count:"<<ctx->internal_module_count<<std::endl;
+    min::context::Context ctx{};
+    //min::internal::InternalModule iModule{ctx.getContext()};
     
     //std::cout<<iModule.getName()<<std::endl;
     //iModule.printModuleData();
 
     
-    min::execute::command cmd{ctx};
-    cmd.model_add("../ietf-netconf.yang");
-    ly_modules_list list= ctx->models;
+    
+    
+    
+    ctx.model_add("../ietf-netconf.yang");
+    //ctx.print_list(stdout,LYD_XML);
+    //ly_modules_list list= ctx->models;
     std::cout<<"---------------------------------------list----------------------"<<std::endl;
     //std::cout<<"---------------------------------------"<<list.parsed_submodules_count<<"----------------------"<<std::endl;
     //std::cout<<"---------------------------------------"<<list.parsing_sub_modules_count<<"----------------------"<<std::endl;
     for(auto i = 0; i< 7; i++){
-     //   std::cout<<list.list[i]->name<<std::endl;
+        //std::cout<<ctx->models.list[i]->name<<std::endl;
+        //std::cout<<list.list[i]->name<<std::endl;
+        //ly_ctx_unset_searchdirs(ctx,i);
     }
     
     //min::internal::InternalModule iModule2{list.list[6]};
@@ -43,6 +45,6 @@ int main(){
     
     std::cout<<"---------------------------------------clean----------------------"<<std::endl;
     
+   
     
-    //ly_ctx_destroy(ctx, NULL);
 }

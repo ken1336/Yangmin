@@ -1044,7 +1044,7 @@ lys_parse_mem_(struct ly_ctx *ctx, const char *data, LYS_INFORMAT format, const 
     char *enlarged_data = NULL;
     struct lys_module *mod = NULL;
     unsigned int len;
-
+    //printf("-----------------tree_schema.c---------data:%s\n",data);
     if (!ctx || !data) {
         LOGARG;
         return NULL;
@@ -1159,7 +1159,6 @@ lys_parse_path(struct ly_ctx *ctx, const char *path, LYS_INFORMAT format)
 
     ret = lys_parse_fd(ctx, fd, format);
     close(fd);
-
     if (!ret) {
         /* error */
         return NULL;
@@ -1193,8 +1192,10 @@ lys_parse_path(struct ly_ctx *ctx, const char *path, LYS_INFORMAT format)
         /* store URI */
         char rpath[PATH_MAX];
         if (realpath(path, rpath) != NULL) {
+            
             ((struct lys_module *)ret)->filepath = lydict_insert(ctx, rpath, 0);
         } else {
+            
             ((struct lys_module *)ret)->filepath = lydict_insert(ctx, path, 0);
         }
     }

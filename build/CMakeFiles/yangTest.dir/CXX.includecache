@@ -130,7 +130,7 @@ string
 memory
 -
 
-/home/min/libyang/tools/lint/./min_extension/execute.hpp
+/home/min/libyang/tools/lint/./min_extension/Context.hpp
 context.h
 -
 tree_schema.h
@@ -189,8 +189,8 @@ context.h
 /home/min/libyang/tools/lint/context.h
 ./min_extension/internal_module.hpp
 /home/min/libyang/tools/lint/./min_extension/internal_module.hpp
-./min_extension/execute.hpp
-/home/min/libyang/tools/lint/./min_extension/execute.hpp
+./min_extension/Context.hpp
+/home/min/libyang/tools/lint/./min_extension/Context.hpp
 
 /home/min/libyang/tools/lint/commands.h
 stdlib.h
@@ -228,10 +228,12 @@ string
 memory
 -
 
-/home/min/libyang/tools/lint/min_extension/command.cpp
-execute.hpp
-/home/min/libyang/tools/lint/min_extension/execute.hpp
+/home/min/libyang/tools/lint/min_extension/Context.cpp
+Context.hpp
+/home/min/libyang/tools/lint/min_extension/Context.hpp
 string
+-
+cassert
 -
 stdio.h
 -
@@ -242,7 +244,7 @@ string.h
 libgen.h
 -
 
-/home/min/libyang/tools/lint/min_extension/execute.hpp
+/home/min/libyang/tools/lint/min_extension/Context.hpp
 context.h
 -
 tree_schema.h

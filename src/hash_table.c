@@ -57,6 +57,47 @@ lydict_init(struct dict_table *dict)
     LY_CHECK_ERR_RETURN(!dict->hash_tab, LOGINT(NULL), );
     pthread_mutex_init(&dict->lock, NULL);
 }
+void
+lydict_clean2(struct ly_ctx* ctx, struct dict_table *dict)
+{
+    unsigned int i;
+    struct dict_rec *dict_rec  = NULL;
+    struct ht_rec *rec = NULL;
+
+    if (!dict) {
+        LOGARG;
+        return;
+    }
+
+    for (i = 0; i < dict->hash_tab->size; i++) {
+        /* get ith record */
+        rec = (struct ht_rec *)&dict->hash_tab->recs[i * dict->hash_tab->rec_size];
+        if (rec->hits == 1) {
+            /*
+             * this should not happen, all records inserted into
+             * dictionary are supposed to be removed using lydict_remove()
+             * before calling lydict_clean()
+             */
+            dict_rec  = (struct dict_rec *)rec->val;
+            
+           
+        
+            LOGWRN(NULL, "String \"%s\" not freed from the dictionary, refcount %d", dict_rec->value, dict_rec->refcount);
+            //free(dict_rec->value);
+            //free(dict_rec->refcount);
+      
+            /* if record wasn't removed before free string allocated for that record */
+#ifdef NDEBUG
+            free(dict_rec->value);
+#endif
+        }
+    }
+
+    /* free table and destroy mutex */
+    lyht_free(dict->hash_tab);
+    pthread_mutex_destroy(&dict->lock);
+}
+
 
 void
 lydict_clean(struct dict_table *dict)
@@ -80,7 +121,10 @@ lydict_clean(struct dict_table *dict)
              * before calling lydict_clean()
              */
             dict_rec  = (struct dict_rec *)rec->val;
+            //printf("refcount: %d\n",dict_rec->refcount);
+            
             LOGWRN(NULL, "String \"%s\" not freed from the dictionary, refcount %d", dict_rec->value, dict_rec->refcount);
+            
             /* if record wasn't removed before free string allocated for that record */
 #ifdef NDEBUG
             free(dict_rec->value);
@@ -168,12 +212,13 @@ lydict_remove(struct ly_ctx *ctx, const char *value)
     lyht_set_cb_data(ctx->dict.hash_tab, (void *)&len);
     /* check if value is already inserted */
     ret = lyht_find(ctx->dict.hash_tab, &rec, hash, (void **)&match);
-
+    
     if (ret == 0) {
         LY_CHECK_ERR_GOTO(!match, LOGINT(ctx), finish);
 
         /* if value is already in dictionary, decrement reference counter */
         match->refcount--;
+        //printf("ref:%d\n",match->refcount);
         if (match->refcount == 0) {
             /*
              * remove record
@@ -197,7 +242,7 @@ dict_insert(struct ly_ctx *ctx, char *value, size_t len, int zerocopy)
     struct dict_rec *match = NULL, rec;
     int ret = 0;
     uint32_t hash;
-
+    
     hash = dict_hash(value, len);
     /* set len as data for compare callback */
     lyht_set_cb_data(ctx->dict.hash_tab, (void *)&len);
@@ -206,6 +251,7 @@ dict_insert(struct ly_ctx *ctx, char *value, size_t len, int zerocopy)
     rec.refcount = 1;
 
     LOGDBG(LY_LDGDICT, "inserting \"%s\"", rec.value);
+    //printf("inserting: %s\n",rec.value);
     ret = lyht_insert(ctx->dict.hash_tab, (void *)&rec, hash, (void **)&match);
     if (ret == 1) {
         match->refcount++;
@@ -228,7 +274,7 @@ dict_insert(struct ly_ctx *ctx, char *value, size_t len, int zerocopy)
         LOGINT(ctx);
         return NULL;
     }
-
+    //printf("match: %s\n",match->value);
     return match->value;
 }
 
@@ -236,7 +282,7 @@ API const char *
 lydict_insert(struct ly_ctx *ctx, const char *value, size_t len)
 {
     FUN_IN;
-
+    //return NULL;
     const char *result;
 
     if (!value) {

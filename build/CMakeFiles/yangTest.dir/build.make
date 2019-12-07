@@ -105,28 +105,28 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o.provides:
 CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o.provides.build: CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o
 
 
-CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o: CMakeFiles/yangTest.dir/flags.make
-CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o: ../tools/lint/min_extension/command.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o"
-	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o -c /home/min/libyang/tools/lint/min_extension/command.cpp
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: CMakeFiles/yangTest.dir/flags.make
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../tools/lint/min_extension/Context.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/min/libyang/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o -c /home/min/libyang/tools/lint/min_extension/Context.cpp
 
-CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.i"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/min/libyang/tools/lint/min_extension/command.cpp > CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.i
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.i"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/min/libyang/tools/lint/min_extension/Context.cpp > CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.i
 
-CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.s"
-	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/min/libyang/tools/lint/min_extension/command.cpp -o CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.s
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.s"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/min/libyang/tools/lint/min_extension/Context.cpp -o CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.s
 
-CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o.requires:
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o.requires:
 
-.PHONY : CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o.requires
+.PHONY : CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o.requires
 
-CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o.provides: CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o.requires
-	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o.provides.build
-.PHONY : CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o.provides
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o.provides: CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o.requires
+	$(MAKE) -f CMakeFiles/yangTest.dir/build.make CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o.provides.build
+.PHONY : CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o.provides
 
-CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o.provides.build: CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o.provides.build: CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o
 
 
 CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.o: CMakeFiles/yangTest.dir/flags.make
@@ -157,7 +157,7 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.o.provides.build
 yangTest_OBJECTS = \
 "CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o" \
 "CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o" \
-"CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o" \
+"CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o" \
 "CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.o"
 
 # External object files for target yangTest
@@ -165,7 +165,7 @@ yangTest_EXTERNAL_OBJECTS =
 
 yangTest: CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o
 yangTest: CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o
-yangTest: CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o
+yangTest: CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o
 yangTest: CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.o
 yangTest: CMakeFiles/yangTest.dir/build.make
 yangTest: libyang.so.1.3.0
@@ -181,7 +181,7 @@ CMakeFiles/yangTest.dir/build: yangTest
 
 CMakeFiles/yangTest.dir/requires: CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o.requires
 CMakeFiles/yangTest.dir/requires: CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o.requires
-CMakeFiles/yangTest.dir/requires: CMakeFiles/yangTest.dir/tools/lint/min_extension/command.cpp.o.requires
+CMakeFiles/yangTest.dir/requires: CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o.requires
 CMakeFiles/yangTest.dir/requires: CMakeFiles/yangTest.dir/tools/lint/min_extension/min_module.cpp.o.requires
 
 .PHONY : CMakeFiles/yangTest.dir/requires
