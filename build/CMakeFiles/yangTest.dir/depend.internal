@@ -6,8 +6,10 @@ CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o
  ../src/dict.h
  ../src/extensions.h
  ../src/hash_table.h
+ ../src/parser.h
  ../src/resolve.h
  ../src/tree_data.h
+ ../src/tree_internal.h
  ../src/tree_schema.h
  ../src/xml.h
  ../src/xpath.h
@@ -23,13 +25,17 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o
  ../src/dict.h
  ../src/extensions.h
  ../src/hash_table.h
+ ../src/parser.h
  ../src/resolve.h
  ../src/tree_data.h
+ ../src/tree_internal.h
  ../src/tree_schema.h
  ../src/xml.h
  ../src/xpath.h
+ /home/min/libyang/tools/lint/min_extension/./min_module.hpp
  /home/min/libyang/tools/lint/min_extension/Context.cpp
  /home/min/libyang/tools/lint/min_extension/Context.hpp
+ /home/min/libyang/tools/lint/min_extension/internal_module.hpp
  src/common.h
  src/libyang.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/internal_module.cpp.o

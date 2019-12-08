@@ -48,6 +48,18 @@ common.h
 dict.h
 ../src/dict.h
 
+../src/parser.h
+pcre.h
+-
+sys/mman.h
+-
+libyang.h
+../src/libyang.h
+tree_schema.h
+../src/tree_schema.h
+tree_internal.h
+../src/tree_internal.h
+
 ../src/resolve.h
 libyang.h
 ../src/libyang.h
@@ -65,6 +77,18 @@ tree_schema.h
 ../src/tree_schema.h
 xml.h
 ../src/xml.h
+
+../src/tree_internal.h
+stdint.h
+-
+libyang.h
+../src/libyang.h
+tree_schema.h
+../src/tree_schema.h
+tree_data.h
+../src/tree_data.h
+resolve.h
+../src/resolve.h
 
 ../src/tree_schema.h
 machine/endian.h
@@ -139,10 +163,20 @@ tree_data.h
 -
 xpath.h
 -
+libyang.h
+/home/min/libyang/tools/lint/./min_extension/libyang.h
+parser.h
+/home/min/libyang/tools/lint/./min_extension/parser.h
 memory
 -
 iostream
 -
+hash_map
+-
+string
+-
+internal_module.hpp
+/home/min/libyang/tools/lint/./min_extension/internal_module.hpp
 
 /home/min/libyang/tools/lint/./min_extension/internal_module.hpp
 pthread.h
@@ -253,10 +287,20 @@ tree_data.h
 -
 xpath.h
 -
+libyang.h
+/home/min/libyang/tools/lint/min_extension/libyang.h
+parser.h
+/home/min/libyang/tools/lint/min_extension/parser.h
 memory
 -
 iostream
 -
+hash_map
+-
+string
+-
+internal_module.hpp
+/home/min/libyang/tools/lint/min_extension/internal_module.hpp
 
 /home/min/libyang/tools/lint/min_extension/internal_module.cpp
 iostream

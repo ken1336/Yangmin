@@ -5,8 +5,10 @@ CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/context.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/dict.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/extensions.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/hash_table.h
+CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/parser.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/resolve.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/tree_data.h
+CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/tree_internal.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/tree_schema.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/xml.h
 CMakeFiles/yangTest.dir/tools/lint/Ytest.cpp.o: ../src/xpath.h
@@ -22,13 +24,17 @@ CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/context.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/dict.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/extensions.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/hash_table.h
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/parser.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/resolve.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/tree_data.h
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/tree_internal.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/tree_schema.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/xml.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../src/xpath.h
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../tools/lint/min_extension/./min_module.hpp
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../tools/lint/min_extension/Context.cpp
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../tools/lint/min_extension/Context.hpp
+CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: ../tools/lint/min_extension/internal_module.hpp
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: src/common.h
 CMakeFiles/yangTest.dir/tools/lint/min_extension/Context.cpp.o: src/libyang.h
 

@@ -292,7 +292,7 @@ struct lys_node *lys_node_dup(struct lys_module *module, struct lys_node *parent
  *
  */
 int lys_ext_dup(struct ly_ctx *ctx, struct lys_module *mod, struct lys_ext_instance **orig, uint8_t size, void *parent,
-                LYEXT_PAR parent_type, struct lys_ext_instance ***new, int shallow, struct unres_schema *unres);
+                LYEXT_PAR parent_type, struct lys_ext_instance ***_new, int shallow, struct unres_schema *unres);
 
 /**
  * @brief Iterate over the specified type of the extension instances

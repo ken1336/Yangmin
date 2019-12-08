@@ -1253,7 +1253,7 @@ lys_parse_fd_(struct ly_ctx *ctx, int fd, LYS_INFORMAT format, const char *revis
         LOGERR(ctx, LY_EINVAL, "Empty schema file.");
         return NULL;
     }
-
+    printf("%s\n",addr);
     module = lys_parse_mem_(ctx, addr, format, revision, 1, implement);
     lyp_munmap(addr, length);
 
@@ -1523,7 +1523,7 @@ lys_ext_iter(struct lys_ext_instance **ext, uint8_t ext_size, uint8_t start, LYE
  */
 int
 lys_ext_dup(struct ly_ctx *ctx, struct lys_module *mod, struct lys_ext_instance **orig, uint8_t size, void *parent,
-            LYEXT_PAR parent_type, struct lys_ext_instance ***new, int shallow, struct unres_schema *unres)
+            LYEXT_PAR parent_type, struct lys_ext_instance ***_new, int shallow, struct unres_schema *unres)
 {
     int i;
     uint8_t u = 0;
@@ -1531,18 +1531,18 @@ lys_ext_dup(struct ly_ctx *ctx, struct lys_module *mod, struct lys_ext_instance 
     struct unres_ext *info, *info_orig;
     size_t len;
 
-    assert(new);
+    assert(_new);
 
     if (!size) {
         if (orig) {
             LOGINT(ctx);
             return EXIT_FAILURE;
         }
-        (*new) = NULL;
+        (*_new) = NULL;
         return EXIT_SUCCESS;
     }
 
-    (*new) = result = calloc(size, sizeof *result);
+    (*_new) = result = calloc(size, sizeof *result);
     LY_CHECK_ERR_RETURN(!result, LOGMEM(ctx), EXIT_FAILURE);
     for (u = 0; u < size; u++) {
         if (orig[u]) {
@@ -1606,7 +1606,7 @@ lys_ext_dup(struct ly_ctx *ctx, struct lys_module *mod, struct lys_ext_instance 
             info->mod = mod;
             info->parent_type = parent_type;
             info->ext_index = u;
-            if (unres_schema_add_node(info->mod, unres, new, UNRES_EXT, (struct lys_node *)info) == -1) {
+            if (unres_schema_add_node(info->mod, unres, _new, UNRES_EXT, (struct lys_node *)info) == -1) {
                 goto error;
             }
         }
@@ -1615,7 +1615,7 @@ lys_ext_dup(struct ly_ctx *ctx, struct lys_module *mod, struct lys_ext_instance 
     return EXIT_SUCCESS;
 
 error:
-    (*new) = NULL;
+    (*_new) = NULL;
     lys_extension_instances_free(ctx, result, u, NULL);
     return EXIT_FAILURE;
 }

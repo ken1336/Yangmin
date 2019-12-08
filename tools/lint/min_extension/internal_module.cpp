@@ -2,6 +2,13 @@
 #include <memory>
 #include "internal_module.hpp"
 
+
+// #include<ietf-yang-metadata@2016-08-05.h>
+// #include<yang@2017-02-20.h>
+// #include<ietf-inet-types@2013-07-15.h>
+// #include<ietf-yang-types@2013-07-15.h>
+// #include<ietf-datastores@2017-08-17.h>
+// #include<ietf-yang-library@2019-01-04.h>
 #include "../../models/ietf-yang-metadata@2016-08-05.h"
 #include "../../models/yang@2017-02-20.h"
 #include "../../models/ietf-inet-types@2013-07-15.h"
@@ -31,12 +38,13 @@ InternalModule::InternalModule(ly_ctx *ctx): MinModule::MinModule()
     // for(auto i = 0; i<4; i++){
     //     lys_parse_mem(ctx, min::internal::internal_modules[i].data, min::internal::internal_modules[i].format);
     // }
-    auto in = lys_parse_mem(ctx, min::internal::internal_modules[5].data, min::internal::internal_modules[5].format);
-    this->module = std::make_unique<lys_module>(*in);
+    //auto in = lys_parse_mem(ctx, min::internal::internal_modules[5].data, min::internal::internal_modules[5].format);
+    //this->module = std::make_unique<lys_module>(*in);
 }
 void InternalModule::test()
 {
-    std::cout << "test" << std::endl;
+    
+    lys_print_file(stdout,this->module.get(),LYS_OUT_TREE,lys_data_path(this->module.get()->data),this->module.get()->data->ext_size,4);
 }
 
 void InternalModule::setModule(lys_module* module){
