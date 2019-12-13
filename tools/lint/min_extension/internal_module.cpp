@@ -45,6 +45,7 @@ void InternalModule::test()
 {
     
     lys_print_file(stdout,this->module.get(),LYS_OUT_TREE,lys_data_path(this->module.get()->data),this->module.get()->data->ext_size,4);
+    std::cout<<lys_data_path(this->module.get()->data->child)<<std::endl;
 }
 
 void InternalModule::setModule(lys_module* module){
@@ -56,7 +57,8 @@ void InternalModule::printModuleData(int dept)
     auto iter = this->module->data;
     int num = 0;
     std::cout << "----------iter start----------" << std::endl;
-    printSubNode(iter, 0);
+    //printSubNode(iter, 0);
+    printPathNode(iter,0);
     std::cout << "----------iter end----------" << std::endl;
     return;
 }
@@ -65,6 +67,30 @@ void InternalModule::printSubModule(lys_module *subModule, int dept)
 {
 }
 
+void InternalModule::printPathNode(lys_node *node, int dept)
+{
+    auto iter = node;
+
+    while(iter)
+    {
+        printIndent(dept);
+        std::cout<<lys_data_path(iter)<<std::endl;
+        if (iter->child)
+        {
+            
+            printPathNode(iter->child, dept + 1);
+        }
+
+        if (iter->next)
+        {
+            iter = iter->next;
+        }
+        else
+        {
+            return;
+        }
+    }
+}
 void InternalModule::printSubNode(lys_node *node, int dept)
 {
 
@@ -72,10 +98,7 @@ void InternalModule::printSubNode(lys_node *node, int dept)
 
     while (iter)
     {
-        for (auto i = 0; i < dept; i++)
-        {
-            std::cout << "  ..  ";
-        }
+        printIndent(dept);
         //std::cout<<"nodetype: "<<iter->nodetype
         //if(iter->flags >= 0 && iter->flags <= 64 )
         if (iter->nodetype != 33 && iter->nodetype != LYS_UNKNOWN && iter->nodetype != LYS_CHOICE && iter->nodetype < 0x10000)

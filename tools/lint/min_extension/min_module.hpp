@@ -41,6 +41,7 @@ public:
     // virtual void printSubNode(lys_node *node, int dept) =0;
     // virtual void printSubModule(lys_module *subModule, int dept = 0) =0;
     // virtual void test() =0;
+    void printIndent(int dept);
     inline std::string getName() { return module->name; };
     
     
