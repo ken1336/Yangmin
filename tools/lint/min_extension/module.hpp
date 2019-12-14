@@ -1,5 +1,5 @@
-#ifndef _MIN_MODULE_H
-#define _MIN_MODULE_H
+#ifndef _MIN_MODULE_MODULE_H
+#define _MIN_MODULE_MODULE_H
 
 #define _GNU_SOURCE
 #include <pthread.h>
@@ -14,27 +14,32 @@
 #include <fcntl.h>
 
 #include "../../src/tree_schema.h"
-#include "./module.hpp"
-
+#include<context.h>
 #include <iostream>
 #include <string>
 #include <memory>
+#define IETF_YANG_LIB_REV "2019-01-04"
 
 namespace min
 {
 
 namespace module
 {
-class MinModule : public BaseModule
+class BaseModule
 {
-    private:
+
+private:
+    std::shared_ptr<lys_module> module;
+    std::shared_ptr<ly_ctx> ctx; 
+    // virtual void printSubModule(const lys_module &subModule, int dept) =0;
+    void setModule(lys_module *module);
     
 
-    void printSubModule(const lys_module& subModule,int dept);
-   
+protected:
+    void printIndent(int dept);
 public:
-    MinModule(const lys_module* module);
-    MinModule(ly_ctx* ctx);
+    BaseModule(const lys_module *module);
+    BaseModule(ly_ctx* ctx);
     
     void printModuleData(int dept = 0);
     void printSubNode(lys_node* node, int dept);
@@ -42,13 +47,15 @@ public:
     void printPathNode(lys_node* node, int dept);
     
     void test();
+
+    //Getter
+    std::shared_ptr<lys_module> getModule();
+    inline std::string getName() { return module->name; };
     
-
-    ~MinModule();
-
-
-
+    
 };
+
+} // namespace module
 } // namespace min
 
 #endif

@@ -14,7 +14,7 @@
 #include <fcntl.h>
 
 #include "../../src/tree_schema.h"
-#include "./min_module.hpp"
+#include "./module.hpp"
 
 #include<iostream>
 #include<string>
@@ -38,15 +38,14 @@ typedef struct internal_modules_s
 
 
 
-class InternalModule : public min::module::MinModule
+class InternalModule : public min::module::BaseModule
 {
 
 private:
     
-    std::unique_ptr<lys_module> module;
 
     void printSubModule(const lys_module& subModule,int dept);
-    void setModule(lys_module* module);
+   
 public:
     InternalModule(const lys_module* module);
     InternalModule(ly_ctx* ctx);
@@ -57,7 +56,7 @@ public:
     void printPathNode(lys_node* node, int dept);
     
     void test();
-    inline std::string getName(){return module->name;};
+    
 
     ~InternalModule();
 };

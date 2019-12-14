@@ -29,11 +29,11 @@ constexpr internal_modules_s internal_modules[] = {
     {"ietf-datastores", "2017-08-17", (const char *)ietf_datastores_2017_08_17_yin, 0, LYS_IN_YIN},
     {"ietf-yang-library", IETF_YANG_LIB_REV, (const char *)ietf_yang_library_2019_01_04_yin, 1, LYS_IN_YIN}};
 
-InternalModule::InternalModule(const lys_module *module) : MinModule::MinModule()
+InternalModule::InternalModule(const lys_module *module) : BaseModule::BaseModule(module)
 {
-    this->module = std::make_unique<lys_module>(*module);
+    //this->module = std::make_unique<lys_module>(*module);
 }
-InternalModule::InternalModule(ly_ctx *ctx): MinModule::MinModule()
+InternalModule::InternalModule(ly_ctx *ctx): BaseModule::BaseModule(ctx)
 {
     // for(auto i = 0; i<4; i++){
     //     lys_parse_mem(ctx, min::internal::internal_modules[i].data, min::internal::internal_modules[i].format);
@@ -44,17 +44,15 @@ InternalModule::InternalModule(ly_ctx *ctx): MinModule::MinModule()
 void InternalModule::test()
 {
     
-    lys_print_file(stdout,this->module.get(),LYS_OUT_TREE,lys_data_path(this->module.get()->data),this->module.get()->data->ext_size,4);
-    std::cout<<lys_data_path(this->module.get()->data->child)<<std::endl;
+    lys_print_file(stdout,this->getModule().get(),LYS_OUT_TREE,lys_data_path(this->getModule().get()->data),this->getModule().get()->data->ext_size,4);
+    //lys_print_file(stdout,this->module.get(),LYS_OUT_TREE,lys_data_path(this->module.get()->data),this->module.get()->data->ext_size,4);
+    //std::cout<<lys_data_path(this->module.get()->data->child)<<std::endl;
 }
 
-void InternalModule::setModule(lys_module* module){
-    this->module = std::make_unique<lys_module>(*module);
-}
 void InternalModule::printModuleData(int dept)
 {
 
-    auto iter = this->module->data;
+    auto iter = this->getModule()->data;
     int num = 0;
     std::cout << "----------iter start----------" << std::endl;
     //printSubNode(iter, 0);
