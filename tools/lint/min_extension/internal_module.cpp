@@ -49,90 +49,90 @@ void InternalModule::test()
     //std::cout<<lys_data_path(this->module.get()->data->child)<<std::endl;
 }
 
-void InternalModule::printModuleData(int dept)
-{
+// void InternalModule::printModuleData(int dept)
+// {
 
-    auto iter = this->getModule()->data;
-    int num = 0;
-    std::cout << "----------iter start----------" << std::endl;
-    //printSubNode(iter, 0);
-    printPathNode(iter,0);
-    std::cout << "----------iter end----------" << std::endl;
-    return;
-}
+//     auto iter = this->getModule()->data;
+//     int num = 0;
+//     std::cout << "----------iter start----------" << std::endl;
+//     //printSubNode(iter, 0);
+//     printPathNode(iter,0);
+//     std::cout << "----------iter end----------" << std::endl;
+//     return;
+// }
 
-void InternalModule::printSubModule(lys_module *subModule, int dept)
-{
-}
+// void InternalModule::printSubModule(lys_module *subModule, int dept)
+// {
+// }
 
-void InternalModule::printPathNode(lys_node *node, int dept)
-{
-    auto iter = node;
+// void InternalModule::printPathNode(lys_node *node, int dept)
+// {
+//     auto iter = node;
 
-    while(iter)
-    {
-        printIndent(dept);
-        std::cout<<lys_data_path(iter)<<std::endl;
-        if (iter->child)
-        {
+//     while(iter)
+//     {
+//         printIndent(dept);
+//         std::cout<<lys_data_path(iter)<<std::endl;
+//         if (iter->child)
+//         {
             
-            printPathNode(iter->child, dept + 1);
-        }
+//             printPathNode(iter->child, dept + 1);
+//         }
 
-        if (iter->next)
-        {
-            iter = iter->next;
-        }
-        else
-        {
-            return;
-        }
-    }
-}
-void InternalModule::printSubNode(lys_node *node, int dept)
-{
+//         if (iter->next)
+//         {
+//             iter = iter->next;
+//         }
+//         else
+//         {
+//             return;
+//         }
+//     }
+// }
+// void InternalModule::printSubNode(lys_node *node, int dept)
+// {
 
-    auto iter = node;
+//     auto iter = node;
 
-    while (iter)
-    {
-        printIndent(dept);
-        //std::cout<<"nodetype: "<<iter->nodetype
-        //if(iter->flags >= 0 && iter->flags <= 64 )
-        if (iter->nodetype != 33 && iter->nodetype != LYS_UNKNOWN && iter->nodetype != LYS_CHOICE && iter->nodetype < 0x10000)
-        {
-            std::cout << "  " << iter->nodetype << " : " << iter->name << std::endl;
-            // for (auto i = 0; i < dept; i++)
-            // {
-            //     std::cout << "  ..  ";
-            // }
-            // std::cout<<iter->dsc<<std::endl;
-        }
+//     while (iter)
+//     {
+//         printIndent(dept);
+//         //std::cout<<"nodetype: "<<iter->nodetype
+//         //if(iter->flags >= 0 && iter->flags <= 64 )
+//         if (iter->nodetype != 33 && iter->nodetype != LYS_UNKNOWN && iter->nodetype != LYS_CHOICE && iter->nodetype < 0x10000)
+//         {
+//             std::cout << "  " << iter->nodetype << " : " << iter->name << std::endl;
+//             // for (auto i = 0; i < dept; i++)
+//             // {
+//             //     std::cout << "  ..  ";
+//             // }
+//             // std::cout<<iter->dsc<<std::endl;
+//         }
 
-        else
-        {
-            std::cout << "  skip--" << std::endl;
-            return;
-        }
+//         else
+//         {
+//             std::cout << "  skip--" << std::endl;
+//             return;
+//         }
 
-        // std::cout<<iter->dsc<<std::endl;
-        if (iter->child)
-        {
-            printSubNode(iter->child, dept + 1);
-        }
+//         // std::cout<<iter->dsc<<std::endl;
+//         if (iter->child)
+//         {
+//             printSubNode(iter->child, dept + 1);
+//         }
 
-        if (iter->next)
-        {
-            iter = iter->next;
-        }
-        else
-        {
-            return;
-        }
-    }
+//         if (iter->next)
+//         {
+//             iter = iter->next;
+//         }
+//         else
+//         {
+//             return;
+//         }
+//     }
 
-    return;
-}
+//     return;
+// }
 
 InternalModule::~InternalModule(){};
 } // namespace internal

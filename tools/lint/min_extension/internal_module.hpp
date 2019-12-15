@@ -50,10 +50,10 @@ public:
     InternalModule(const lys_module* module);
     InternalModule(ly_ctx* ctx);
     
-    void printModuleData(int dept = 0);
-    void printSubNode(lys_node* node, int dept);
-    void printSubModule(lys_module* subModule, int dept = 0);
-    void printPathNode(lys_node* node, int dept);
+    // void printModuleData(int dept = 0);
+    // void printSubNode(lys_node* node, int dept);
+    // void printSubModule(lys_module* subModule, int dept = 0);
+    // void printPathNode(lys_node* node, int dept);
     
     void test();
     

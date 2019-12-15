@@ -27,28 +27,23 @@ namespace module
 {
 class MinModule : public BaseModule
 {
-    private:
-    
+private:
+    void printSubModule(const lys_module &subModule, int dept);
 
-    void printSubModule(const lys_module& subModule,int dept);
-   
 public:
-    MinModule(const lys_module* module);
-    MinModule(ly_ctx* ctx);
-    
-    void printModuleData(int dept = 0);
-    void printSubNode(lys_node* node, int dept);
-    void printSubModule(lys_module* subModule, int dept = 0);
-    void printPathNode(lys_node* node, int dept);
-    
+    MinModule(const lys_module *module);
+    MinModule(ly_ctx *ctx);
+
+    // void printModuleData(int dept = 0);
+    // void printSubNode(lys_node* node, int dept);
+    // void printSubModule(lys_module* subModule, int dept = 0);
+    // void printPathNode(lys_node* node, int dept);
+
     void test();
-    
 
     ~MinModule();
-
-
-
 };
+} // namespace module
 } // namespace min
 
 #endif
