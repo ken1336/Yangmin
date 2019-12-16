@@ -9,6 +9,9 @@ namespace module
 {
 BaseModule::BaseModule(const lys_module *module)
 {
+    assert(module->ctx);
+    auto mCtx = module->ctx;
+    this->ctx = std::make_shared<ly_ctx>(*mCtx);
     this->module = std::make_shared<lys_module>(*module);
 }
 
@@ -124,6 +127,11 @@ void BaseModule::setModule(lys_module *module)
     this->module = std::make_shared<lys_module>(*module);
 }
 
+std::shared_ptr<ly_ctx> BaseModule::getContext()
+{
+    assert(this->ctx);
+    return this->ctx;
+}
 std::shared_ptr<lys_module> BaseModule::getModule()
 {
     return this->module;

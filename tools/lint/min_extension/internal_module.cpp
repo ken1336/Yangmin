@@ -44,9 +44,23 @@ InternalModule::InternalModule(ly_ctx *ctx): BaseModule::BaseModule(ctx)
 void InternalModule::test()
 {
     
-    lys_print_file(stdout,this->getModule().get(),LYS_OUT_TREE,lys_data_path(this->getModule().get()->data),this->getModule().get()->data->ext_size,4);
+    //lys_print_file(stdout,this->getModule().get(),LYS_OUT_TREE,lys_data_path(this->getModule().get()->data),this->getModule().get()->data->ext_size,4);
     //lys_print_file(stdout,this->module.get(),LYS_OUT_TREE,lys_data_path(this->module.get()->data),this->module.get()->data->ext_size,4);
     //std::cout<<lys_data_path(this->module.get()->data->child)<<std::endl;
+    //auto xml = lyxml_parse_mem(this->getContext().get(),"<ietf-netconf><get-config></source></get-config></ietf-netconf>",1);
+    //
+
+    char *mem;
+    struct lyd_node *node;
+    auto ctx = this->getContext().get();
+    //node = lyd_new_yangdata(this->getModule().get(),"ietf-netconf",this->getModule()->name);
+    node = lyd_new(NULL,this->getModule().get(),this->getModule()->data->child->child->child->child->name);
+    if (lyd_print_mem(&mem, node, LYD_XML, LYP_WITHSIBLINGS)) {
+       
+    }
+    std::cout<<mem<<std::endl;
+    //auto xml = lyxml_parse_mem(ctx, mem, LYXML_PARSE_NOMIXEDCONTENT);
+    //lyxml_print_file(stdout, xml,1);
 }
 
 // void InternalModule::printModuleData(int dept)

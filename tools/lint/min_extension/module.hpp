@@ -18,6 +18,7 @@
 #include <iostream>
 #include <string>
 #include <memory>
+#include<cassert>
 #define IETF_YANG_LIB_REV "2019-01-04"
 
 namespace min
@@ -50,6 +51,7 @@ public:
 
     //Getter
     std::shared_ptr<lys_module> getModule();
+    std::shared_ptr<ly_ctx> getContext();
     inline std::string getName() { return module->name; };
     
     

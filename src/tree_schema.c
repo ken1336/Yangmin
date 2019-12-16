@@ -1253,7 +1253,8 @@ lys_parse_fd_(struct ly_ctx *ctx, int fd, LYS_INFORMAT format, const char *revis
         LOGERR(ctx, LY_EINVAL, "Empty schema file.");
         return NULL;
     }
-    printf("%s\n",addr);
+    //printf("%s\n",addr);
+        
     module = lys_parse_mem_(ctx, addr, format, revision, 1, implement);
     lyp_munmap(addr, length);
 

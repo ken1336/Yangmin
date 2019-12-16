@@ -27,7 +27,7 @@ int main(){
     
     
     ctx.add_model("../ietf-netconf.yang");
-    ctx.print_list(stdout,LYD_XML);
+    //ctx.print_list(stdout,LYD_XML);
     auto module = ctx.getModuleByIndex(6);
     std::cout<<module->getName()<<std::endl;
     module->printModuleData(0);
