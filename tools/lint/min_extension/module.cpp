@@ -61,6 +61,8 @@ void BaseModule::printPathNode(lys_node *node, int dept)
     {
         printIndent(dept);
         std::cout<<lys_data_path(iter)<<std::endl;
+        printIndent(dept);
+        std::cout<<lys_path(iter,0x01)<<std::endl;
         if (iter->child)
         {
             

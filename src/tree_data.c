@@ -1147,7 +1147,7 @@ lyd_new_find_schema(struct lyd_node *parent, const struct lys_module *module, in
     return siblings;
 }
 
-struct lyd_node *
+API struct lyd_node *
 _lyd_new(struct lyd_node *parent, const struct lys_node *schema, int dflt)
 {
     struct lyd_node *ret;

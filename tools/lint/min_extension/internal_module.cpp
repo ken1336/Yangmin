@@ -2,7 +2,12 @@
 #include <memory>
 #include "internal_module.hpp"
 
-
+#include<resolve.h>
+#include<parser.h>
+#define LYD_WHEN       0x04
+#define LYD_WHEN_TRUE  0x02
+#define LYD_WHEN_FALSE 0x01
+#define LYD_WHEN_DONE(status) (!((status) & LYD_WHEN) || ((status) & (LYD_WHEN_TRUE | LYD_WHEN_FALSE)))
 // #include<ietf-yang-metadata@2016-08-05.h>
 // #include<yang@2017-02-20.h>
 // #include<ietf-inet-types@2013-07-15.h>
@@ -19,6 +24,7 @@ namespace min
 {
 namespace internal
 {
+
 
 constexpr internal_modules_s internal_modules[] = {
     {"ietf-yang-metadata", "2016-08-05", (const char *)ietf_yang_metadata_2016_08_05_yin, 0, LYS_IN_YIN},
@@ -54,11 +60,18 @@ void InternalModule::test()
     struct lyd_node *node;
     auto ctx = this->getContext().get();
     //node = lyd_new_yangdata(this->getModule().get(),"ietf-netconf",this->getModule()->name);
-    node = lyd_new(NULL,this->getModule().get(),this->getModule()->data->child->child->child->child->name);
+    //node = lyd_new(NULL,this->getModule().get(), "l");
+    //node = lyd_new(NULL, this->getModule().get()->, "source");
+    resolve_applies_when(this->getModule().get()->data, 0, NULL);
+    node = lyd_new(NULL,this->getModule().get(),lys_path(this->getModule().get()->data,0x01));
+    node = _lyd_new(NULL,this->getModule().get()->data,1 );
+    //std::cout<<"abc: "<<this->getModule().get()->ref<<std::endl;
+    //node = lyd_parse_mem(ctx,this->getModule().get()->ref,LYD_XML,1);
     if (lyd_print_mem(&mem, node, LYD_XML, LYP_WITHSIBLINGS)) {
        
     }
-    std::cout<<mem<<std::endl;
+    //node->next
+    std::cout<<this->getModule().get()->ns<<std::endl;
     //auto xml = lyxml_parse_mem(ctx, mem, LYXML_PARSE_NOMIXEDCONTENT);
     //lyxml_print_file(stdout, xml,1);
 }
