@@ -4,6 +4,7 @@
 
 #include<resolve.h>
 #include<parser.h>
+
 #define LYD_WHEN       0x04
 #define LYD_WHEN_TRUE  0x02
 #define LYD_WHEN_FALSE 0x01
@@ -20,6 +21,47 @@
 #include "../../models/ietf-yang-types@2013-07-15.h"
 #include "../../models/ietf-datastores@2017-08-17.h"
 #include "../../models/ietf-yang-library@2019-01-04.h"
+
+static struct lyd_node *
+lyb_new_node(const struct lys_node *schema)
+{
+    struct lyd_node *node;
+
+    switch (schema->nodetype) {
+    case LYS_CONTAINER:
+    case LYS_LIST:
+    case LYS_NOTIF:
+    case LYS_RPC:
+    case LYS_ACTION:
+        node = (lyd_node*)calloc(sizeof(struct lyd_node), 1);
+        break;
+    case LYS_LEAF:
+    case LYS_LEAFLIST:
+        node = (lyd_node*)calloc(sizeof(struct lyd_node_leaf_list), 1);
+
+        if (((struct lys_node_leaf *)schema)->type.base == LY_TYPE_LEAFREF) {
+            node->validity |= LYD_VAL_LEAFREF;
+        }
+        break;
+    case LYS_ANYDATA:
+    case LYS_ANYXML:
+        node = (lyd_node*)calloc(sizeof(struct lyd_node_anydata), 1);
+        break;
+    default:
+        return NULL;
+    }
+    //LY_CHECK_ERR_RETURN(!node, LOGMEM(schema->module->ctx), NULL);
+
+    /* fill basic info */
+    node->schema = (struct lys_node *)schema;
+    if (resolve_applies_when_ex(schema, 0, NULL)) {
+        /* this data are considered trusted so if this node exists, it means its when must have been true */
+        node->when_status = LYD_WHEN | LYD_WHEN_TRUE;
+    }
+    node->prev = node;
+
+    return node;
+}
 namespace min
 {
 namespace internal
@@ -47,6 +89,9 @@ InternalModule::InternalModule(ly_ctx *ctx): BaseModule::BaseModule(ctx)
     //auto in = lys_parse_mem(ctx, min::internal::internal_modules[5].data, min::internal::internal_modules[5].format);
     //this->module = std::make_unique<lys_module>(*in);
 }
+
+
+
 void InternalModule::test()
 {
     
@@ -62,16 +107,23 @@ void InternalModule::test()
     //node = lyd_new_yangdata(this->getModule().get(),"ietf-netconf",this->getModule()->name);
     //node = lyd_new(NULL,this->getModule().get(), "l");
     //node = lyd_new(NULL, this->getModule().get()->, "source");
-    resolve_applies_when(this->getModule().get()->data, 0, NULL);
-    node = lyd_new(NULL,this->getModule().get(),lys_path(this->getModule().get()->data,0x01));
-    node = _lyd_new(NULL,this->getModule().get()->data,1 );
+    //resolve_applies_when(this->getModule().get()->data, 0, NULL);
+//     char* name = (char*)this->getModule().get()->data->name;
+//    std::cout<<this->getModule().get()->data->name<<std::endl;
+//     node = lyd_new(NULL,this->getModule().get(),name);
+    node = lyb_new_node(this->getModule().get()->data);
+    auto subnode = lyb_new_node(this->getModule().get()->data->child->child);
+    std::cout<<this->getModule().get()->data->child->child->name<<std::endl;
+    
+    lyd_insert(node,subnode);
     //std::cout<<"abc: "<<this->getModule().get()->ref<<std::endl;
     //node = lyd_parse_mem(ctx,this->getModule().get()->ref,LYD_XML,1);
     if (lyd_print_mem(&mem, node, LYD_XML, LYP_WITHSIBLINGS)) {
        
     }
     //node->next
-    std::cout<<this->getModule().get()->ns<<std::endl;
+    std::cout<<"aa:"<<mem<<std::endl;
+    //std::cout<<"bb: "<<lyd_path(node)<<std::endl;
     //auto xml = lyxml_parse_mem(ctx, mem, LYXML_PARSE_NOMIXEDCONTENT);
     //lyxml_print_file(stdout, xml,1);
 }

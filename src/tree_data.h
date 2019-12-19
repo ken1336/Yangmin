@@ -1414,6 +1414,8 @@ double lyd_dec64_to_double(const struct lyd_node *node);
  */
 int lyd_lyb_data_length(const char *data);
 
+
+int resolve_applies_when_ex(const struct lys_node *schema, int mode, const struct lys_node *stop);
 #ifdef LY_ENABLED_LYD_PRIV
 
 /**

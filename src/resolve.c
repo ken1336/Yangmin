@@ -31,6 +31,7 @@
 #include "tree_internal.h"
 #include "extensions.h"
 #include "validation.h"
+#include"tree_data.h"
 
 /* internal parsed predicate structure */
 struct parsed_pred {
@@ -6684,6 +6685,7 @@ check_augment:
 
     return 0;
 }
+
 
 /**
  * @brief Resolve (check) all when conditions relevant for \p node.

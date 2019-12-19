@@ -7963,6 +7963,74 @@ lyd_leaf_type(const struct lyd_node_leaf_list *leaf)
     return type;
 }
 
+static struct lys_when *
+snode_get_when(const struct lys_node *schema)
+{
+    switch (schema->nodetype) {
+    case LYS_CONTAINER:
+        return ((struct lys_node_container *)schema)->when;
+    case LYS_CHOICE:
+        return ((struct lys_node_choice *)schema)->when;
+    case LYS_LEAF:
+        return ((struct lys_node_leaf *)schema)->when;
+    case LYS_LEAFLIST:
+        return ((struct lys_node_leaflist *)schema)->when;
+    case LYS_LIST:
+        return ((struct lys_node_list *)schema)->when;
+    case LYS_ANYDATA:
+    case LYS_ANYXML:
+        return ((struct lys_node_anydata *)schema)->when;
+    case LYS_CASE:
+        return ((struct lys_node_case *)schema)->when;
+    case LYS_USES:
+        return ((struct lys_node_uses *)schema)->when;
+    case LYS_AUGMENT:
+        return ((struct lys_node_augment *)schema)->when;
+    default:
+        return NULL;
+    }
+}
+API int
+resolve_applies_when_ex(const struct lys_node *schema, int mode, const struct lys_node *stop)
+{
+    const struct lys_node *parent;
+
+    assert(schema);
+
+    if (!(schema->nodetype & (LYS_NOTIF | LYS_RPC)) && snode_get_when(schema)) {
+        return 1;
+    }
+
+    parent = schema;
+    goto check_augment;
+
+    while (parent) {
+        /* stop conditions */
+        if (!mode) {
+            /* stop on node that can be instantiated in data tree */
+            if (!(parent->nodetype & (LYS_USES | LYS_CHOICE | LYS_CASE))) {
+                break;
+            }
+        } else {
+            /* stop on the specified node */
+            if (parent == stop) {
+                break;
+            }
+        }
+
+        if (snode_get_when(parent)) {
+            return 1;
+        }
+check_augment:
+
+        if (parent->parent && (parent->parent->nodetype == LYS_AUGMENT) && snode_get_when(parent->parent)) {
+            return 1;
+        }
+        parent = lys_parent(parent);
+    }
+
+    return 0;
+}
 #ifdef LY_ENABLED_LYD_PRIV
 
 API void *
