@@ -308,7 +308,7 @@ xml_print_leaf(struct lyout *out, int level, const struct lyd_node *node, int to
         return EXIT_FAILURE;
     }
     datatype = leaf->value_type;
-
+    
 printvalue:
     switch (datatype) {
     case LY_TYPE_STRING:

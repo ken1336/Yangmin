@@ -100,7 +100,9 @@ void InternalModule::test()
     //std::cout<<lys_data_path(this->module.get()->data->child)<<std::endl;
     //auto xml = lyxml_parse_mem(this->getContext().get(),"<ietf-netconf><get-config></source></get-config></ietf-netconf>",1);
     //
-
+    std::cout<<"lyd_node size:"<<sizeof(lyd_node)<<std::endl;
+    std::cout<<"lyd_node_leaf_list size:"<<sizeof(lyd_node_leaf_list)<<std::endl;
+    std::cout<<"lyd_node_anydata size:"<<sizeof(lyd_node_anydata)<<std::endl;
     char *mem;
     struct lyd_node *node;
     auto ctx = this->getContext().get();
@@ -113,9 +115,15 @@ void InternalModule::test()
 //     node = lyd_new(NULL,this->getModule().get(),name);
     node = lyb_new_node(this->getModule().get()->data);
     auto subnode = lyb_new_node(this->getModule().get()->data->child->child);
-    std::cout<<this->getModule().get()->data->child->child->name<<std::endl;
+    auto subnode2 = lyb_new_node(this->getModule().get()->data->child->child->next);
+    auto subnode3 = lyb_new_node(this->getModule().get()->data->child->child->child->child->child);
     
+    
+    std::cout<<this->getModule().get()->data->child->child->child->child->child->name<<std::endl;
     lyd_insert(node,subnode);
+    lyd_insert_after(subnode,subnode2);
+    lyd_insert(subnode,subnode3);
+    //lyd_insert(subnode,subnode2);
     //std::cout<<"abc: "<<this->getModule().get()->ref<<std::endl;
     //node = lyd_parse_mem(ctx,this->getModule().get()->ref,LYD_XML,1);
     if (lyd_print_mem(&mem, node, LYD_XML, LYP_WITHSIBLINGS)) {
