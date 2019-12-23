@@ -247,6 +247,7 @@ set(yangtest
     tools/lint/min_extension/Context.cpp
     tools/lint/min_extension/module.cpp
     tools/lint/min_extension/min_module.cpp
+    tools/lint/min_extension/LibyangWrapper.cpp
     )
 
 set(lintsrc

@@ -58,9 +58,10 @@ Context::Context()
 }
 Context::~Context(){
     
-    for(auto i = moduleIndex; i< moduleIndex+addedModuleCount; i++){
-        
+    for(auto i = moduleIndex+addedModuleCount-1; i>= moduleIndex; i--){
+        std::cout<<"-----------------------------------"<<i<<":"<<ctx->models.list[i]->name<<" deleted"<<std::endl;
         ly_ctx_remove_module(ctx->models.list[i],NULL);
+        
     }
     //
     

@@ -56,21 +56,27 @@ void BaseModule::printSubModule(lys_module *subModule, int dept)
 void BaseModule::printPathNode(lys_node *node, int dept)
 {
     auto iter = node;
-
+    
     while(iter)
-    {
+    {   
+        
         printIndent(dept);
         std::cout<<lys_data_path(iter)<<std::endl;
-        printIndent(dept);
-        std::cout<<lys_path(iter,0x01)<<std::endl;
-        if (iter->child)
+        //printIndent(dept);
+        //std::cout<<lys_path(iter,0x01)<<std::endl;
+        if (iter->child )
         {
             
-            printPathNode(iter->child, dept + 1);
+            if(min::wrapper::LibyangWrapper::isInLYS_NODE(iter->child->nodetype)){
+                std::cout<<"child: "<<iter->child->nodetype<<std::endl;
+                printPathNode(iter->child, dept + 1);
+            }
+            
         }
 
         if (iter->next)
         {
+            std::cout<<"next: "<<iter->name<<std::endl;
             iter = iter->next;
         }
         else

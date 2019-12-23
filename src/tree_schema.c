@@ -4115,11 +4115,13 @@ lys_parent(const struct lys_node *node)
     FUN_IN;
 
     struct lys_node *parent;
-
+    
     if (!node) {
+        
         return NULL;
     }
-
+   
+    
     if (node->nodetype == LYS_EXT) {
         if (((struct lys_ext_instance_complex*)node)->parent_type != LYEXT_PAR_NODE) {
             return NULL;
@@ -5145,6 +5147,7 @@ lys_data_path(const struct lys_node *node)
     while (node) {
         ly_set_add(set, (void *)node, 0);
         do {
+            
             node = lys_parent(node);
         } while (node && (node->nodetype & (LYS_USES | LYS_CHOICE | LYS_CASE | LYS_INPUT | LYS_OUTPUT)));
     }

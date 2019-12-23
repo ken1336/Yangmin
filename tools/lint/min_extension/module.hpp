@@ -21,6 +21,8 @@
 #include<cassert>
 #define IETF_YANG_LIB_REV "2019-01-04"
 
+#include"LibyangWrapper.hpp"
+
 namespace min
 {
 
@@ -32,6 +34,7 @@ class BaseModule
 private:
     std::shared_ptr<lys_module> module;
     std::shared_ptr<ly_ctx> ctx; 
+   
     // virtual void printSubModule(const lys_module &subModule, int dept) =0;
     void setModule(lys_module *module);
     
@@ -39,14 +42,18 @@ private:
 protected:
     void printIndent(int dept);
 public:
+    friend bool min::wrapper::LibyangWrapper::isInLYS_NODE(LYS_NODE type);
     BaseModule(const lys_module *module);
     BaseModule(ly_ctx* ctx);
     
     void printModuleData(int dept = 0);
     void printSubNode(lys_node* node, int dept);
     void printSubModule(lys_module* subModule, int dept = 0);
-    void printPathNode(lys_node* node, int dept);
+    void printPathNodeBFS(lys_node* node, int dept);
     
+    
+    void printPathNode(lys_node* node, int dept);
+
     void test();
 
     //Getter
