@@ -62,6 +62,16 @@ lyb_new_node(const struct lys_node *schema)
 
     return node;
 }
+
+
+
+static int
+xml_print_leaf(const struct lyd_node *node)
+{
+    const struct lyd_node_leaf_list *leaf = (struct lyd_node_leaf_list *)node;
+    std::cout<<leaf->schema->name<<std::endl;
+    return 1;
+}
 namespace min
 {
 namespace internal
@@ -102,7 +112,7 @@ void InternalModule::test()
     //
     std::cout<<"lyd_node size:"<<sizeof(lyd_node)<<std::endl;
     std::cout<<"lyd_node_leaf_list size:"<<sizeof(lyd_node_leaf_list)<<std::endl;
-    std::cout<<"lyd_node_anydata size:"<<sizeof(lyd_node_anydata)<<std::endl;
+    std::cout<<"lyd_node_anydata size:"<<sizeof(lyd_node)<<std::endl;
     char *mem;
     struct lyd_node *node;
     auto ctx = this->getContext().get();
@@ -118,7 +128,7 @@ void InternalModule::test()
     auto subnode2 = lyb_new_node(this->getModule().get()->data->child->child->next);
     auto subnode3 = lyb_new_node(this->getModule().get()->data->child->child->child->child->child);
     
-    
+    xml_print_leaf(subnode3);
     std::cout<<this->getModule().get()->data->child->child->child->child->child->name<<std::endl;
     lyd_insert(node,subnode);
     lyd_insert_after(subnode,subnode2);

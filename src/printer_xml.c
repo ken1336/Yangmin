@@ -291,7 +291,7 @@ xml_print_leaf(struct lyout *out, int level, const struct lyd_node *node, int to
     enum int_log_opts prev_ilo;
 
     LY_PRINT_SET;
-
+     
     if (toplevel || !node->parent || nscmp(node, node->parent)) {
         /* print "namespace" */
         ns = lyd_node_module(node)->ns;
@@ -623,7 +623,7 @@ xml_print_node(struct lyout *out, int level, const struct lyd_node *node, int to
         /* wd says do not print */
         return EXIT_SUCCESS;
     }
-
+    
     switch (node->schema->nodetype) {
     case LYS_NOTIF:
     case LYS_RPC:
