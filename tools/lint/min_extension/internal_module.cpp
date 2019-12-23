@@ -123,16 +123,26 @@ void InternalModule::test()
 //     char* name = (char*)this->getModule().get()->data->name;
 //    std::cout<<this->getModule().get()->data->name<<std::endl;
 //     node = lyd_new(NULL,this->getModule().get(),name);
-    node = lyb_new_node(this->getModule().get()->data);
-    auto subnode = lyb_new_node(this->getModule().get()->data->child->child);
-    auto subnode2 = lyb_new_node(this->getModule().get()->data->child->child->next);
-    auto subnode3 = lyb_new_node(this->getModule().get()->data->child->child->child->child->child);
+    node = lyb_new_node(this->getModule().get()->data); //get-config
     
-    xml_print_leaf(subnode3);
-    std::cout<<this->getModule().get()->data->child->child->child->child->child->name<<std::endl;
+
+    auto subnode = lyb_new_node(this->getModule().get()->data->child->child);   //source
+    auto subnode2 = lyb_new_node(this->getModule().get()->data->child->child->next);       //filter
+    auto subnode3 = lyb_new_node(this->getModule().get()->data->child->child->child->child->child); //candidate
+    std::cout<<lys_data_path(this->getModule().get()->data->child->child->child->child->child)<<std::endl;
+    std::cout<<lys_data_path(this->getModule().get()->data->child->child->child->child->next->child)<<std::endl;
+    
+    auto subnode4 = lyb_new_node(this->getModule().get()->data->child->child->child->child->next->child);
+
+
+    lyd_node_leaf_list* tt = (lyd_node_leaf_list*)subnode3;
+    
+    std::cout<<"value type: "<<tt->value_type<<std::endl;
+
     lyd_insert(node,subnode);
     lyd_insert_after(subnode,subnode2);
     lyd_insert(subnode,subnode3);
+    lyd_insert(subnode,subnode4);
     //lyd_insert(subnode,subnode2);
     //std::cout<<"abc: "<<this->getModule().get()->ref<<std::endl;
     //node = lyd_parse_mem(ctx,this->getModule().get()->ref,LYD_XML,1);

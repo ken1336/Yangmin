@@ -308,9 +308,10 @@ xml_print_leaf(struct lyout *out, int level, const struct lyd_node *node, int to
         return EXIT_FAILURE;
     }
     datatype = leaf->value_type;
-    
+    printf("%d\n",datatype);
 printvalue:
     switch (datatype) {
+    case LY_TYPE_DER:
     case LY_TYPE_STRING:
         ly_ilo_change(NULL, ILO_IGNORE, &prev_ilo, NULL);
         type = lyd_leaf_type((struct lyd_node_leaf_list *)leaf);
@@ -419,6 +420,7 @@ printvalue:
 
     default:
         /* error */
+        
         LOGINT(node->schema->module->ctx);
         return EXIT_FAILURE;
     }
